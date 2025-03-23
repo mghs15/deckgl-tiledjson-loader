@@ -1,0 +1,3443 @@
+{
+    "contour": [],
+    "road": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        135.17537355422974,
+                        34.650883622333225,
+                        0.69
+                    ],
+                    [
+                        135.17540574073792,
+                        34.65163823173931,
+                        1
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 2711,
+                "vt_rdctg": "市区町村道等",
+                "vt_lvorder": 0,
+                "vt_drworder": 43,
+                "vt_rnkwidth": "3m-5.5m未満",
+                "vt_width": 638,
+                "vt_tollsect": "無料",
+                "vt_motorway": 9
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        135.17535209655762,
+                        34.650883622333225,
+                        0.69
+                    ],
+                    [
+                        135.17537355422974,
+                        34.650883622333225,
+                        0.69
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 2711,
+                "vt_rdctg": "市区町村道等",
+                "vt_lvorder": 0,
+                "vt_drworder": 43,
+                "vt_rnkwidth": "5.5m-13m未満",
+                "vt_width": 1251,
+                "vt_tollsect": "無料",
+                "vt_motorway": 9
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        135.17600655555725,
+                        34.65087038351041,
+                        0.6
+                    ],
+                    [
+                        135.17578125,
+                        34.650874796451575,
+                        0.65
+                    ],
+                    [
+                        135.17537355422974,
+                        34.650883622333225,
+                        0.69
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 2711,
+                "vt_rdctg": "市区町村道等",
+                "vt_lvorder": 0,
+                "vt_drworder": 43,
+                "vt_rnkwidth": "5.5m-13m未満",
+                "vt_width": 1251,
+                "vt_tollsect": "無料",
+                "vt_motorway": 9
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        135.17536282539368,
+                        34.6500098554918,
+                        0.28
+                    ],
+                    [
+                        135.17537355422974,
+                        34.650883622333225,
+                        0.69
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 2711,
+                "vt_rdctg": "市区町村道等",
+                "vt_lvorder": 0,
+                "vt_drworder": 43,
+                "vt_rnkwidth": "3m-5.5m未満",
+                "vt_width": 638,
+                "vt_tollsect": "無料",
+                "vt_motorway": 9
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        135.17536282539368,
+                        34.65000102951714,
+                        0.28
+                    ],
+                    [
+                        135.17536282539368,
+                        34.6500098554918,
+                        0.28
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 2711,
+                "vt_rdctg": "市区町村道等",
+                "vt_lvorder": 0,
+                "vt_drworder": 43,
+                "vt_rnkwidth": "3m-5.5m未満",
+                "vt_width": 638,
+                "vt_tollsect": "無料",
+                "vt_motorway": 9
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        135.17536282539368,
+                        34.64993483467711,
+                        0.26
+                    ],
+                    [
+                        135.17536282539368,
+                        34.65000102951714,
+                        0.28
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 2711,
+                "vt_rdctg": "市区町村道等",
+                "vt_lvorder": 0,
+                "vt_drworder": 43,
+                "vt_rnkwidth": "3m-5.5m未満",
+                "vt_width": 638,
+                "vt_tollsect": "無料",
+                "vt_motorway": 9
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        135.17535209655762,
+                        34.649480295348155,
+                        0.09
+                    ],
+                    [
+                        135.17536282539368,
+                        34.64993483467711,
+                        0.26
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 2711,
+                "vt_rdctg": "市区町村道等",
+                "vt_lvorder": 0,
+                "vt_drworder": 43,
+                "vt_rnkwidth": "3m-5.5m未満",
+                "vt_width": 638,
+                "vt_tollsect": "無料",
+                "vt_motorway": 9
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        135.17706871032715,
+                        34.65163381883876,
+                        0.99
+                    ],
+                    [
+                        135.17706871032715,
+                        34.65163823173931,
+                        0.99
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 2711,
+                "vt_rdctg": "市区町村道等",
+                "vt_lvorder": 0,
+                "vt_drworder": 43,
+                "vt_rnkwidth": "13m-19.5m未満",
+                "vt_width": 1951,
+                "vt_tollsect": "無料",
+                "vt_motorway": 9
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        135.17730474472046,
+                        34.65163823173931,
+                        1
+                    ],
+                    [
+                        135.17706871032715,
+                        34.65163381883876,
+                        0.99
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 2711,
+                "vt_rdctg": "市区町村道等",
+                "vt_lvorder": 0,
+                "vt_drworder": 43,
+                "vt_rnkwidth": "5.5m-13m未満",
+                "vt_width": 1251,
+                "vt_tollsect": "無料",
+                "vt_motorway": 9
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        135.1796007156372,
+                        34.65163823173931,
+                        1.09
+                    ],
+                    [
+                        135.1794558763504,
+                        34.65135580563144,
+                        0.93
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 2711,
+                "vt_rdctg": "市区町村道等",
+                "vt_lvorder": 0,
+                "vt_drworder": 43,
+                "vt_rnkwidth": "5.5m-13m未満",
+                "vt_width": 1251,
+                "vt_tollsect": "無料",
+                "vt_motorway": 9
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        135.17973482608795,
+                        34.65125430851391,
+                        0.9
+                    ],
+                    [
+                        135.17964899539948,
+                        34.651285198954156,
+                        0.93
+                    ],
+                    [
+                        135.1794558763504,
+                        34.65135580563144,
+                        0.93
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 2711,
+                "vt_rdctg": "市区町村道等",
+                "vt_lvorder": 0,
+                "vt_drworder": 43,
+                "vt_rnkwidth": "5.5m-13m未満",
+                "vt_width": 1251,
+                "vt_tollsect": "無料",
+                "vt_motorway": 9
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        135.18130123615265,
+                        34.65163823173931,
+                        0.91
+                    ],
+                    [
+                        135.18200397491455,
+                        34.651285198954156,
+                        0.73
+                    ],
+                    [
+                        135.18233120441437,
+                        34.65112192078253,
+                        0.65
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 2711,
+                "vt_rdctg": "市区町村道等",
+                "vt_lvorder": 0,
+                "vt_drworder": 43,
+                "vt_rnkwidth": "3m-5.5m未満",
+                "vt_width": 638,
+                "vt_tollsect": "無料",
+                "vt_motorway": 9
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        135.1827710866928,
+                        34.65163823173931,
+                        0.8
+                    ],
+                    [
+                        135.18250286579132,
+                        34.651285198954156,
+                        0.7
+                    ],
+                    [
+                        135.18236339092255,
+                        34.65110426906902,
+                        0.65
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 2711,
+                "vt_rdctg": "市区町村道等",
+                "vt_lvorder": 0,
+                "vt_drworder": 43,
+                "vt_rnkwidth": "5.5m-13m未満",
+                "vt_width": 1251,
+                "vt_tollsect": "無料",
+                "vt_motorway": 9
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        135.18385469913483,
+                        34.65163823173931,
+                        0.8
+                    ],
+                    [
+                        135.1840102672577,
+                        34.65155879949373,
+                        0.8
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 2711,
+                "vt_rdctg": "市区町村道等",
+                "vt_lvorder": 0,
+                "vt_drworder": 43,
+                "vt_rnkwidth": "5.5m-13m未満",
+                "vt_width": 1251,
+                "vt_tollsect": "無料",
+                "vt_motorway": 9
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        135.1840102672577,
+                        34.65155879949373,
+                        0.8
+                    ],
+                    [
+                        135.18407464027405,
+                        34.65163823173931,
+                        0.8
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 2711,
+                "vt_rdctg": "市区町村道等",
+                "vt_lvorder": 0,
+                "vt_drworder": 43,
+                "vt_rnkwidth": "5.5m-13m未満",
+                "vt_width": 1251,
+                "vt_tollsect": "無料",
+                "vt_motorway": 9
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        135.17601191997528,
+                        34.651232243906705,
+                        0.77
+                    ],
+                    [
+                        135.17600655555725,
+                        34.65087038351041,
+                        0.6
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 2711,
+                "vt_rdctg": "市区町村道等",
+                "vt_lvorder": 0,
+                "vt_drworder": 43,
+                "vt_rnkwidth": "5.5m-13m未満",
+                "vt_width": 1251,
+                "vt_tollsect": "無料",
+                "vt_motorway": 9
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        135.17600655555725,
+                        34.65087038351041,
+                        0.6
+                    ],
+                    [
+                        135.17696142196655,
+                        34.650865970569,
+                        0.74
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 2711,
+                "vt_rdctg": "市区町村道等",
+                "vt_lvorder": 0,
+                "vt_drworder": 43,
+                "vt_rnkwidth": "13m-19.5m未満",
+                "vt_width": 1951,
+                "vt_tollsect": "無料",
+                "vt_motorway": 9
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        135.17696142196655,
+                        34.650865970569,
+                        0.74
+                    ],
+                    [
+                        135.17702043056488,
+                        34.650865970569,
+                        0.78
+                    ],
+                    [
+                        135.1770257949829,
+                        34.651285198954156,
+                        0.88
+                    ],
+                    [
+                        135.17703115940094,
+                        34.65153232206163,
+                        0.93
+                    ],
+                    [
+                        135.17706871032715,
+                        34.65163381883876,
+                        0.99
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 2711,
+                "vt_rdctg": "市区町村道等",
+                "vt_lvorder": 0,
+                "vt_drworder": 43,
+                "vt_rnkwidth": "13m-19.5m未満",
+                "vt_width": 1951,
+                "vt_tollsect": "無料",
+                "vt_motorway": 9
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        135.17696142196655,
+                        34.650865970569,
+                        0.74
+                    ],
+                    [
+                        135.1769506931305,
+                        34.65011135413302,
+                        0.84
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 2711,
+                "vt_rdctg": "市区町村道等",
+                "vt_lvorder": 0,
+                "vt_drworder": 43,
+                "vt_rnkwidth": "3m-5.5m未満",
+                "vt_width": 638,
+                "vt_tollsect": "無料",
+                "vt_motorway": 0
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        135.17636597156525,
+                        34.6499083567263,
+                        0.45
+                    ],
+                    [
+                        135.17578125,
+                        34.649926008694464,
+                        0.2
+                    ],
+                    [
+                        135.17536282539368,
+                        34.64993483467711,
+                        0.26
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 2711,
+                "vt_rdctg": "市区町村道等",
+                "vt_lvorder": 0,
+                "vt_drworder": 43,
+                "vt_rnkwidth": "5.5m-13m未満",
+                "vt_width": 1251,
+                "vt_tollsect": "無料",
+                "vt_motorway": 9
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        135.17634987831116,
+                        34.649290535473426,
+                        0.56
+                    ],
+                    [
+                        135.17578125,
+                        34.64930377454853,
+                        0.21
+                    ],
+                    [
+                        135.17535209655762,
+                        34.649312600597455,
+                        0.04
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 2711,
+                "vt_rdctg": "市区町村道等",
+                "vt_lvorder": 0,
+                "vt_drworder": 43,
+                "vt_rnkwidth": "3m-5.5m未満",
+                "vt_width": 638,
+                "vt_tollsect": "無料",
+                "vt_motorway": 9
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        135.17696142196655,
+                        34.649630337732304,
+                        0.9
+                    ],
+                    [
+                        135.17696678638458,
+                        34.649696532815426,
+                        0.9
+                    ],
+                    [
+                        135.1768058538437,
+                        34.64989070475441,
+                        0.74
+                    ],
+                    [
+                        135.17636597156525,
+                        34.6499083567263,
+                        0.45
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 2711,
+                "vt_rdctg": "市区町村道等",
+                "vt_lvorder": 0,
+                "vt_drworder": 43,
+                "vt_rnkwidth": "5.5m-13m未満",
+                "vt_width": 1251,
+                "vt_tollsect": "無料",
+                "vt_motorway": 9
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        135.17696142196655,
+                        34.649630337732304,
+                        0.9
+                    ],
+                    [
+                        135.17636060714722,
+                        34.64963916374643,
+                        0.46
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 2711,
+                "vt_rdctg": "市区町村道等",
+                "vt_lvorder": 0,
+                "vt_drworder": 43,
+                "vt_rnkwidth": "5.5m-13m未満",
+                "vt_width": 1251,
+                "vt_tollsect": "無料",
+                "vt_motorway": 9
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        135.17634987831116,
+                        34.649290535473426,
+                        0.56
+                    ],
+                    [
+                        135.1769506931305,
+                        34.649290535473426,
+                        0.99
+                    ],
+                    [
+                        135.1769506931305,
+                        34.649365556871146,
+                        0.99
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 2711,
+                "vt_rdctg": "市区町村道等",
+                "vt_lvorder": 0,
+                "vt_drworder": 43,
+                "vt_rnkwidth": "3m-5.5m未満",
+                "vt_width": 638,
+                "vt_tollsect": "無料",
+                "vt_motorway": 9
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        135.1776748895645,
+                        34.64977155384578,
+                        0.75
+                    ],
+                    [
+                        135.17800211906433,
+                        34.64979803184028,
+                        0.57
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 2711,
+                "vt_rdctg": "市区町村道等",
+                "vt_lvorder": 0,
+                "vt_drworder": 43,
+                "vt_rnkwidth": "5.5m-13m未満",
+                "vt_width": 1251,
+                "vt_tollsect": "無料",
+                "vt_motorway": 9
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        135.17800211906433,
+                        34.64979803184028,
+                        0.57
+                    ],
+                    [
+                        135.17834544181824,
+                        34.649837748816154,
+                        0.37
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 2711,
+                "vt_rdctg": "市区町村道等",
+                "vt_lvorder": 0,
+                "vt_drworder": 43,
+                "vt_rnkwidth": "5.5m-13m未満",
+                "vt_width": 1251,
+                "vt_tollsect": "無料",
+                "vt_motorway": 9
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        135.17800211906433,
+                        34.64979803184028,
+                        0.57
+                    ],
+                    [
+                        135.1780503988266,
+                        34.64945823026875,
+                        0.41
+                    ],
+                    [
+                        135.17809331417084,
+                        34.64939644801521,
+                        0.4
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 2711,
+                "vt_rdctg": "市区町村道等",
+                "vt_lvorder": 0,
+                "vt_drworder": 43,
+                "vt_rnkwidth": "5.5m-13m未満",
+                "vt_width": 1251,
+                "vt_tollsect": "無料",
+                "vt_motorway": 9
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        135.17834544181824,
+                        34.649837748816154,
+                        0.37
+                    ],
+                    [
+                        135.17841517925262,
+                        34.64942733914772,
+                        0.19
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 2711,
+                "vt_rdctg": "市区町村道等",
+                "vt_lvorder": 0,
+                "vt_drworder": 43,
+                "vt_rnkwidth": "5.5m-13m未満",
+                "vt_width": 1251,
+                "vt_tollsect": "無料",
+                "vt_motorway": 9
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        135.17809331417084,
+                        34.64939644801521,
+                        0.4
+                    ],
+                    [
+                        135.17841517925262,
+                        34.64942733914772,
+                        0.19
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 2711,
+                "vt_rdctg": "市区町村道等",
+                "vt_lvorder": 0,
+                "vt_drworder": 43,
+                "vt_rnkwidth": "3m-5.5m未満",
+                "vt_width": 638,
+                "vt_tollsect": "無料",
+                "vt_motorway": 9
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        135.17768561840057,
+                        34.650177548832076,
+                        0.91
+                    ],
+                    [
+                        135.1795095205307,
+                        34.650358480739825,
+                        0.5
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 2711,
+                "vt_rdctg": "市区町村道等",
+                "vt_lvorder": 0,
+                "vt_drworder": 43,
+                "vt_rnkwidth": "5.5m-13m未満",
+                "vt_width": 1251,
+                "vt_tollsect": "無料",
+                "vt_motorway": 9
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        135.1794558763504,
+                        34.65135580563144,
+                        0.93
+                    ],
+                    [
+                        135.17945051193237,
+                        34.651285198954156,
+                        0.93
+                    ],
+                    [
+                        135.1794397830963,
+                        34.65094981641563,
+                        0.8
+                    ],
+                    [
+                        135.1795095205307,
+                        34.650358480739825,
+                        0.5
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 2711,
+                "vt_rdctg": "市区町村道等",
+                "vt_lvorder": 0,
+                "vt_drworder": 43,
+                "vt_rnkwidth": "5.5m-13m未満",
+                "vt_width": 1251,
+                "vt_tollsect": "無料",
+                "vt_motorway": 9
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        135.1795095205307,
+                        34.650358480739825,
+                        0.5
+                    ],
+                    [
+                        135.17957389354706,
+                        34.65000102951714,
+                        0.34
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 2711,
+                "vt_rdctg": "市区町村道等",
+                "vt_lvorder": 0,
+                "vt_drworder": 43,
+                "vt_rnkwidth": "5.5m-13m未満",
+                "vt_width": 1251,
+                "vt_tollsect": "無料",
+                "vt_motorway": 9
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        135.17958462238312,
+                        34.64996131261947,
+                        0.34
+                    ],
+                    [
+                        135.17834544181824,
+                        34.649837748816154,
+                        0.37
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 2711,
+                "vt_rdctg": "市区町村道等",
+                "vt_lvorder": 0,
+                "vt_drworder": 43,
+                "vt_rnkwidth": "3m-5.5m未満",
+                "vt_width": 638,
+                "vt_tollsect": "無料",
+                "vt_motorway": 9
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        135.17841517925262,
+                        34.64942733914772,
+                        0.19
+                    ],
+                    [
+                        135.17962753772736,
+                        34.64955090356274,
+                        0.15
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 2711,
+                "vt_rdctg": "市区町村道等",
+                "vt_lvorder": 0,
+                "vt_drworder": 43,
+                "vt_rnkwidth": "3m-5.5m未満",
+                "vt_width": 638,
+                "vt_tollsect": "無料",
+                "vt_motorway": 9
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        135.17957389354706,
+                        34.65000102951714,
+                        0.34
+                    ],
+                    [
+                        135.17958462238312,
+                        34.64996131261947,
+                        0.34
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 2711,
+                "vt_rdctg": "市区町村道等",
+                "vt_lvorder": 0,
+                "vt_drworder": 43,
+                "vt_rnkwidth": "3m-5.5m未満",
+                "vt_width": 638,
+                "vt_tollsect": "無料",
+                "vt_motorway": 9
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        135.17958462238312,
+                        34.64996131261947,
+                        0.34
+                    ],
+                    [
+                        135.17962753772736,
+                        34.64955090356274,
+                        0.15
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 2711,
+                "vt_rdctg": "市区町村道等",
+                "vt_lvorder": 0,
+                "vt_drworder": 43,
+                "vt_rnkwidth": "5.5m-13m未満",
+                "vt_width": 1251,
+                "vt_tollsect": "無料",
+                "vt_motorway": 9
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        135.17962753772736,
+                        34.64955090356274,
+                        0.15
+                    ],
+                    [
+                        135.18032491207123,
+                        34.64964357675315,
+                        0.2
+                    ],
+                    [
+                        135.18261551856995,
+                        34.64984657480822,
+                        0.2
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 2711,
+                "vt_rdctg": "市区町村道等",
+                "vt_lvorder": 0,
+                "vt_drworder": 43,
+                "vt_rnkwidth": "3m-5.5m未満",
+                "vt_width": 638,
+                "vt_tollsect": "無料",
+                "vt_motorway": 9
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        135.18233120441437,
+                        34.65112192078253,
+                        0.65
+                    ],
+                    [
+                        135.18236339092255,
+                        34.65110426906902,
+                        0.65
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 2711,
+                "vt_rdctg": "市区町村道等",
+                "vt_lvorder": 0,
+                "vt_drworder": 43,
+                "vt_rnkwidth": "3m-5.5m未満",
+                "vt_width": 638,
+                "vt_tollsect": "無料",
+                "vt_motorway": 9
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        135.18243312835693,
+                        34.650186374787964,
+                        0.3
+                    ],
+                    [
+                        135.18257796764374,
+                        34.650376132612124,
+                        0.4
+                    ],
+                    [
+                        135.18266379833221,
+                        34.65039378448067,
+                        0.4
+                    ],
+                    [
+                        135.18268525600433,
+                        34.650437914135566,
+                        0.4
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 2711,
+                "vt_rdctg": "市区町村道等",
+                "vt_lvorder": 0,
+                "vt_drworder": 43,
+                "vt_rnkwidth": "3m-5.5m未満",
+                "vt_width": 638,
+                "vt_tollsect": "無料",
+                "vt_motorway": 9
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        135.18216490745544,
+                        34.650076050271906,
+                        0.28
+                    ],
+                    [
+                        135.1823204755783,
+                        34.65000102951714,
+                        0.23
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 2711,
+                "vt_rdctg": "市区町村道等",
+                "vt_lvorder": 0,
+                "vt_drworder": 43,
+                "vt_rnkwidth": "3m-5.5m未満",
+                "vt_width": 638,
+                "vt_tollsect": "無料",
+                "vt_motorway": 9
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        135.18245458602905,
+                        34.65012900605795,
+                        0.3
+                    ],
+                    [
+                        135.18243312835693,
+                        34.650186374787964,
+                        0.3
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 2711,
+                "vt_rdctg": "市区町村道等",
+                "vt_lvorder": 0,
+                "vt_drworder": 43,
+                "vt_rnkwidth": "5.5m-13m未満",
+                "vt_width": 1251,
+                "vt_tollsect": "無料",
+                "vt_motorway": 9
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        135.18238484859467,
+                        34.65000102951714,
+                        0.23
+                    ],
+                    [
+                        135.18245458602905,
+                        34.65012900605795,
+                        0.3
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 2711,
+                "vt_rdctg": "市区町村道等",
+                "vt_lvorder": 0,
+                "vt_drworder": 43,
+                "vt_rnkwidth": "5.5m-13m未満",
+                "vt_width": 1251,
+                "vt_tollsect": "無料",
+                "vt_motorway": 9
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        135.1823204755783,
+                        34.65000102951714,
+                        0.23
+                    ],
+                    [
+                        135.1823741197586,
+                        34.649978964576334,
+                        0.23
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 2711,
+                "vt_rdctg": "市区町村道等",
+                "vt_lvorder": 0,
+                "vt_drworder": 43,
+                "vt_rnkwidth": "3m-5.5m未満",
+                "vt_width": 638,
+                "vt_tollsect": "無料",
+                "vt_motorway": 9
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        135.1823741197586,
+                        34.649978964576334,
+                        0.23
+                    ],
+                    [
+                        135.18238484859467,
+                        34.65000102951714,
+                        0.23
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 2711,
+                "vt_rdctg": "市区町村道等",
+                "vt_lvorder": 0,
+                "vt_drworder": 43,
+                "vt_rnkwidth": "5.5m-13m未満",
+                "vt_width": 1251,
+                "vt_tollsect": "無料",
+                "vt_motorway": 9
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        135.1823741197586,
+                        34.649978964576334,
+                        0.23
+                    ],
+                    [
+                        135.18261551856995,
+                        34.64984657480822,
+                        0.2
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 2711,
+                "vt_rdctg": "市区町村道等",
+                "vt_lvorder": 0,
+                "vt_drworder": 43,
+                "vt_rnkwidth": "5.5m-13m未満",
+                "vt_width": 1251,
+                "vt_tollsect": "無料",
+                "vt_motorway": 9
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        135.18236339092255,
+                        34.65110426906902,
+                        0.65
+                    ],
+                    [
+                        135.18295347690582,
+                        34.650813015253746,
+                        0.51
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 2711,
+                "vt_rdctg": "市区町村道等",
+                "vt_lvorder": 0,
+                "vt_drworder": 43,
+                "vt_rnkwidth": "3m-5.5m未満",
+                "vt_width": 638,
+                "vt_tollsect": "無料",
+                "vt_motorway": 9
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        135.18295347690582,
+                        34.650813015253746,
+                        0.51
+                    ],
+                    [
+                        135.18268525600433,
+                        34.650437914135566,
+                        0.4
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 2711,
+                "vt_rdctg": "市区町村道等",
+                "vt_lvorder": 0,
+                "vt_drworder": 43,
+                "vt_rnkwidth": "5.5m-13m未満",
+                "vt_width": 1251,
+                "vt_tollsect": "無料",
+                "vt_motorway": 9
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        135.18268525600433,
+                        34.650437914135566,
+                        0.4
+                    ],
+                    [
+                        135.18303394317627,
+                        34.650261395375026,
+                        0.3
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 2711,
+                "vt_rdctg": "市区町村道等",
+                "vt_lvorder": 0,
+                "vt_drworder": 43,
+                "vt_rnkwidth": "5.5m-13m未満",
+                "vt_width": 1251,
+                "vt_tollsect": "無料",
+                "vt_motorway": 9
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        135.18295347690582,
+                        34.650813015253746,
+                        0.51
+                    ],
+                    [
+                        135.18328607082367,
+                        34.65060560660996,
+                        0.41
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 2711,
+                "vt_rdctg": "市区町村道等",
+                "vt_lvorder": 0,
+                "vt_drworder": 43,
+                "vt_rnkwidth": "3m-5.5m未満",
+                "vt_width": 638,
+                "vt_tollsect": "無料",
+                "vt_motorway": 9
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        135.18328607082367,
+                        34.65060560660996,
+                        0.41
+                    ],
+                    [
+                        135.1833289861679,
+                        34.650645323198916,
+                        0.41
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 2711,
+                "vt_rdctg": "市区町村道等",
+                "vt_lvorder": 0,
+                "vt_drworder": 43,
+                "vt_rnkwidth": "5.5m-13m未満",
+                "vt_width": 1251,
+                "vt_tollsect": "無料",
+                "vt_motorway": 9
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        135.1833289861679,
+                        34.650645323198916,
+                        0.41
+                    ],
+                    [
+                        135.1833289861679,
+                        34.65064091024553,
+                        0.41
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 2711,
+                "vt_rdctg": "市区町村道等",
+                "vt_lvorder": 0,
+                "vt_drworder": 43,
+                "vt_rnkwidth": "5.5m-13m未満",
+                "vt_width": 1251,
+                "vt_tollsect": "無料",
+                "vt_motorway": 9
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        135.1830017566681,
+                        34.65026580834859,
+                        0.3
+                    ],
+                    [
+                        135.18303394317627,
+                        34.650261395375026,
+                        0.3
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 2711,
+                "vt_rdctg": "市区町村道等",
+                "vt_lvorder": 0,
+                "vt_drworder": 43,
+                "vt_rnkwidth": "3m-5.5m未満",
+                "vt_width": 638,
+                "vt_tollsect": "無料",
+                "vt_motorway": 9
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        135.18303394317627,
+                        34.650261395375026,
+                        0.3
+                    ],
+                    [
+                        135.18328607082367,
+                        34.65060560660996,
+                        0.41
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 2711,
+                "vt_rdctg": "市区町村道等",
+                "vt_lvorder": 0,
+                "vt_drworder": 43,
+                "vt_rnkwidth": "3m-5.5m未満",
+                "vt_width": 638,
+                "vt_tollsect": "無料",
+                "vt_motorway": 9
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        135.1834201812744,
+                        34.65077329874511,
+                        0.5
+                    ],
+                    [
+                        135.18380641937256,
+                        34.651285198954156,
+                        0.7
+                    ],
+                    [
+                        135.1840102672577,
+                        34.65155879949373,
+                        0.8
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 2711,
+                "vt_rdctg": "市区町村道等",
+                "vt_lvorder": 0,
+                "vt_drworder": 43,
+                "vt_rnkwidth": "5.5m-13m未満",
+                "vt_width": 1251,
+                "vt_tollsect": "無料",
+                "vt_motorway": 9
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        135.1833289861679,
+                        34.650645323198916,
+                        0.41
+                    ],
+                    [
+                        135.1834201812744,
+                        34.65077329874511,
+                        0.5
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 2711,
+                "vt_rdctg": "市区町村道等",
+                "vt_lvorder": 0,
+                "vt_drworder": 43,
+                "vt_rnkwidth": "5.5m-13m未満",
+                "vt_width": 1251,
+                "vt_tollsect": "無料",
+                "vt_motorway": 9
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        135.1833289861679,
+                        34.65064091024553,
+                        0.41
+                    ],
+                    [
+                        135.18337726593018,
+                        34.65061001956522,
+                        0.41
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 2711,
+                "vt_rdctg": "市区町村道等",
+                "vt_lvorder": 0,
+                "vt_drworder": 43,
+                "vt_rnkwidth": "5.5m-13m未満",
+                "vt_width": 1251,
+                "vt_tollsect": "無料",
+                "vt_motorway": 9
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        135.18337726593018,
+                        34.65061001956522,
+                        0.41
+                    ],
+                    [
+                        135.18370985984802,
+                        34.65040261041352,
+                        0.4
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 2711,
+                "vt_rdctg": "市区町村道等",
+                "vt_lvorder": 0,
+                "vt_drworder": 43,
+                "vt_rnkwidth": "5.5m-13m未満",
+                "vt_width": 1251,
+                "vt_tollsect": "無料",
+                "vt_motorway": 9
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        135.18261551856995,
+                        34.64984657480822,
+                        0.2
+                    ],
+                    [
+                        135.18270671367645,
+                        34.649859813794535,
+                        0.2
+                    ],
+                    [
+                        135.18281936645508,
+                        34.649978964576334,
+                        0.2
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 2711,
+                "vt_rdctg": "市区町村道等",
+                "vt_lvorder": 0,
+                "vt_drworder": 43,
+                "vt_rnkwidth": "3m-5.5m未満",
+                "vt_width": 638,
+                "vt_tollsect": "無料",
+                "vt_motorway": 9
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        135.1828408241272,
+                        34.65000102951714,
+                        0.2
+                    ],
+                    [
+                        135.18287301063538,
+                        34.650045159381094,
+                        0.21
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 2711,
+                "vt_rdctg": "市区町村道等",
+                "vt_lvorder": 0,
+                "vt_drworder": 43,
+                "vt_rnkwidth": "3m-5.5m未満",
+                "vt_width": 638,
+                "vt_tollsect": "無料",
+                "vt_motorway": 9
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        135.18287301063538,
+                        34.650045159381094,
+                        0.21
+                    ],
+                    [
+                        135.18303394317627,
+                        34.650261395375026,
+                        0.3
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 2711,
+                "vt_rdctg": "市区町村道等",
+                "vt_lvorder": 0,
+                "vt_drworder": 43,
+                "vt_rnkwidth": "3m-5.5m未満",
+                "vt_width": 638,
+                "vt_tollsect": "無料",
+                "vt_motorway": 9
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        135.18281936645508,
+                        34.649978964576334,
+                        0.2
+                    ],
+                    [
+                        135.1828408241272,
+                        34.65000102951714,
+                        0.2
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 2711,
+                "vt_rdctg": "市区町村道等",
+                "vt_lvorder": 0,
+                "vt_drworder": 43,
+                "vt_rnkwidth": "3m-5.5m未満",
+                "vt_width": 638,
+                "vt_tollsect": "無料",
+                "vt_motorway": 9
+            }
+        }
+    ],
+    "railway": [],
+    "waterarea": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            135.1916652917862,
+                            34.65163823173931,
+                            0
+                        ],
+                        [
+                            135.1916652917862,
+                            34.65000102951714,
+                            0
+                        ],
+                        [
+                            135.1837956905365,
+                            34.65000102951714,
+                            0.22
+                        ],
+                        [
+                            135.1853460073471,
+                            34.651285198954156,
+                            0.4
+                        ],
+                        [
+                            135.18578052520752,
+                            34.65163823173931,
+                            0.2
+                        ],
+                        [
+                            135.1916652917862,
+                            34.65163823173931,
+                            0
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 5100
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            135.19818305969238,
+                            34.65163823173931,
+                            0
+                        ],
+                        [
+                            135.19818305969238,
+                            34.65000102951714,
+                            0
+                        ],
+                        [
+                            135.1916652917862,
+                            34.65000102951714,
+                            0
+                        ],
+                        [
+                            135.1916652917862,
+                            34.65163823173931,
+                            0
+                        ],
+                        [
+                            135.19818305969238,
+                            34.65163823173931,
+                            0
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 5100
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            135.1833289861679,
+                            34.64961709870933,
+                            0.01
+                        ],
+                        [
+                            135.1833289861679,
+                            34.641668890314236,
+                            0
+                        ],
+                        [
+                            135.17535209655762,
+                            34.641668890314236,
+                            0
+                        ],
+                        [
+                            135.17535209655762,
+                            34.64878744905212,
+                            0.45
+                        ],
+                        [
+                            135.17578125,
+                            34.64883157956211,
+                            0.55
+                        ],
+                        [
+                            135.18264770507812,
+                            34.64952883850215,
+                            0.05
+                        ],
+                        [
+                            135.1833075284958,
+                            34.649599446675396,
+                            0.01
+                        ],
+                        [
+                            135.1833289861679,
+                            34.64961709870933,
+                            0.01
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 5100
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            135.1833289861679,
+                            34.641668890314236,
+                            0
+                        ],
+                        [
+                            135.1833289861679,
+                            34.63333591383922,
+                            0
+                        ],
+                        [
+                            135.17535209655762,
+                            34.63333591383922,
+                            0
+                        ],
+                        [
+                            135.17535209655762,
+                            34.641668890314236,
+                            0
+                        ],
+                        [
+                            135.1833289861679,
+                            34.641668890314236,
+                            0
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 5100
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            135.1916652917862,
+                            34.65000102951714,
+                            0
+                        ],
+                        [
+                            135.1916652917862,
+                            34.641668890314236,
+                            0
+                        ],
+                        [
+                            135.1833289861679,
+                            34.641668890314236,
+                            0
+                        ],
+                        [
+                            135.1833289861679,
+                            34.64961709870933,
+                            0.01
+                        ],
+                        [
+                            135.1837956905365,
+                            34.65000102951714,
+                            0.22
+                        ],
+                        [
+                            135.1916652917862,
+                            34.65000102951714,
+                            0
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 5100
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            135.19818305969238,
+                            34.65000102951714,
+                            0
+                        ],
+                        [
+                            135.19818305969238,
+                            34.641668890314236,
+                            0
+                        ],
+                        [
+                            135.1916652917862,
+                            34.641668890314236,
+                            0
+                        ],
+                        [
+                            135.1916652917862,
+                            34.65000102951714,
+                            0
+                        ],
+                        [
+                            135.19818305969238,
+                            34.65000102951714,
+                            0
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 5100
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            135.1916652917862,
+                            34.641668890314236,
+                            0
+                        ],
+                        [
+                            135.1916652917862,
+                            34.63333591383922,
+                            0
+                        ],
+                        [
+                            135.1833289861679,
+                            34.63333591383922,
+                            0
+                        ],
+                        [
+                            135.1833289861679,
+                            34.641668890314236,
+                            0
+                        ],
+                        [
+                            135.1916652917862,
+                            34.641668890314236,
+                            0
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 5100
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            135.19818305969238,
+                            34.641668890314236,
+                            0
+                        ],
+                        [
+                            135.19818305969238,
+                            34.63333591383922,
+                            0
+                        ],
+                        [
+                            135.1916652917862,
+                            34.63333591383922,
+                            0
+                        ],
+                        [
+                            135.1916652917862,
+                            34.641668890314236,
+                            0
+                        ],
+                        [
+                            135.19818305969238,
+                            34.641668890314236,
+                            0
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 5100
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            135.1833289861679,
+                            34.63333591383922,
+                            0
+                        ],
+                        [
+                            135.1833289861679,
+                            34.63285480012212,
+                            0
+                        ],
+                        [
+                            135.17535209655762,
+                            34.63285480012212,
+                            0
+                        ],
+                        [
+                            135.17535209655762,
+                            34.63333591383922,
+                            0
+                        ],
+                        [
+                            135.1833289861679,
+                            34.63333591383922,
+                            0
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 5100
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            135.1916652917862,
+                            34.63333591383922,
+                            0
+                        ],
+                        [
+                            135.1916652917862,
+                            34.63285480012212,
+                            0
+                        ],
+                        [
+                            135.1833289861679,
+                            34.63285480012212,
+                            0
+                        ],
+                        [
+                            135.1833289861679,
+                            34.63333591383922,
+                            0
+                        ],
+                        [
+                            135.1916652917862,
+                            34.63333591383922,
+                            0
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 5100
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            135.19818305969238,
+                            34.63333591383922,
+                            0
+                        ],
+                        [
+                            135.19818305969238,
+                            34.63285480012212,
+                            0
+                        ],
+                        [
+                            135.1916652917862,
+                            34.63285480012212,
+                            0
+                        ],
+                        [
+                            135.1916652917862,
+                            34.63333591383922,
+                            0
+                        ],
+                        [
+                            135.19818305969238,
+                            34.63333591383922,
+                            0
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "vt_code": 5100
+            }
+        }
+    ],
+    "border": [],
+    "symbol": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.18443942070007,
+                    34.64767976555689,
+                    0
+                ]
+            },
+            "properties": {
+                "vt_code": 110,
+                "vt_text": "神戸市",
+                "vt_arrng": 1,
+                "vt_arrngagl": 0
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.19045293331146,
+                    34.646638264787256,
+                    0
+                ]
+            },
+            "properties": {
+                "vt_code": 6361
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.19046902656555,
+                    34.6459983531647,
+                    0
+                ]
+            },
+            "properties": {
+                "vt_code": 431,
+                "vt_text": "神戸港",
+                "vt_arrng": 1,
+                "vt_arrngagl": 0
+            }
+        }
+    ],
+    "building": {
+        "type": "FeatureCollection",
+        "features": [
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Polygon",
+                    "coordinates": [
+                        [
+                            [
+                                135.17677903175354,
+                                34.65163823173931
+                            ],
+                            [
+                                135.17676830291748,
+                                34.65133815396776
+                            ],
+                            [
+                                135.17548620700836,
+                                34.65136463146189
+                            ],
+                            [
+                                135.1754915714264,
+                                34.65163823173931
+                            ],
+                            [
+                                135.17677903175354,
+                                34.65163823173931
+                            ]
+                        ]
+                    ]
+                },
+                "properties": {
+                    "vt_code": 3101,
+                    "vt_lvorder": 0,
+                    "alti": 0.86
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Polygon",
+                    "coordinates": [
+                        [
+                            [
+                                135.17721891403198,
+                                34.65156762530255
+                            ],
+                            [
+                                135.17765879631042,
+                                34.65155879949373
+                            ],
+                            [
+                                135.1776534318924,
+                                34.651285198954156
+                            ],
+                            [
+                                135.17764806747437,
+                                34.65114839834571
+                            ],
+                            [
+                                135.177401304245,
+                                34.651152811272084
+                            ],
+                            [
+                                135.177401304245,
+                                34.65111750785451
+                            ],
+                            [
+                                135.1771491765976,
+                                34.65112192078253
+                            ],
+                            [
+                                135.17715454101562,
+                                34.6512366568286
+                            ],
+                            [
+                                135.17720818519592,
+                                34.651232243906705
+                            ],
+                            [
+                                135.17720818519592,
+                                34.651285198954156
+                            ],
+                            [
+                                135.17721354961395,
+                                34.651311676465184
+                            ],
+                            [
+                                135.17716526985168,
+                                34.651311676465184
+                            ],
+                            [
+                                135.17717063426971,
+                                34.6513602185468
+                            ],
+                            [
+                                135.17721354961395,
+                                34.6513602185468
+                            ],
+                            [
+                                135.17721354961395,
+                                34.65142641224864
+                            ],
+                            [
+                                135.17719209194183,
+                                34.65142641224864
+                            ],
+                            [
+                                135.17719745635986,
+                                34.65150143171347
+                            ],
+                            [
+                                135.17721891403198,
+                                34.65150143171347
+                            ],
+                            [
+                                135.17721891403198,
+                                34.65156762530255
+                            ]
+                        ]
+                    ]
+                },
+                "properties": {
+                    "vt_code": 3101,
+                    "vt_lvorder": 0,
+                    "alti": 0.98
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Polygon",
+                    "coordinates": [
+                        [
+                            [
+                                135.17785727977753,
+                                34.65163823173931
+                            ],
+                            [
+                                135.17920911312103,
+                                34.65163381883876
+                            ],
+                            [
+                                135.179203748703,
+                                34.65133815396776
+                            ],
+                            [
+                                135.17784655094147,
+                                34.65136463146189
+                            ],
+                            [
+                                135.17785727977753,
+                                34.65163823173931
+                            ]
+                        ]
+                    ]
+                },
+                "properties": {
+                    "vt_code": 3101,
+                    "vt_lvorder": 0,
+                    "alti": 1
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Polygon",
+                    "coordinates": [
+                        [
+                            [
+                                135.18225073814392,
+                                34.65163823173931
+                            ],
+                            [
+                                135.18214344978333,
+                                34.6514926058976
+                            ],
+                            [
+                                135.1819610595703,
+                                34.65158527691737
+                            ],
+                            [
+                                135.18199861049652,
+                                34.65163823173931
+                            ],
+                            [
+                                135.18225073814392,
+                                34.65163823173931
+                            ]
+                        ]
+                    ]
+                },
+                "properties": {
+                    "vt_code": 3101,
+                    "vt_lvorder": 0,
+                    "alti": 0.82
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Polygon",
+                    "coordinates": [
+                        [
+                            [
+                                135.1826959848404,
+                                34.65163823173931
+                            ],
+                            [
+                                135.1824975013733,
+                                34.65137787020578
+                            ],
+                            [
+                                135.1823526620865,
+                                34.65145288971455
+                            ],
+                            [
+                                135.18249213695526,
+                                34.65163823173931
+                            ],
+                            [
+                                135.1826959848404,
+                                34.65163823173931
+                            ]
+                        ]
+                    ]
+                },
+                "properties": {
+                    "vt_code": 3101,
+                    "vt_lvorder": 0,
+                    "alti": 0.8
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Polygon",
+                    "coordinates": [
+                        [
+                            [
+                                135.1844823360443,
+                                34.65163823173931
+                            ],
+                            [
+                                135.18421411514282,
+                                34.651285198954156
+                            ],
+                            [
+                                135.18406927585602,
+                                34.65109103028145
+                            ],
+                            [
+                                135.18388152122498,
+                                34.65118811467464
+                            ],
+                            [
+                                135.18389225006104,
+                                34.6512101792936
+                            ],
+                            [
+                                135.18386006355286,
+                                34.65122783098454
+                            ],
+                            [
+                                135.1839029788971,
+                                34.651285198954156
+                            ],
+                            [
+                                135.18397271633148,
+                                34.651373457291385
+                            ],
+                            [
+                                135.1840102672577,
+                                34.65135580563144
+                            ],
+                            [
+                                135.1842302083969,
+                                34.65163823173931
+                            ],
+                            [
+                                135.1844823360443,
+                                34.65163823173931
+                            ]
+                        ]
+                    ]
+                },
+                "properties": {
+                    "vt_code": 3101,
+                    "vt_lvorder": 0,
+                    "alti": 0.8
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Polygon",
+                    "coordinates": [
+                        [
+                            [
+                                135.1758188009262,
+                                34.65082184114196
+                            ],
+                            [
+                                135.17581343650818,
+                                34.65077771169145
+                            ],
+                            [
+                                135.17601191997528,
+                                34.65077329874511
+                            ],
+                            [
+                                135.17601191997528,
+                                34.65082184114196
+                            ],
+                            [
+                                135.17618358135223,
+                                34.65081742819795
+                            ],
+                            [
+                                135.1761782169342,
+                                34.65077329874511
+                            ],
+                            [
+                                135.17683804035187,
+                                34.65075564695738
+                            ],
+                            [
+                                135.17683267593384,
+                                34.65055265112838
+                            ],
+                            [
+                                135.1767736673355,
+                                34.65055265112838
+                            ],
+                            [
+                                135.1767736673355,
+                                34.65053058633438
+                            ],
+                            [
+                                135.17671465873718,
+                                34.65053058633438
+                            ],
+                            [
+                                135.17671465873718,
+                                34.65055265112838
+                            ],
+                            [
+                                135.17663419246674,
+                                34.65055706408644
+                            ],
+                            [
+                                135.17663419246674,
+                                34.650526173374885
+                            ],
+                            [
+                                135.17638206481934,
+                                34.650534999293654
+                            ],
+                            [
+                                135.17638742923737,
+                                34.65055706408644
+                            ],
+                            [
+                                135.17578125,
+                                34.65057471591646
+                            ],
+                            [
+                                135.17571687698364,
+                                34.65057471591646
+                            ],
+                            [
+                                135.1757276058197,
+                                34.65077771169145
+                            ],
+                            [
+                                135.17573833465576,
+                                34.65082184114196
+                            ],
+                            [
+                                135.1758188009262,
+                                34.65082184114196
+                            ]
+                        ]
+                    ]
+                },
+                "properties": {
+                    "vt_code": 3101,
+                    "vt_lvorder": 0,
+                    "alti": 0.56
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Polygon",
+                    "coordinates": [
+                        [
+                            [
+                                135.17578125,
+                                34.650526173374885
+                            ],
+                            [
+                                135.1758348941803,
+                                34.65052176041516
+                            ],
+                            [
+                                135.1758348941803,
+                                34.65050852153453
+                            ],
+                            [
+                                135.17606019973755,
+                                34.65050410857387
+                            ],
+                            [
+                                135.17605483531952,
+                                34.65049086969043
+                            ],
+                            [
+                                135.17616748809814,
+                                34.650486456728814
+                            ],
+                            [
+                                135.17616212368011,
+                                34.65045556599095
+                            ],
+                            [
+                                135.1762157678604,
+                                34.65045556599095
+                            ],
+                            [
+                                135.1762157678604,
+                                34.65050410857387
+                            ],
+                            [
+                                135.1764464378357,
+                                34.65049969561295
+                            ],
+                            [
+                                135.1764464378357,
+                                34.65045556599095
+                            ],
+                            [
+                                135.17648935317993,
+                                34.65045115302743
+                            ],
+                            [
+                                135.17648935317993,
+                                34.650495282651804
+                            ],
+                            [
+                                135.17682194709778,
+                                34.65049086969043
+                            ],
+                            [
+                                135.17682194709778,
+                                34.65045556599095
+                            ],
+                            [
+                                135.17693996429443,
+                                34.65045115302743
+                            ],
+                            [
+                                135.1769345998764,
+                                34.65027904726797
+                            ],
+                            [
+                                135.17687022686005,
+                                34.65027904726797
+                            ],
+                            [
+                                135.17686486244202,
+                                34.65002309445204
+                            ],
+                            [
+                                135.1765537261963,
+                                34.65003192042438
+                            ],
+                            [
+                                135.1765537261963,
+                                34.6500098554918
+                            ],
+                            [
+                                135.17647862434387,
+                                34.6500098554918
+                            ],
+                            [
+                                135.17647862434387,
+                                34.65003192042438
+                            ],
+                            [
+                                135.17578125,
+                                34.6500495723662
+                            ],
+                            [
+                                135.17560422420502,
+                                34.6500495723662
+                            ],
+                            [
+                                135.17561495304108,
+                                34.650477630804886
+                            ],
+                            [
+                                135.1756364107132,
+                                34.650477630804886
+                            ],
+                            [
+                                135.1756364107132,
+                                34.65049086969043
+                            ],
+                            [
+                                135.17567932605743,
+                                34.65049086969043
+                            ],
+                            [
+                                135.17567932605743,
+                                34.650477630804886
+                            ],
+                            [
+                                135.17573833465576,
+                                34.650473217842574
+                            ],
+                            [
+                                135.17573833465576,
+                                34.65051293449497
+                            ],
+                            [
+                                135.17578125,
+                                34.650526173374885
+                            ]
+                        ]
+                    ]
+                },
+                "properties": {
+                    "vt_code": 3101,
+                    "vt_lvorder": 0,
+                    "alti": 0.4
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Polygon",
+                    "coordinates": [
+                        [
+                            [
+                                135.1778519153595,
+                                34.65133815396776
+                            ],
+                            [
+                                135.17867803573608,
+                                34.65132050230031
+                            ],
+                            [
+                                135.17867803573608,
+                                34.65130726354725
+                            ],
+                            [
+                                135.17928957939148,
+                                34.651285198954156
+                            ],
+                            [
+                                135.17928421497345,
+                                34.65106013976886
+                            ],
+                            [
+                                135.17887115478516,
+                                34.651068965630756
+                            ],
+                            [
+                                135.17886579036713,
+                                34.65101159751153
+                            ],
+                            [
+                                135.17866730690002,
+                                34.651016010445176
+                            ],
+                            [
+                                135.17866730690002,
+                                34.651002771643505
+                            ],
+                            [
+                                135.178120136261,
+                                34.651016010445176
+                            ],
+                            [
+                                135.17811477184296,
+                                34.650940990541045
+                            ],
+                            [
+                                135.17784118652344,
+                                34.65094981641563
+                            ],
+                            [
+                                135.1778519153595,
+                                34.651285198954156
+                            ],
+                            [
+                                135.1778519153595,
+                                34.65133815396776
+                            ]
+                        ]
+                    ]
+                },
+                "properties": {
+                    "vt_code": 3102,
+                    "vt_lvorder": 0,
+                    "alti": 0.84
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Polygon",
+                    "coordinates": [
+                        [
+                            [
+                                135.17872631549835,
+                                34.65093216466549
+                            ],
+                            [
+                                135.1787370443344,
+                                34.650865970569
+                            ],
+                            [
+                                135.17926275730133,
+                                34.65091892585043
+                            ],
+                            [
+                                135.17927885055542,
+                                34.650813015253746
+                            ],
+                            [
+                                135.17906427383423,
+                                34.65079095052907
+                            ],
+                            [
+                                135.1790750026703,
+                                34.65072916926873
+                            ],
+                            [
+                                135.17813622951508,
+                                34.65063208433804
+                            ],
+                            [
+                                135.17810940742493,
+                                34.65080418936458
+                            ],
+                            [
+                                135.1783400774002,
+                                34.65082625408573
+                            ],
+                            [
+                                135.17832934856415,
+                                34.65089244821394
+                            ],
+                            [
+                                135.17872631549835,
+                                34.65093216466549
+                            ]
+                        ]
+                    ]
+                },
+                "properties": {
+                    "vt_code": 3101,
+                    "vt_lvorder": 0,
+                    "alti": 0.7
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Polygon",
+                    "coordinates": [
+                        [
+                            [
+                                135.18112421035767,
+                                34.65163823173931
+                            ],
+                            [
+                                135.18119931221008,
+                                34.65160292852845
+                            ],
+                            [
+                                135.18121540546417,
+                                34.65162058013574
+                            ],
+                            [
+                                135.1813817024231,
+                                34.651536734967564
+                            ],
+                            [
+                                135.181365609169,
+                                34.65151467043552
+                            ],
+                            [
+                                135.18145143985748,
+                                34.6514705413538
+                            ],
+                            [
+                                135.18142461776733,
+                                34.65143965098265
+                            ],
+                            [
+                                135.18150508403778,
+                                34.65139993477422
+                            ],
+                            [
+                                135.1814889907837,
+                                34.65137787020578
+                            ],
+                            [
+                                135.1815801858902,
+                                34.65133374105126
+                            ],
+                            [
+                                135.181542634964,
+                                34.651285198954156
+                            ],
+                            [
+                                135.18141388893127,
+                                34.65111309492626
+                            ],
+                            [
+                                135.18170356750488,
+                                34.65096746816201
+                            ],
+                            [
+                                135.18144071102142,
+                                34.65061443252024
+                            ],
+                            [
+                                135.1813119649887,
+                                34.6506806268176
+                            ],
+                            [
+                                135.18137097358704,
+                                34.65076005990467
+                            ],
+                            [
+                                135.18101692199707,
+                                34.650940990541045
+                            ],
+                            [
+                                135.18100082874298,
+                                34.65092333878901
+                            ],
+                            [
+                                135.18094182014465,
+                                34.65094981641563
+                            ],
+                            [
+                                135.18095791339874,
+                                34.65097188109803
+                            ],
+                            [
+                                135.18043220043182,
+                                34.6512366568286
+                            ],
+                            [
+                                135.18046975135803,
+                                34.651285198954156
+                            ],
+                            [
+                                135.18056094646454,
+                                34.65140434768723
+                            ],
+                            [
+                                135.18064141273499,
+                                34.65136463146189
+                            ],
+                            [
+                                135.1806253194809,
+                                34.65134697980008
+                            ],
+                            [
+                                135.18074333667755,
+                                34.65128961187324
+                            ],
+                            [
+                                135.18082916736603,
+                                34.65140876059996
+                            ],
+                            [
+                                135.18080234527588,
+                                34.65142199933682
+                            ],
+                            [
+                                135.18082916736603,
+                                34.65145288971455
+                            ],
+                            [
+                                135.18090426921844,
+                                34.65141317351248
+                            ],
+                            [
+                                135.18107056617737,
+                                34.65163823173931
+                            ],
+                            [
+                                135.18112421035767,
+                                34.65163823173931
+                            ]
+                        ]
+                    ]
+                },
+                "properties": {
+                    "vt_code": 3101,
+                    "vt_lvorder": 0,
+                    "alti": 0.79
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Polygon",
+                    "coordinates": [
+                        [
+                            [
+                                135.17984747886658,
+                                34.65140876059996
+                            ],
+                            [
+                                135.18009424209595,
+                                34.651285198954156
+                            ],
+                            [
+                                135.18190741539001,
+                                34.65035406777116
+                            ],
+                            [
+                                135.1815962791443,
+                                34.64993483467711
+                            ],
+                            [
+                                135.181542634964,
+                                34.64996131261947
+                            ],
+                            [
+                                135.18152117729187,
+                                34.64993924766809
+                            ],
+                            [
+                                135.18138706684113,
+                                34.64975390184475
+                            ],
+                            [
+                                135.1795256137848,
+                                34.65070269157165
+                            ],
+                            [
+                                135.17968118190765,
+                                34.650910099972535
+                            ],
+                            [
+                                135.17953634262085,
+                                34.6509895328397
+                            ],
+                            [
+                                135.1796543598175,
+                                34.65114839834571
+                            ],
+                            [
+                                135.1796704530716,
+                                34.65113957249224
+                            ],
+                            [
+                                135.17968654632568,
+                                34.65116605004981
+                            ],
+                            [
+                                135.1796704530716,
+                                34.65117487590045
+                            ],
+                            [
+                                135.17975628376007,
+                                34.651285198954156
+                            ],
+                            [
+                                135.17984747886658,
+                                34.65140876059996
+                            ]
+                        ]
+                    ]
+                },
+                "properties": {
+                    "vt_code": 3101,
+                    "vt_lvorder": 4,
+                    "alti": 0.57
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Polygon",
+                    "coordinates": [
+                        [
+                            [
+                                135.17987430095673,
+                                34.65052176041516
+                            ],
+                            [
+                                135.18088817596436,
+                                34.65000102951714
+                            ],
+                            [
+                                135.1809525489807,
+                                34.64997013859836
+                            ],
+                            [
+                                135.1807540655136,
+                                34.64970094581909
+                            ],
+                            [
+                                135.1806628704071,
+                                34.64974948884391
+                            ],
+                            [
+                                135.1806789636612,
+                                34.64977155384578
+                            ],
+                            [
+                                135.18063604831696,
+                                34.64979361884177
+                            ],
+                            [
+                                135.18061459064484,
+                                34.649762727845726
+                            ],
+                            [
+                                135.18057703971863,
+                                34.64978479284409
+                            ],
+                            [
+                                135.18059849739075,
+                                34.64981127083436
+                            ],
+                            [
+                                135.18028736114502,
+                                34.64997013859836
+                            ],
+                            [
+                                135.18025517463684,
+                                34.649926008694464
+                            ],
+                            [
+                                135.18019080162048,
+                                34.64995689962964
+                            ],
+                            [
+                                135.18022298812866,
+                                34.65000102951714
+                            ],
+                            [
+                                135.17978847026825,
+                                34.65022609157779
+                            ],
+                            [
+                                135.17976701259613,
+                                34.65019961372002
+                            ],
+                            [
+                                135.1796704530716,
+                                34.65024815645283
+                            ],
+                            [
+                                135.1797777414322,
+                                34.65039378448067
+                            ],
+                            [
+                                135.1797240972519,
+                                34.65042026227641
+                            ],
+                            [
+                                135.1797991991043,
+                                34.65052176041516
+                            ],
+                            [
+                                135.1798528432846,
+                                34.650495282651804
+                            ],
+                            [
+                                135.17987430095673,
+                                34.65052176041516
+                            ]
+                        ]
+                    ]
+                },
+                "properties": {
+                    "vt_code": 3101,
+                    "vt_lvorder": 1,
+                    "alti": 0.39
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Polygon",
+                    "coordinates": [
+                        [
+                            [
+                                135.18357038497925,
+                                34.65163823173931
+                            ],
+                            [
+                                135.1837420463562,
+                                34.651554386588955
+                            ],
+                            [
+                                135.1835435628891,
+                                34.651285198954156
+                            ],
+                            [
+                                135.1833289861679,
+                                34.651002771643505
+                            ],
+                            [
+                                135.183168053627,
+                                34.65078212463756
+                            ],
+                            [
+                                135.18284618854523,
+                                34.65094540347846
+                            ],
+                            [
+                                135.18309831619263,
+                                34.651285198954156
+                            ],
+                            [
+                                135.1833611726761,
+                                34.65163823173931
+                            ],
+                            [
+                                135.18357038497925,
+                                34.65163823173931
+                            ]
+                        ]
+                    ]
+                },
+                "properties": {
+                    "vt_code": 3101,
+                    "vt_lvorder": 0,
+                    "alti": 0.61
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Polygon",
+                    "coordinates": [
+                        [
+                            [
+                                135.1833289861679,
+                                34.650548238170046
+                            ],
+                            [
+                                135.18351137638092,
+                                34.65045556599095
+                            ],
+                            [
+                                135.18322706222534,
+                                34.650080463255364
+                            ],
+                            [
+                                135.18307149410248,
+                                34.64995248663962
+                            ],
+                            [
+                                135.1829320192337,
+                                34.65002309445204
+                            ],
+                            [
+                                135.1833289861679,
+                                34.650548238170046
+                            ]
+                        ]
+                    ]
+                },
+                "properties": {
+                    "vt_code": 3101,
+                    "vt_lvorder": 0,
+                    "alti": 0.28
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Polygon",
+                    "coordinates": [
+                        [
+                            [
+                                135.18368303775787,
+                                34.651479367172044
+                            ],
+                            [
+                                135.18381714820862,
+                                34.65140876059996
+                            ],
+                            [
+                                135.1837259531021,
+                                34.651285198954156
+                            ],
+                            [
+                                135.1833289861679,
+                                34.650751234009846
+                            ],
+                            [
+                                135.18330216407776,
+                                34.65071593042123
+                            ],
+                            [
+                                135.183168053627,
+                                34.65078212463756
+                            ],
+                            [
+                                135.1835435628891,
+                                34.651285198954156
+                            ],
+                            [
+                                135.18368303775787,
+                                34.651479367172044
+                            ]
+                        ]
+                    ]
+                },
+                "properties": {
+                    "vt_code": 3101,
+                    "vt_lvorder": 0,
+                    "alti": 0.6
+                }
+            }
+        ]
+    }
+}
