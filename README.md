@@ -23,6 +23,43 @@
 * 注記の文字が、建物（MapLibre のネイティブレイヤ（fill-extrusion）使用）よりも下に表示されてしまう
 * 動くたびにレイヤを一式作成しなおしているため、動かすたびにデータが一瞬消えてしまってうるさい
 
+### 解消
+
+以下の通り変更したら修正できた
+
+* 修正前
+```
+  if(g.deckOverlay){
+    map.removeControl(g.deckOverlay);
+    delete g.deckOverlay;
+  }
+  
+  g.deckOverlay = new deck.MapboxOverlay({
+    interleaved: true, layers: []
+  });
+  
+  g.deckOverlay.setProps({
+    layers: deckLayers
+  });
+  
+  map.addControl(g.deckOverlay);
+```
+
+* 修正後
+```
+  if(!g.deckOverlay){
+    g.deckOverlay = new deck.MapboxOverlay({
+      interleaved: true, layers: []
+    });
+    map.addControl(g.deckOverlay);
+  }
+  
+  g.deckOverlay.setProps({
+    layers: deckLayers
+  });
+```
+
+
 ## 使用データ等
 
 * 国土地理院最適化ベクトルタイル https://github.com/gsi-cyberjapan/optimal_bvmap

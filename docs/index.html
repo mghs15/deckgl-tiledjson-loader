@@ -88,10 +88,11 @@ button.local {
     <input type="checkbox" class="local" id="showBorder" onchange="set3dLayers();" checked>境界
     <input type="checkbox" class="local" id="showText" onchange="set3dLayers();" checked>注記
     <input type="checkbox" class="local" id="showIcon" onchange="set3dLayers();" checked>記号
+    <br>
+    <input type="checkbox" class="local" id="showTerrain" onchange="set3dLayers();" />地形（terrain）
     <hr>
     <span>表示オプション</span><br>
     <input type="checkbox" class="local" id="switchBack" onchange="switchBack();" checked>背景地図<br>
-    <input type="checkbox" class="local" id="showTerrain" onchange="addTerrain()" />地形を表示（試験中）<br>
     <input type="checkbox" class="local" id="showTileBoundary" onchange="addTileboundary()" checked/>タイル図郭を表示<br>
     <input type="checkbox" class="local" id="isTileLoad" />データ読込停止<br>
     高さ強調：<input type="number" class="local" id="elevScale" onchange="set3dLayers()" min="0" value="1"/><br>
@@ -507,17 +508,43 @@ async function set3dLayers() {
   }
   
   
-  if(g.deckOverlay){
-    map.removeControl(g.deckOverlay);
-    delete g.deckOverlay;
+  const isTerrainShow = document.getElementById("showTerrain").checked;
+  if(isTerrainShow){
+    
+    //エラー処理
+    //if(map.getZoom() > 14.5){
+    //  alert("地形表示はZL14.5未満でできます。");
+    //}
+  
+    //地形
+    const myTerrainDeckLayer = new deck.TerrainLayer({
+      id: 'terrain-layer',
+      maxZoom: 14,
+      elevationDecoder: {
+        rScaler: Math.pow(2,16)*0.01,
+        gScaler: Math.pow(2,8)*0.01,
+        bScaler: 0.01,
+        offset: 0
+      },
+      elevationData: 'https://cyberjapandata.gsi.go.jp/xyz/dem_png/{z}/{x}/{y}.png',
+      texture: 'https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/{z}/{x}/{y}.jpg',
+      color: [100,155,100]
+    });  
+    deckLayers.push(myTerrainDeckLayer);
+    
   }
   
-  g.deckOverlay = new deck.MapboxOverlay({
-    interleaved: true, layers: deckLayers
+  if(!g.deckOverlay){
+    g.deckOverlay = new deck.MapboxOverlay({
+      interleaved: true, layers: []
+    });
+    map.addControl(g.deckOverlay);
+  }
+  
+  g.deckOverlay.setProps({
+    layers: deckLayers
   });
-  
-  map.addControl(g.deckOverlay);
-  
+ 
 }
 
 // データの加工
@@ -637,56 +664,6 @@ const setStyleInfo = (data) => {
   return data;
   
 }
-
-//地形データ
-const addTerrain = function(){
-  
-  if(g.deckTerrainOverlay){
-    map.removeControl(g.deckTerrainOverlay);
-    delete g.deckTerrainOverlay;
-  }
-  g.deckTerrainOverlay = new deck.MapboxOverlay({
-    interleaved: true, layers: []
-  });
-  
-  const isTerrainShow = document.getElementById("showTerrain").checked;
-  if(isTerrainShow){
-    
-    //エラー処理
-    const styleLoadStatus = map.isStyleLoaded();
-    if(!styleLoadStatus){
-      alert("スタイルがまだ読み込めていません。");
-    }
-    
-    if(map.getZoom() > 14.5){
-      alert("地形表示はZL14.5未満でできます。");
-    }
-  
-    //地形
-    
-    const myTerrainDeckLayer = new deck.TerrainLayer({
-      id: 'terrain-layer',
-      elevationDecoder: {
-        rScaler: Math.pow(2,16)*0.01,
-        gScaler: Math.pow(2,8)*0.01,
-        bScaler: 0.01,
-        offset: 0
-      },
-      elevationData: 'https://cyberjapandata.gsi.go.jp/xyz/dem_png/{z}/{x}/{y}.png',
-      texture: 'https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/{z}/{x}/{y}.jpg',
-      color: [100,155,100]
-    });
-    
-    g.deckTerrainOverlay.setProps({
-      layers: [
-        myTerrainDeckLayer
-      ]
-    });
-    map.addControl(g.deckTerrainOverlay);
-  
-  }
-}
-
 
 </script>
  
