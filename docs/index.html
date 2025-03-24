@@ -79,7 +79,7 @@ button.local {
   <span>MapLibre-v5+deck.gl-v9<br>（標高タイル使用ver）</span>
   <hr>
   <div id="menu-main">
-    <span>データ取得・表示の選択</span><br>
+    <span>データ表示の選択</span><br>
     <input type="checkbox" class="local" id="showRoad" onchange="set3dLayers();" checked>道路
     <input type="checkbox" class="local" id="showRailway" onchange="set3dLayers();" checked>鉄道
     <input type="checkbox" class="local" id="showBuilding" onchange="set3dLayers();" checked>建物
@@ -93,6 +93,7 @@ button.local {
     <input type="checkbox" class="local" id="switchBack" onchange="switchBack();" checked>背景地図<br>
     <input type="checkbox" class="local" id="showTerrain" onchange="addTerrain()" />地形を表示（試験中）<br>
     <input type="checkbox" class="local" id="showTileBoundary" onchange="addTileboundary()" checked/>タイル図郭を表示<br>
+    <input type="checkbox" class="local" id="isTileLoad" />データ読込停止<br>
     高さ強調：<input type="number" class="local" id="elevScale" onchange="set3dLayers()" min="0" value="1"/><br>
     <hr>
     <div id="message">対象：神戸市新開地駅～谷上駅付近 ZL 14 相当の情報（ZL 13 以上 16 未満で表示）
@@ -283,18 +284,22 @@ class TileLoader {
 
 const tileLoader = new TileLoader();
 map.on("moveend", () => {
-  set3dLayers();
+  if(!document.getElementById("isTileLoad").checked){
+    set3dLayers();
+  }
 });
 
 
 async function set3dLayers() {
   
-  const d = await tileLoader.loadTiles(map) || {};
-  ["contour", "road", "railway", "waterarea", "border", "building", "symbol"].forEach( k => {
-    if(!d[k]) d[k] = [];
-  });
-  
-  g.d = setStyleInfo(d);
+  if(!document.getElementById("isTileLoad").checked){
+    const d = await tileLoader.loadTiles(map) || {};
+    ["contour", "road", "railway", "waterarea", "border", "building", "symbol"].forEach( k => {
+      if(!d[k]) d[k] = [];
+    });
+    
+    g.d = setStyleInfo(d);
+  }
   
   const {contour, road, railway, waterarea, border, building, symbol} = g.d;
   
@@ -508,11 +513,7 @@ async function set3dLayers() {
   }
   
   g.deckOverlay = new deck.MapboxOverlay({
-    interleaved: true, layers: []
-  });
-  
-  g.deckOverlay.setProps({
-    layers: deckLayers
+    interleaved: true, layers: deckLayers
   });
   
   map.addControl(g.deckOverlay);
