@@ -1,0 +1,3927 @@
+{
+  "BldA": [
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "20231031-47928-12411-s-1532",
+        "lfSpanFr": "2023-10-31",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "2500",
+        "ftCode": "3101",
+        "admCode": null,
+        "devDate": "2022-06-30",
+        "type": "普通建物",
+        "lvOrder": 0,
+        "name": null,
+        "grElv": 160.52,
+        "repElv": 173.6,
+        "maxElv": 175.18,
+        "gElvCode": 4,
+        "uElvCode": 3,
+        "spcFlg": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              133.140794288,
+              34.476614016
+            ],
+            [
+              133.140762541,
+              34.476608139
+            ],
+            [
+              133.140754812,
+              34.476636238
+            ],
+            [
+              133.140786669,
+              34.476642204
+            ],
+            [
+              133.140794288,
+              34.476614016
+            ]
+          ]
+        ]
+      }
+    }
+  ],
+  "RdCL": [
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "47925-12408-i-34",
+        "lfSpanFr": "2023-06-15",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "25000",
+        "ftCode": "2721",
+        "admCode": null,
+        "devDate": null,
+        "type": "徒歩道",
+        "rdCtg": "市区町村道等",
+        "state": "通常部",
+        "lvOrder": 0,
+        "name": null,
+        "admOfcRd": null,
+        "rnkWidth": "3m未満",
+        "Width": 0,
+        "sectID": null,
+        "tollSect": "無料",
+        "medSect": 0,
+        "motorway": 0,
+        "repLtdLvl": 25000,
+        "rtCode": null,
+        "cElvCode": "4"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            133.132520278,
+            34.47166,
+            286.55
+          ],
+          [
+            133.132634167,
+            34.4716,
+            283.93
+          ],
+          [
+            133.132740556,
+            34.471558056,
+            281.49
+          ],
+          [
+            133.132953611,
+            34.471536944,
+            279.17
+          ],
+          [
+            133.133137222,
+            34.471491944,
+            279.48
+          ],
+          [
+            133.133266111,
+            34.471418611,
+            279.88
+          ],
+          [
+            133.133333333,
+            34.471355389,
+            280.41
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "47925-12411-i-113",
+        "lfSpanFr": "2023-06-15",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "25000",
+        "ftCode": "2701",
+        "admCode": null,
+        "devDate": null,
+        "type": "通常部",
+        "rdCtg": "市区町村道等",
+        "state": "通常部",
+        "lvOrder": 0,
+        "name": null,
+        "admOfcRd": null,
+        "rnkWidth": "3m-5.5m未満",
+        "Width": 0,
+        "sectID": null,
+        "tollSect": "無料",
+        "medSect": 0,
+        "motorway": 9,
+        "repLtdLvl": 25000,
+        "rtCode": null,
+        "cElvCode": "4"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            133.132017022,
+            34.477154895,
+            202.47
+          ],
+          [
+            133.132106133,
+            34.477073248,
+            202.69
+          ],
+          [
+            133.132166805,
+            34.477068538,
+            202.78
+          ],
+          [
+            133.132354507,
+            34.477117212,
+            204.39
+          ],
+          [
+            133.132496691,
+            34.477137366,
+            205.68
+          ],
+          [
+            133.132619931,
+            34.477137366,
+            206.76
+          ],
+          [
+            133.132864514,
+            34.477132656,
+            209.01
+          ],
+          [
+            133.133006714,
+            34.477116954,
+            210.38
+          ],
+          [
+            133.133057906,
+            34.477098113,
+            210.88
+          ],
+          [
+            133.13309393,
+            34.477076131,
+            211.39
+          ],
+          [
+            133.133133746,
+            34.477032167,
+            211.96
+          ],
+          [
+            133.133167974,
+            34.476945475,
+            212.93
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "47925-12411-i-114",
+        "lfSpanFr": "2023-06-15",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "25000",
+        "ftCode": "2701",
+        "admCode": null,
+        "devDate": null,
+        "type": "通常部",
+        "rdCtg": "市区町村道等",
+        "state": "通常部",
+        "lvOrder": 0,
+        "name": null,
+        "admOfcRd": null,
+        "rnkWidth": "3m-5.5m未満",
+        "Width": 0,
+        "sectID": null,
+        "tollSect": "無料",
+        "medSect": 0,
+        "motorway": 9,
+        "repLtdLvl": 25000,
+        "rtCode": null,
+        "cElvCode": "4"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            133.133167974,
+            34.476945475,
+            212.93
+          ],
+          [
+            133.133237961,
+            34.47673019,
+            214.02
+          ],
+          [
+            133.133333333,
+            34.476405335,
+            214.83
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "47925-12411-i-115",
+        "lfSpanFr": "2023-06-15",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "25000",
+        "ftCode": "2701",
+        "admCode": null,
+        "devDate": null,
+        "type": "通常部",
+        "rdCtg": "市区町村道等",
+        "state": "通常部",
+        "lvOrder": 0,
+        "name": null,
+        "admOfcRd": null,
+        "rnkWidth": "3m-5.5m未満",
+        "Width": 0,
+        "sectID": null,
+        "tollSect": "無料",
+        "medSect": 0,
+        "motorway": 9,
+        "repLtdLvl": 25000,
+        "rtCode": null,
+        "cElvCode": "4"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            133.132017022,
+            34.477154895,
+            202.47
+          ],
+          [
+            133.132086614,
+            34.477230418,
+            201.85
+          ],
+          [
+            133.1322323,
+            34.477376568,
+            200.51
+          ],
+          [
+            133.132251393,
+            34.477392366,
+            200.35
+          ],
+          [
+            133.132313093,
+            34.477429951,
+            199.86
+          ],
+          [
+            133.132384159,
+            34.477461338,
+            199.35
+          ],
+          [
+            133.13248392,
+            34.477496747,
+            198.59
+          ],
+          [
+            133.132556564,
+            34.477530095,
+            197.97
+          ],
+          [
+            133.132609989,
+            34.477571155,
+            197.33
+          ],
+          [
+            133.132647891,
+            34.477620198,
+            196.64
+          ],
+          [
+            133.132668421,
+            34.477663355,
+            196.24
+          ],
+          [
+            133.132683048,
+            34.477869137,
+            195.09
+          ],
+          [
+            133.132687541,
+            34.477926907,
+            194.84
+          ],
+          [
+            133.132695826,
+            34.47796883,
+            194.71
+          ],
+          [
+            133.132713592,
+            34.478007082,
+            194.5
+          ],
+          [
+            133.13273728,
+            34.478039449,
+            194.3
+          ],
+          [
+            133.132762152,
+            34.478062988,
+            194.17
+          ],
+          [
+            133.132809241,
+            34.478091204,
+            193.9
+          ],
+          [
+            133.132873197,
+            34.478116705,
+            193.63
+          ],
+          [
+            133.13298533,
+            34.478137547,
+            193.1
+          ],
+          [
+            133.133333333,
+            34.478187556,
+            191.21
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "47925-12411-i-117",
+        "lfSpanFr": "2023-06-15",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "25000",
+        "ftCode": "2701",
+        "admCode": null,
+        "devDate": null,
+        "type": "通常部",
+        "rdCtg": "高速自動車国道等",
+        "state": "通常部",
+        "lvOrder": 0,
+        "name": null,
+        "admOfcRd": null,
+        "rnkWidth": "19.5m以上",
+        "Width": 30,
+        "sectID": null,
+        "tollSect": "有料",
+        "medSect": 1,
+        "motorway": 1,
+        "repLtdLvl": 25000,
+        "rtCode": null,
+        "cElvCode": "4"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            133.132533312,
+            34.475603796,
+            241.83
+          ],
+          [
+            133.133002771,
+            34.475508252,
+            241.77
+          ],
+          [
+            133.133333333,
+            34.475418731,
+            241.05
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "47928-12408-i-100",
+        "lfSpanFr": "2023-06-15",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "2500",
+        "ftCode": "2701",
+        "admCode": null,
+        "devDate": "2022-06-30",
+        "type": "通常部",
+        "rdCtg": "市区町村道等",
+        "state": "通常部",
+        "lvOrder": 0,
+        "name": null,
+        "admOfcRd": null,
+        "rnkWidth": "3m未満",
+        "Width": 0,
+        "sectID": null,
+        "tollSect": "無料",
+        "medSect": 0,
+        "motorway": 0,
+        "repLtdLvl": 2500,
+        "rtCode": null,
+        "cElvCode": "4"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            133.135729938,
+            34.474830944,
+            241.24
+          ],
+          [
+            133.13574065,
+            34.474876394,
+            241.85
+          ],
+          [
+            133.135734657,
+            34.474966563,
+            243.82
+          ],
+          [
+            133.135723669,
+            34.474988071,
+            244.38
+          ],
+          [
+            133.135716471,
+            34.475,
+            244.6
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "47928-12408-i-101",
+        "lfSpanFr": "2023-06-15",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "2500",
+        "ftCode": "2701",
+        "admCode": null,
+        "devDate": "2022-06-30",
+        "type": "通常部",
+        "rdCtg": "市区町村道等",
+        "state": "通常部",
+        "lvOrder": 0,
+        "name": null,
+        "admOfcRd": null,
+        "rnkWidth": "3m未満",
+        "Width": 0,
+        "sectID": null,
+        "tollSect": "無料",
+        "medSect": 0,
+        "motorway": 0,
+        "repLtdLvl": 2500,
+        "rtCode": null,
+        "cElvCode": "4"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            133.134545184,
+            34.474789612,
+            231.16
+          ],
+          [
+            133.134564602,
+            34.474826371,
+            231.24
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "47928-12408-i-102",
+        "lfSpanFr": "2023-06-15",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "25000",
+        "ftCode": "2704",
+        "admCode": null,
+        "devDate": "2022-06-30",
+        "type": "通常部",
+        "rdCtg": "市区町村道等",
+        "state": "トンネル",
+        "lvOrder": 0,
+        "name": null,
+        "admOfcRd": null,
+        "rnkWidth": "3m未満",
+        "Width": 0,
+        "sectID": null,
+        "tollSect": "無料",
+        "medSect": 0,
+        "motorway": 0,
+        "repLtdLvl": 2500,
+        "rtCode": null,
+        "cElvCode": "8"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            133.134564602,
+            34.474826371,
+            231.24
+          ],
+          [
+            133.134656327,
+            34.475,
+            231.6
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "47928-12408-i-103",
+        "lfSpanFr": "2023-06-15",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "25000",
+        "ftCode": "2721",
+        "admCode": null,
+        "devDate": null,
+        "type": "徒歩道",
+        "rdCtg": "市区町村道等",
+        "state": "通常部",
+        "lvOrder": 0,
+        "name": null,
+        "admOfcRd": null,
+        "rnkWidth": "3m未満",
+        "Width": 0,
+        "sectID": null,
+        "tollSect": "無料",
+        "medSect": 0,
+        "motorway": 0,
+        "repLtdLvl": 25000,
+        "rtCode": null,
+        "cElvCode": "4"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            133.137149722,
+            34.469835278,
+            184.96
+          ],
+          [
+            133.137155278,
+            34.469936944,
+            184.62
+          ],
+          [
+            133.137128056,
+            34.470168056,
+            182.66
+          ],
+          [
+            133.137073889,
+            34.470331389,
+            181.92
+          ],
+          [
+            133.137073889,
+            34.4705,
+            180.92
+          ],
+          [
+            133.137128056,
+            34.470652222,
+            181.82
+          ],
+          [
+            133.137155278,
+            34.470691667,
+            181.95
+          ],
+          [
+            133.137223333,
+            34.470894444,
+            180.37
+          ],
+          [
+            133.137332222,
+            34.471339722,
+            178.67
+          ],
+          [
+            133.137359444,
+            34.471441111,
+            178.85
+          ],
+          [
+            133.137420556,
+            34.471581944,
+            178.41
+          ],
+          [
+            133.137508889,
+            34.471689167,
+            179.1
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "47928-12408-i-104",
+        "lfSpanFr": "2023-06-15",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "25000",
+        "ftCode": "2721",
+        "admCode": null,
+        "devDate": null,
+        "type": "徒歩道",
+        "rdCtg": "市区町村道等",
+        "state": "通常部",
+        "lvOrder": 0,
+        "name": null,
+        "admOfcRd": null,
+        "rnkWidth": "3m未満",
+        "Width": 0,
+        "sectID": null,
+        "tollSect": "無料",
+        "medSect": 0,
+        "motorway": 0,
+        "repLtdLvl": 25000,
+        "rtCode": null,
+        "cElvCode": "4"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            133.133333333,
+            34.471355389,
+            280.41
+          ],
+          [
+            133.133517778,
+            34.471181944,
+            280.06
+          ],
+          [
+            133.133653889,
+            34.471052222,
+            277.06
+          ],
+          [
+            133.133844167,
+            34.470945278,
+            270.81
+          ],
+          [
+            133.134050833,
+            34.470952778,
+            268.89
+          ],
+          [
+            133.134135556,
+            34.470916667,
+            264.32
+          ],
+          [
+            133.134253056,
+            34.470814722,
+            256.57
+          ],
+          [
+            133.134304444,
+            34.470778889,
+            255.01
+          ],
+          [
+            133.134333333,
+            34.470774167,
+            254.99
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "47928-12408-i-108",
+        "lfSpanFr": "2023-06-15",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "25000",
+        "ftCode": "2701",
+        "admCode": null,
+        "devDate": null,
+        "type": "通常部",
+        "rdCtg": "市区町村道等",
+        "state": "通常部",
+        "lvOrder": 0,
+        "name": null,
+        "admOfcRd": null,
+        "rnkWidth": "3m-5.5m未満",
+        "Width": 0,
+        "sectID": null,
+        "tollSect": "無料",
+        "medSect": 0,
+        "motorway": 9,
+        "repLtdLvl": 25000,
+        "rtCode": null,
+        "cElvCode": "4"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            133.13697642,
+            34.473670947,
+            219.59
+          ],
+          [
+            133.136732712,
+            34.473805763,
+            220.83
+          ],
+          [
+            133.13585954,
+            34.474306709,
+            228.01
+          ],
+          [
+            133.135688966,
+            34.474383962,
+            230.29
+          ],
+          [
+            133.135451387,
+            34.474526944,
+            233.7
+          ],
+          [
+            133.135286138,
+            34.474610822,
+            234.69
+          ],
+          [
+            133.134830371,
+            34.474780783,
+            235.32
+          ],
+          [
+            133.134702436,
+            34.474787405,
+            233.36
+          ],
+          [
+            133.134545184,
+            34.474789612,
+            231.16
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "47928-12408-i-109",
+        "lfSpanFr": "2023-06-15",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "25000",
+        "ftCode": "2701",
+        "admCode": null,
+        "devDate": null,
+        "type": "通常部",
+        "rdCtg": "市区町村道等",
+        "state": "通常部",
+        "lvOrder": 0,
+        "name": null,
+        "admOfcRd": null,
+        "rnkWidth": "3m-5.5m未満",
+        "Width": 0,
+        "sectID": null,
+        "tollSect": "無料",
+        "medSect": 0,
+        "motorway": 9,
+        "repLtdLvl": 25000,
+        "rtCode": null,
+        "cElvCode": "4"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            133.137281284,
+            34.474003091,
+            221.59
+          ],
+          [
+            133.137307206,
+            34.474029329,
+            221.72
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "47928-12408-i-110",
+        "lfSpanFr": "2023-06-15",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "25000",
+        "ftCode": "2704",
+        "admCode": null,
+        "devDate": null,
+        "type": "通常部",
+        "rdCtg": "市区町村道等",
+        "state": "トンネル",
+        "lvOrder": 0,
+        "name": null,
+        "admOfcRd": null,
+        "rnkWidth": "3m-5.5m未満",
+        "Width": 0,
+        "sectID": null,
+        "tollSect": "無料",
+        "medSect": 0,
+        "motorway": 9,
+        "repLtdLvl": 25000,
+        "rtCode": null,
+        "cElvCode": "8"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            133.13697642,
+            34.473670947,
+            219.59
+          ],
+          [
+            133.137281284,
+            34.474003091,
+            221.59
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "47928-12408-i-111",
+        "lfSpanFr": "2023-06-15",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "25000",
+        "ftCode": "2701",
+        "admCode": null,
+        "devDate": null,
+        "type": "通常部",
+        "rdCtg": "市区町村道等",
+        "state": "通常部",
+        "lvOrder": 0,
+        "name": null,
+        "admOfcRd": null,
+        "rnkWidth": "3m-5.5m未満",
+        "Width": 0,
+        "sectID": null,
+        "tollSect": "無料",
+        "medSect": 0,
+        "motorway": 9,
+        "repLtdLvl": 25000,
+        "rtCode": null,
+        "cElvCode": "4"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            133.140677084,
+            34.472805218,
+            157.05
+          ],
+          [
+            133.140659469,
+            34.472864742,
+            156.63
+          ],
+          [
+            133.140665058,
+            34.47289174,
+            157.24
+          ],
+          [
+            133.140726532,
+            34.472929537,
+            157.24
+          ],
+          [
+            133.140809822,
+            34.472968377,
+            157.23
+          ],
+          [
+            133.140869903,
+            34.472990363,
+            157.34
+          ],
+          [
+            133.140930042,
+            34.473008373,
+            157.32
+          ],
+          [
+            133.141138232,
+            34.47306276,
+            157.4
+          ],
+          [
+            133.141427661,
+            34.473153849,
+            157.45
+          ],
+          [
+            133.141536641,
+            34.473198976,
+            157.51
+          ],
+          [
+            133.141666667,
+            34.473260783,
+            157.59
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "47928-12408-i-112",
+        "lfSpanFr": "2023-06-15",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "25000",
+        "ftCode": "2701",
+        "admCode": null,
+        "devDate": null,
+        "type": "通常部",
+        "rdCtg": "市区町村道等",
+        "state": "通常部",
+        "lvOrder": 0,
+        "name": null,
+        "admOfcRd": null,
+        "rnkWidth": "3m-5.5m未満",
+        "Width": 0,
+        "sectID": null,
+        "tollSect": "無料",
+        "medSect": 0,
+        "motorway": 9,
+        "repLtdLvl": 25000,
+        "rtCode": null,
+        "cElvCode": "4"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            133.140677084,
+            34.472805218,
+            157.05
+          ],
+          [
+            133.140693591,
+            34.472787778,
+            157.09
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "47928-12408-i-113",
+        "lfSpanFr": "2023-06-15",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "25000",
+        "ftCode": "2721",
+        "admCode": null,
+        "devDate": null,
+        "type": "徒歩道",
+        "rdCtg": "市区町村道等",
+        "state": "通常部",
+        "lvOrder": 0,
+        "name": null,
+        "admOfcRd": null,
+        "rnkWidth": "3m未満",
+        "Width": 0,
+        "sectID": null,
+        "tollSect": "無料",
+        "medSect": 0,
+        "motorway": 0,
+        "repLtdLvl": 25000,
+        "rtCode": null,
+        "cElvCode": "4"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            133.140693591,
+            34.472787778,
+            157.09
+          ],
+          [
+            133.140667588,
+            34.472787778,
+            157.04
+          ],
+          [
+            133.140418889,
+            34.472787778,
+            158.17
+          ],
+          [
+            133.1403375,
+            34.472770833,
+            158.58
+          ],
+          [
+            133.140208056,
+            34.472697778,
+            159.19
+          ],
+          [
+            133.1400325,
+            34.472516111,
+            159.34
+          ],
+          [
+            133.139833333,
+            34.472375278,
+            163.51
+          ],
+          [
+            133.139290278,
+            34.472224444,
+            166.65
+          ],
+          [
+            133.1391475,
+            34.47223,
+            169.71
+          ],
+          [
+            133.139011389,
+            34.472213056,
+            170
+          ],
+          [
+            133.138943333,
+            34.472213056,
+            171.04
+          ],
+          [
+            133.138828056,
+            34.472190556,
+            169.03
+          ],
+          [
+            133.138753333,
+            34.472190556,
+            169.34
+          ],
+          [
+            133.1385425,
+            34.472156667,
+            170.28
+          ],
+          [
+            133.138399722,
+            34.472111667,
+            170.63
+          ],
+          [
+            133.138120833,
+            34.4719425,
+            172.24
+          ],
+          [
+            133.137930556,
+            34.471869444,
+            172.98
+          ],
+          [
+            133.137842222,
+            34.471846944,
+            174.21
+          ],
+          [
+            133.137631389,
+            34.471773611,
+            174.69
+          ],
+          [
+            133.137543056,
+            34.471722778,
+            178.95
+          ],
+          [
+            133.137508889,
+            34.471689167,
+            179.1
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "47928-12408-i-114",
+        "lfSpanFr": "2023-06-15",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "25000",
+        "ftCode": "2701",
+        "admCode": null,
+        "devDate": null,
+        "type": "通常部",
+        "rdCtg": "高速自動車国道等",
+        "state": "通常部",
+        "lvOrder": 0,
+        "name": null,
+        "admOfcRd": null,
+        "rnkWidth": "19.5m以上",
+        "Width": 30,
+        "sectID": null,
+        "tollSect": "有料",
+        "medSect": 1,
+        "motorway": 1,
+        "repLtdLvl": 25000,
+        "rtCode": null,
+        "cElvCode": "8"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            133.13475711,
+            34.475,
+            237.74
+          ],
+          [
+            133.134878068,
+            34.474959032,
+            237.34
+          ],
+          [
+            133.135296483,
+            34.474786991,
+            235.48
+          ],
+          [
+            133.136172517,
+            34.474380466,
+            231.16
+          ],
+          [
+            133.136765881,
+            34.474080952,
+            228.17
+          ],
+          [
+            133.137457826,
+            34.473683467,
+            224.38
+          ],
+          [
+            133.138031292,
+            34.473314335,
+            221.46
+          ],
+          [
+            133.139061969,
+            34.472673848,
+            215.91
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "47928-12408-i-115",
+        "lfSpanFr": "2023-06-15",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "25000",
+        "ftCode": "2703",
+        "admCode": null,
+        "devDate": null,
+        "type": "通常部",
+        "rdCtg": "高速自動車国道等",
+        "state": "橋・高架",
+        "lvOrder": 1,
+        "name": null,
+        "admOfcRd": null,
+        "rnkWidth": "19.5m以上",
+        "Width": 30,
+        "sectID": null,
+        "tollSect": "有料",
+        "medSect": 1,
+        "motorway": 1,
+        "repLtdLvl": 25000,
+        "rtCode": null,
+        "cElvCode": "4"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            133.139061969,
+            34.472673848,
+            215.91
+          ],
+          [
+            133.139464958,
+            34.472420796,
+            213.72
+          ],
+          [
+            133.140176237,
+            34.472021036,
+            210.03
+          ],
+          [
+            133.140545345,
+            34.471842656,
+            208.24
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "47928-12408-i-116",
+        "lfSpanFr": "2023-06-15",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "25000",
+        "ftCode": "2701",
+        "admCode": null,
+        "devDate": null,
+        "type": "通常部",
+        "rdCtg": "高速自動車国道等",
+        "state": "通常部",
+        "lvOrder": 0,
+        "name": null,
+        "admOfcRd": null,
+        "rnkWidth": "19.5m以上",
+        "Width": 30,
+        "sectID": null,
+        "tollSect": "有料",
+        "medSect": 1,
+        "motorway": 1,
+        "repLtdLvl": 25000,
+        "rtCode": null,
+        "cElvCode": "8"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            133.140545345,
+            34.471842656,
+            208.24
+          ],
+          [
+            133.141666667,
+            34.471395388,
+            202.84
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "47928-12408-i-117",
+        "lfSpanFr": "2023-06-15",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "25000",
+        "ftCode": "2701",
+        "admCode": null,
+        "devDate": null,
+        "type": "通常部",
+        "rdCtg": "市区町村道等",
+        "state": "通常部",
+        "lvOrder": 0,
+        "name": null,
+        "admOfcRd": null,
+        "rnkWidth": "3m-5.5m未満",
+        "Width": 0,
+        "sectID": null,
+        "tollSect": "無料",
+        "medSect": 0,
+        "motorway": 9,
+        "repLtdLvl": 25000,
+        "rtCode": null,
+        "cElvCode": "4"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            133.137307206,
+            34.474029329,
+            221.72
+          ],
+          [
+            133.137237484,
+            34.474076065,
+            222.06
+          ],
+          [
+            133.136607319,
+            34.474334124,
+            229.28
+          ],
+          [
+            133.136460181,
+            34.474425933,
+            231.38
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "47928-12408-i-118",
+        "lfSpanFr": "2023-06-15",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "25000",
+        "ftCode": "2701",
+        "admCode": null,
+        "devDate": null,
+        "type": "通常部",
+        "rdCtg": "市区町村道等",
+        "state": "通常部",
+        "lvOrder": 0,
+        "name": null,
+        "admOfcRd": null,
+        "rnkWidth": "3m-5.5m未満",
+        "Width": 0,
+        "sectID": null,
+        "tollSect": "無料",
+        "medSect": 0,
+        "motorway": 9,
+        "repLtdLvl": 25000,
+        "rtCode": null,
+        "cElvCode": "4"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            133.136460181,
+            34.474425933,
+            231.38
+          ],
+          [
+            133.136184959,
+            34.474597662,
+            235.28
+          ],
+          [
+            133.135943358,
+            34.474734483,
+            238.53
+          ],
+          [
+            133.135826111,
+            34.474793331,
+            240.1
+          ],
+          [
+            133.135729938,
+            34.474830944,
+            241.24
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "47928-12408-i-119",
+        "lfSpanFr": "2023-06-15",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "25000",
+        "ftCode": "2701",
+        "admCode": null,
+        "devDate": null,
+        "type": "通常部",
+        "rdCtg": "市区町村道等",
+        "state": "通常部",
+        "lvOrder": 0,
+        "name": null,
+        "admOfcRd": null,
+        "rnkWidth": "3m-5.5m未満",
+        "Width": 0,
+        "sectID": null,
+        "tollSect": "無料",
+        "medSect": 0,
+        "motorway": 9,
+        "repLtdLvl": 25000,
+        "rtCode": null,
+        "cElvCode": "4"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            133.134323963,
+            34.474782991,
+            228.72
+          ],
+          [
+            133.133988135,
+            34.474928672,
+            230.48
+          ],
+          [
+            133.133849901,
+            34.475,
+            231.95
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "47928-12408-i-120",
+        "lfSpanFr": "2023-06-15",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "25000",
+        "ftCode": "2701",
+        "admCode": null,
+        "devDate": null,
+        "type": "通常部",
+        "rdCtg": "市区町村道等",
+        "state": "通常部",
+        "lvOrder": 0,
+        "name": null,
+        "admOfcRd": null,
+        "rnkWidth": "3m-5.5m未満",
+        "Width": 0,
+        "sectID": null,
+        "tollSect": "無料",
+        "medSect": 0,
+        "motorway": 9,
+        "repLtdLvl": 25000,
+        "rtCode": null,
+        "cElvCode": "4"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            133.135729938,
+            34.474830944,
+            241.24
+          ],
+          [
+            133.135509242,
+            34.474917257,
+            241.27
+          ],
+          [
+            133.135214187,
+            34.475,
+            238.12
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "47928-12408-i-121",
+        "lfSpanFr": "2023-06-15",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "25000",
+        "ftCode": "2701",
+        "admCode": null,
+        "devDate": null,
+        "type": "通常部",
+        "rdCtg": "市区町村道等",
+        "state": "通常部",
+        "lvOrder": 0,
+        "name": null,
+        "admOfcRd": null,
+        "rnkWidth": "3m-5.5m未満",
+        "Width": 0,
+        "sectID": null,
+        "tollSect": "無料",
+        "medSect": 0,
+        "motorway": 9,
+        "repLtdLvl": 25000,
+        "rtCode": null,
+        "cElvCode": "4"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            133.134545184,
+            34.474789612,
+            231.16
+          ],
+          [
+            133.134323963,
+            34.474782991,
+            228.72
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "47928-12408-i-122",
+        "lfSpanFr": "2023-06-15",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "25000",
+        "ftCode": "2701",
+        "admCode": null,
+        "devDate": null,
+        "type": "通常部",
+        "rdCtg": "市区町村道等",
+        "state": "通常部",
+        "lvOrder": 0,
+        "name": null,
+        "admOfcRd": null,
+        "rnkWidth": "3m-5.5m未満",
+        "Width": 0,
+        "sectID": null,
+        "tollSect": "無料",
+        "medSect": 0,
+        "motorway": 9,
+        "repLtdLvl": 25000,
+        "rtCode": null,
+        "cElvCode": "4"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            133.140693591,
+            34.472787778,
+            157.09
+          ],
+          [
+            133.140703246,
+            34.472777576,
+            157.08
+          ],
+          [
+            133.140730258,
+            34.472766005,
+            157.08
+          ],
+          [
+            133.140766583,
+            34.472766005,
+            157.1
+          ],
+          [
+            133.141098967,
+            34.47284636,
+            157.1
+          ],
+          [
+            133.141598689,
+            34.472889574,
+            157.11
+          ],
+          [
+            133.141628494,
+            34.472888031,
+            157.11
+          ],
+          [
+            133.141666667,
+            34.472875282,
+            157.1
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "47928-12408-i-94",
+        "lfSpanFr": "2023-06-15",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "2500",
+        "ftCode": "2701",
+        "admCode": null,
+        "devDate": "2022-06-30",
+        "type": "通常部",
+        "rdCtg": "市区町村道等",
+        "state": "通常部",
+        "lvOrder": 0,
+        "name": null,
+        "admOfcRd": null,
+        "rnkWidth": "3m未満",
+        "Width": 0,
+        "sectID": null,
+        "tollSect": "無料",
+        "medSect": 0,
+        "motorway": 0,
+        "repLtdLvl": 2500,
+        "rtCode": null,
+        "cElvCode": "4"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            133.137307206,
+            34.474029329,
+            221.72
+          ],
+          [
+            133.137442379,
+            34.473923053,
+            222.04
+          ],
+          [
+            133.137605598,
+            34.473777021,
+            223.63
+          ],
+          [
+            133.137658895,
+            34.47374073,
+            224.1
+          ],
+          [
+            133.137785572,
+            34.473681397,
+            225.05
+          ],
+          [
+            133.13809622,
+            34.473555439,
+            227.21
+          ],
+          [
+            133.138221766,
+            34.473479912,
+            227.84
+          ],
+          [
+            133.138430575,
+            34.473380747,
+            228.5
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "47928-12408-i-95",
+        "lfSpanFr": "2023-06-15",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "2500",
+        "ftCode": "2701",
+        "admCode": null,
+        "devDate": "2022-06-30",
+        "type": "通常部",
+        "rdCtg": "市区町村道等",
+        "state": "通常部",
+        "lvOrder": 0,
+        "name": null,
+        "admOfcRd": null,
+        "rnkWidth": "3m未満",
+        "Width": 0,
+        "sectID": null,
+        "tollSect": "無料",
+        "medSect": 0,
+        "motorway": 0,
+        "repLtdLvl": 2500,
+        "rtCode": null,
+        "cElvCode": "4"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            133.137307206,
+            34.474029329,
+            221.72
+          ],
+          [
+            133.137411233,
+            34.474006329,
+            222.07
+          ],
+          [
+            133.137487909,
+            34.473996079,
+            223.41
+          ],
+          [
+            133.137545245,
+            34.473948709,
+            224.27
+          ],
+          [
+            133.137571301,
+            34.473933669,
+            224.52
+          ],
+          [
+            133.137596567,
+            34.473933015,
+            224.89
+          ],
+          [
+            133.137624111,
+            34.473937229,
+            225.22
+          ],
+          [
+            133.137660826,
+            34.473955864,
+            225.52
+          ],
+          [
+            133.137685697,
+            34.473972539,
+            225.88
+          ],
+          [
+            133.137714121,
+            34.473999021,
+            226.41
+          ],
+          [
+            133.137757031,
+            34.47404785,
+            227.74
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "47928-12408-i-96",
+        "lfSpanFr": "2023-06-15",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "2500",
+        "ftCode": "2701",
+        "admCode": null,
+        "devDate": "2022-06-30",
+        "type": "通常部",
+        "rdCtg": "市区町村道等",
+        "state": "通常部",
+        "lvOrder": 0,
+        "name": null,
+        "admOfcRd": null,
+        "rnkWidth": "3m未満",
+        "Width": 0,
+        "sectID": null,
+        "tollSect": "無料",
+        "medSect": 0,
+        "motorway": 0,
+        "repLtdLvl": 2500,
+        "rtCode": null,
+        "cElvCode": "4"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            133.136460181,
+            34.474425933,
+            231.38
+          ],
+          [
+            133.136479379,
+            34.474457601,
+            231.78
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "47928-12408-i-97",
+        "lfSpanFr": "2023-06-15",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "2500",
+        "ftCode": "2701",
+        "admCode": null,
+        "devDate": "2022-06-30",
+        "type": "通常部",
+        "rdCtg": "市区町村道等",
+        "state": "通常部",
+        "lvOrder": 0,
+        "name": null,
+        "admOfcRd": null,
+        "rnkWidth": "3m未満",
+        "Width": 0,
+        "sectID": null,
+        "tollSect": "無料",
+        "medSect": 0,
+        "motorway": 0,
+        "repLtdLvl": 2500,
+        "rtCode": null,
+        "cElvCode": "4"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            133.136479379,
+            34.474457601,
+            231.78
+          ],
+          [
+            133.136423304,
+            34.474593721,
+            228.2
+          ],
+          [
+            133.136365883,
+            34.474662286,
+            227.89
+          ],
+          [
+            133.13629701,
+            34.474753536,
+            227.11
+          ],
+          [
+            133.136285167,
+            34.474771679,
+            226.79
+          ],
+          [
+            133.136270717,
+            34.474811236,
+            225.77
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "47928-12408-i-98",
+        "lfSpanFr": "2023-06-15",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "2500",
+        "ftCode": "2731",
+        "admCode": null,
+        "devDate": "2022-06-30",
+        "type": "石段",
+        "rdCtg": "市区町村道等",
+        "state": "通常部",
+        "lvOrder": 0,
+        "name": null,
+        "admOfcRd": null,
+        "rnkWidth": "3m未満",
+        "Width": 0,
+        "sectID": null,
+        "tollSect": "無料",
+        "medSect": 0,
+        "motorway": 0,
+        "repLtdLvl": 2500,
+        "rtCode": null,
+        "cElvCode": "4"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            133.136479379,
+            34.474457601,
+            231.78
+          ],
+          [
+            133.136495169,
+            34.474453351,
+            231.71
+          ],
+          [
+            133.136681035,
+            34.474457468,
+            237.27
+          ],
+          [
+            133.136715379,
+            34.474455179,
+            238.06
+          ],
+          [
+            133.136772763,
+            34.474446111,
+            239.32
+          ],
+          [
+            133.136840475,
+            34.474430155,
+            240.04
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "47928-12408-i-99",
+        "lfSpanFr": "2023-06-15",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "2500",
+        "ftCode": "2701",
+        "admCode": null,
+        "devDate": "2022-06-30",
+        "type": "通常部",
+        "rdCtg": "市区町村道等",
+        "state": "通常部",
+        "lvOrder": 0,
+        "name": null,
+        "admOfcRd": null,
+        "rnkWidth": "3m未満",
+        "Width": 0,
+        "sectID": null,
+        "tollSect": "無料",
+        "medSect": 0,
+        "motorway": 0,
+        "repLtdLvl": 2500,
+        "rtCode": null,
+        "cElvCode": "4"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            133.134323963,
+            34.474782991,
+            228.72
+          ],
+          [
+            133.134238962,
+            34.474772317,
+            227.98
+          ],
+          [
+            133.134022793,
+            34.47477938,
+            225.96
+          ],
+          [
+            133.133733054,
+            34.474807512,
+            223.64
+          ],
+          [
+            133.133499264,
+            34.474837299,
+            222.2
+          ],
+          [
+            133.133396715,
+            34.474856713,
+            222.11
+          ],
+          [
+            133.133356354,
+            34.474789968,
+            222.77
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "47928-12411-i-63",
+        "lfSpanFr": "2023-06-15",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "2500",
+        "ftCode": "2701",
+        "admCode": null,
+        "devDate": "2022-06-30",
+        "type": "通常部",
+        "rdCtg": "市区町村道等",
+        "state": "通常部",
+        "lvOrder": 0,
+        "name": null,
+        "admOfcRd": null,
+        "rnkWidth": "3m未満",
+        "Width": 0,
+        "sectID": null,
+        "tollSect": "無料",
+        "medSect": 0,
+        "motorway": 0,
+        "repLtdLvl": 2500,
+        "rtCode": null,
+        "cElvCode": "4"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            133.135716471,
+            34.475,
+            244.6
+          ],
+          [
+            133.135700153,
+            34.475027044,
+            245.4
+          ],
+          [
+            133.135688167,
+            34.475056825,
+            246.3
+          ],
+          [
+            133.13568659,
+            34.475082276,
+            246.87
+          ],
+          [
+            133.135720553,
+            34.475253516,
+            247.35
+          ],
+          [
+            133.13577523,
+            34.475357799,
+            246.39
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "47928-12411-i-64",
+        "lfSpanFr": "2023-06-15",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "2500",
+        "ftCode": "2701",
+        "admCode": null,
+        "devDate": "2022-06-30",
+        "type": "通常部",
+        "rdCtg": "市区町村道等",
+        "state": "通常部",
+        "lvOrder": 0,
+        "name": null,
+        "admOfcRd": null,
+        "rnkWidth": "3m未満",
+        "Width": 0,
+        "sectID": null,
+        "tollSect": "無料",
+        "medSect": 0,
+        "motorway": 0,
+        "repLtdLvl": 2500,
+        "rtCode": null,
+        "cElvCode": "4"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            133.13577523,
+            34.475357799,
+            246.39
+          ],
+          [
+            133.135875456,
+            34.475548958,
+            246.02
+          ],
+          [
+            133.135887106,
+            34.475605724,
+            246.98
+          ],
+          [
+            133.135974235,
+            34.475763958,
+            247.91
+          ],
+          [
+            133.136033397,
+            34.475893813,
+            249.28
+          ],
+          [
+            133.136081145,
+            34.47603334,
+            247.52
+          ],
+          [
+            133.136096463,
+            34.476076361,
+            247.35
+          ],
+          [
+            133.136108673,
+            34.476134562,
+            247.24
+          ],
+          [
+            133.136107341,
+            34.476154969,
+            247.25
+          ],
+          [
+            133.13609725,
+            34.476179044,
+            247.63
+          ],
+          [
+            133.136079934,
+            34.47621324,
+            247.5
+          ],
+          [
+            133.136052071,
+            34.476239924,
+            247.75
+          ],
+          [
+            133.136009386,
+            34.476267071,
+            248.13
+          ],
+          [
+            133.135821935,
+            34.476366017,
+            248.27
+          ],
+          [
+            133.135631724,
+            34.476473314,
+            249.88
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "47928-12411-i-65",
+        "lfSpanFr": "2023-06-15",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "2500",
+        "ftCode": "2701",
+        "admCode": null,
+        "devDate": "2022-06-30",
+        "type": "通常部",
+        "rdCtg": "市区町村道等",
+        "state": "通常部",
+        "lvOrder": 0,
+        "name": null,
+        "admOfcRd": null,
+        "rnkWidth": "3m未満",
+        "Width": 0,
+        "sectID": null,
+        "tollSect": "無料",
+        "medSect": 0,
+        "motorway": 0,
+        "repLtdLvl": 2500,
+        "rtCode": null,
+        "cElvCode": "4"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            133.134126039,
+            34.478709314,
+            187.35
+          ],
+          [
+            133.134051708,
+            34.478747779,
+            188.07
+          ],
+          [
+            133.133918283,
+            34.478770118,
+            190.36
+          ],
+          [
+            133.133869335,
+            34.478788424,
+            191.26
+          ],
+          [
+            133.133691864,
+            34.478895065,
+            195.15
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "47928-12411-i-67",
+        "lfSpanFr": "2023-06-15",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "25000",
+        "ftCode": "2704",
+        "admCode": null,
+        "devDate": "2022-06-30",
+        "type": "通常部",
+        "rdCtg": "市区町村道等",
+        "state": "トンネル",
+        "lvOrder": 0,
+        "name": null,
+        "admOfcRd": null,
+        "rnkWidth": "3m未満",
+        "Width": 0,
+        "sectID": null,
+        "tollSect": "無料",
+        "medSect": 0,
+        "motorway": 0,
+        "repLtdLvl": 2500,
+        "rtCode": null,
+        "cElvCode": "8"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            133.134656327,
+            34.475,
+            231.6
+          ],
+          [
+            133.134756532,
+            34.475189683,
+            231.99
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "47928-12411-i-68",
+        "lfSpanFr": "2023-06-15",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "2500",
+        "ftCode": "2701",
+        "admCode": null,
+        "devDate": "2022-06-30",
+        "type": "通常部",
+        "rdCtg": "市区町村道等",
+        "state": "通常部",
+        "lvOrder": 0,
+        "name": null,
+        "admOfcRd": null,
+        "rnkWidth": "3m未満",
+        "Width": 0,
+        "sectID": null,
+        "tollSect": "無料",
+        "medSect": 0,
+        "motorway": 0,
+        "repLtdLvl": 2500,
+        "rtCode": null,
+        "cElvCode": "4"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            133.134756532,
+            34.475189683,
+            231.99
+          ],
+          [
+            133.134774363,
+            34.475223435,
+            231.94
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "47928-12411-i-69",
+        "lfSpanFr": "2023-06-15",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "25000",
+        "ftCode": "2701",
+        "admCode": null,
+        "devDate": null,
+        "type": "通常部",
+        "rdCtg": "市区町村道等",
+        "state": "通常部",
+        "lvOrder": 0,
+        "name": null,
+        "admOfcRd": null,
+        "rnkWidth": "3m-5.5m未満",
+        "Width": 0,
+        "sectID": null,
+        "tollSect": "無料",
+        "medSect": 0,
+        "motorway": 9,
+        "repLtdLvl": 25000,
+        "rtCode": null,
+        "cElvCode": "4"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            133.133333333,
+            34.476405335,
+            214.83
+          ],
+          [
+            133.13335783,
+            34.476322287,
+            215.05
+          ],
+          [
+            133.133375527,
+            34.476269947,
+            215.26
+          ],
+          [
+            133.133408051,
+            34.476211307,
+            215.4
+          ],
+          [
+            133.133459876,
+            34.476146405,
+            215.55
+          ],
+          [
+            133.133510438,
+            34.476098252,
+            215.75
+          ],
+          [
+            133.133624936,
+            34.476010216,
+            216.01
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "47928-12411-i-70",
+        "lfSpanFr": "2023-06-15",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "25000",
+        "ftCode": "2701",
+        "admCode": null,
+        "devDate": null,
+        "type": "通常部",
+        "rdCtg": "市区町村道等",
+        "state": "通常部",
+        "lvOrder": 0,
+        "name": null,
+        "admOfcRd": null,
+        "rnkWidth": "3m-5.5m未満",
+        "Width": 0,
+        "sectID": null,
+        "tollSect": "無料",
+        "medSect": 0,
+        "motorway": 9,
+        "repLtdLvl": 25000,
+        "rtCode": null,
+        "cElvCode": "4"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            133.133333333,
+            34.478187556,
+            191.21
+          ],
+          [
+            133.133398308,
+            34.478197923,
+            190.85
+          ],
+          [
+            133.133494115,
+            34.478249154,
+            190.31
+          ],
+          [
+            133.133595492,
+            34.478322727,
+            189.7
+          ],
+          [
+            133.133723399,
+            34.478424072,
+            188.9
+          ],
+          [
+            133.133887259,
+            34.478488839,
+            188.43
+          ],
+          [
+            133.13392871,
+            34.478517281,
+            188.22
+          ],
+          [
+            133.133980463,
+            34.478566107,
+            187.96
+          ],
+          [
+            133.134055073,
+            34.478659277,
+            187.63
+          ],
+          [
+            133.134100077,
+            34.478697526,
+            187.47
+          ],
+          [
+            133.134126039,
+            34.478709314,
+            187.35
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "47928-12411-i-71",
+        "lfSpanFr": "2023-06-15",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "25000",
+        "ftCode": "2701",
+        "admCode": null,
+        "devDate": null,
+        "type": "通常部",
+        "rdCtg": "市区町村道等",
+        "state": "通常部",
+        "lvOrder": 0,
+        "name": null,
+        "admOfcRd": null,
+        "rnkWidth": "3m-5.5m未満",
+        "Width": 0,
+        "sectID": null,
+        "tollSect": "無料",
+        "medSect": 0,
+        "motorway": 9,
+        "repLtdLvl": 25000,
+        "rtCode": null,
+        "cElvCode": "4"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            133.133849901,
+            34.475,
+            231.95
+          ],
+          [
+            133.133742529,
+            34.475051295,
+            232.99
+          ],
+          [
+            133.133333333,
+            34.47521678,
+            236.92
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "47928-12411-i-73",
+        "lfSpanFr": "2023-06-15",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "25000",
+        "ftCode": "2701",
+        "admCode": null,
+        "devDate": null,
+        "type": "通常部",
+        "rdCtg": "市区町村道等",
+        "state": "通常部",
+        "lvOrder": 0,
+        "name": null,
+        "admOfcRd": null,
+        "rnkWidth": "3m-5.5m未満",
+        "Width": 0,
+        "sectID": null,
+        "tollSect": "無料",
+        "medSect": 0,
+        "motorway": 9,
+        "repLtdLvl": 25000,
+        "rtCode": null,
+        "cElvCode": "4"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            133.135214187,
+            34.475,
+            238.12
+          ],
+          [
+            133.135074207,
+            34.475034217,
+            236.4
+          ],
+          [
+            133.13500454,
+            34.475069578,
+            235.62
+          ],
+          [
+            133.134774363,
+            34.475223435,
+            231.94
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "47928-12411-i-74",
+        "lfSpanFr": "2023-06-15",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "25000",
+        "ftCode": "2701",
+        "admCode": null,
+        "devDate": null,
+        "type": "通常部",
+        "rdCtg": "市区町村道等",
+        "state": "通常部",
+        "lvOrder": 0,
+        "name": null,
+        "admOfcRd": null,
+        "rnkWidth": "3m-5.5m未満",
+        "Width": 0,
+        "sectID": null,
+        "tollSect": "無料",
+        "medSect": 0,
+        "motorway": 9,
+        "repLtdLvl": 25000,
+        "rtCode": null,
+        "cElvCode": "4"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            133.135683106,
+            34.478705521,
+            178.84
+          ],
+          [
+            133.135814548,
+            34.478717288,
+            178.03
+          ],
+          [
+            133.135933841,
+            34.478746231,
+            177.23
+          ],
+          [
+            133.136240196,
+            34.478865378,
+            175.58
+          ],
+          [
+            133.136310999,
+            34.478882316,
+            175.43
+          ],
+          [
+            133.136375508,
+            34.478891437,
+            175.08
+          ],
+          [
+            133.136455752,
+            34.478897952,
+            174.73
+          ],
+          [
+            133.136618568,
+            34.478890082,
+            174.18
+          ],
+          [
+            133.136898631,
+            34.478891385,
+            173.22
+          ],
+          [
+            133.137037607,
+            34.478854935,
+            172.79
+          ],
+          [
+            133.137165051,
+            34.478805424,
+            172.15
+          ],
+          [
+            133.137330256,
+            34.478733762,
+            170.82
+          ],
+          [
+            133.137424939,
+            34.478685044,
+            170.28
+          ],
+          [
+            133.137591715,
+            34.478569084,
+            169.38
+          ],
+          [
+            133.137648356,
+            34.478520876,
+            169.06
+          ],
+          [
+            133.137852234,
+            34.478297244,
+            168.24
+          ],
+          [
+            133.137883701,
+            34.478285517,
+            168.18
+          ],
+          [
+            133.137921461,
+            34.478279003,
+            168.07
+          ],
+          [
+            133.137989388,
+            34.478274292,
+            167.84
+          ],
+          [
+            133.138078796,
+            34.478282912,
+            167.38
+          ],
+          [
+            133.13842044,
+            34.478358012,
+            165.88
+          ],
+          [
+            133.138513267,
+            34.478372344,
+            165.57
+          ],
+          [
+            133.138859695,
+            34.478403554,
+            163.72
+          ],
+          [
+            133.138905591,
+            34.478405411,
+            163.58
+          ],
+          [
+            133.138947799,
+            34.478401817,
+            163.41
+          ],
+          [
+            133.139017024,
+            34.47838792,
+            163.18
+          ],
+          [
+            133.139158621,
+            34.478354045,
+            162.85
+          ],
+          [
+            133.139302358,
+            34.478306574,
+            162.71
+          ],
+          [
+            133.139346409,
+            34.478283123,
+            162.63
+          ],
+          [
+            133.139370532,
+            34.478262278,
+            162.53
+          ],
+          [
+            133.139396753,
+            34.478234484,
+            162.42
+          ],
+          [
+            133.139416774,
+            34.478212294,
+            162.32
+          ],
+          [
+            133.139568663,
+            34.477984693,
+            160.88
+          ],
+          [
+            133.139615363,
+            34.477928956,
+            160.49
+          ],
+          [
+            133.139855907,
+            34.477707471,
+            159.04
+          ],
+          [
+            133.139907296,
+            34.477667519,
+            158.79
+          ],
+          [
+            133.139942954,
+            34.477644069,
+            158.68
+          ],
+          [
+            133.139994344,
+            34.477616277,
+            158.56
+          ],
+          [
+            133.140045733,
+            34.477598038,
+            158.42
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "47928-12411-i-75",
+        "lfSpanFr": "2023-06-15",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "25000",
+        "ftCode": "2701",
+        "admCode": null,
+        "devDate": null,
+        "type": "通常部",
+        "rdCtg": "市区町村道等",
+        "state": "通常部",
+        "lvOrder": 0,
+        "name": null,
+        "admOfcRd": null,
+        "rnkWidth": "3m-5.5m未満",
+        "Width": 0,
+        "sectID": null,
+        "tollSect": "無料",
+        "medSect": 0,
+        "motorway": 9,
+        "repLtdLvl": 25000,
+        "rtCode": null,
+        "cElvCode": "4"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            133.141666667,
+            34.475717389,
+            157.61
+          ],
+          [
+            133.141564369,
+            34.475755939,
+            157.67
+          ],
+          [
+            133.141533617,
+            34.475770602,
+            157.65
+          ],
+          [
+            133.141505422,
+            34.475786445,
+            157.64
+          ],
+          [
+            133.141465091,
+            34.475812627,
+            157.66
+          ],
+          [
+            133.14143527,
+            34.475838095,
+            157.67
+          ],
+          [
+            133.141404554,
+            34.475868513,
+            157.6
+          ],
+          [
+            133.141380288,
+            34.475893661,
+            157.65
+          ],
+          [
+            133.141357683,
+            34.475925041,
+            157.59
+          ],
+          [
+            133.141345102,
+            34.475951666,
+            157.63
+          ],
+          [
+            133.141337308,
+            34.475981356,
+            157.67
+          ],
+          [
+            133.141325531,
+            34.476107948,
+            157.74
+          ],
+          [
+            133.141313662,
+            34.476156504,
+            157.76
+          ],
+          [
+            133.141296887,
+            34.476183131,
+            157.74
+          ],
+          [
+            133.14127452,
+            34.476210915,
+            157.74
+          ],
+          [
+            133.141249357,
+            34.476232911,
+            157.73
+          ],
+          [
+            133.141119166,
+            34.476313094,
+            157.69
+          ],
+          [
+            133.141071821,
+            34.476344047,
+            157.66
+          ],
+          [
+            133.141044751,
+            34.476367554,
+            157.72
+          ],
+          [
+            133.141022892,
+            34.476390951,
+            157.68
+          ],
+          [
+            133.141000525,
+            34.47641642,
+            157.72
+          ],
+          [
+            133.140978476,
+            34.476453786,
+            157.65
+          ],
+          [
+            133.140959985,
+            34.476496301,
+            157.65
+          ],
+          [
+            133.140884927,
+            34.476766832,
+            157.74
+          ],
+          [
+            133.140842988,
+            34.476860606,
+            157.86
+          ],
+          [
+            133.140802232,
+            34.476922503,
+            157.81
+          ],
+          [
+            133.140775671,
+            34.476956077,
+            157.87
+          ],
+          [
+            133.140691619,
+            34.477043439,
+            158.04
+          ],
+          [
+            133.140488366,
+            34.477240493,
+            158.18
+          ],
+          [
+            133.140389107,
+            34.477307642,
+            158.61
+          ],
+          [
+            133.140328993,
+            34.477335427,
+            158.55
+          ],
+          [
+            133.140273072,
+            34.477355109,
+            158.51
+          ],
+          [
+            133.140055077,
+            34.477408256,
+            159.12
+          ],
+          [
+            133.140025718,
+            34.477427359,
+            158.63
+          ],
+          [
+            133.140008942,
+            34.477451671,
+            158.65
+          ],
+          [
+            133.140002651,
+            34.477479457,
+            158.51
+          ],
+          [
+            133.140045733,
+            34.477598038,
+            158.42
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "47928-12411-i-76",
+        "lfSpanFr": "2023-06-15",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "25000",
+        "ftCode": "2701",
+        "admCode": null,
+        "devDate": null,
+        "type": "通常部",
+        "rdCtg": "市区町村道等",
+        "state": "通常部",
+        "lvOrder": 0,
+        "name": null,
+        "admOfcRd": null,
+        "rnkWidth": "3m-5.5m未満",
+        "Width": 0,
+        "sectID": null,
+        "tollSect": "無料",
+        "medSect": 0,
+        "motorway": 9,
+        "repLtdLvl": 25000,
+        "rtCode": null,
+        "cElvCode": "4"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            133.140045733,
+            34.477598038,
+            158.42
+          ],
+          [
+            133.140427173,
+            34.477547023,
+            157.57
+          ],
+          [
+            133.14052472,
+            34.477534402,
+            157.48
+          ],
+          [
+            133.140630101,
+            34.477512926,
+            157.51
+          ],
+          [
+            133.140800602,
+            34.477468781,
+            157.6
+          ],
+          [
+            133.14089508,
+            34.477432249,
+            157.62
+          ],
+          [
+            133.140967129,
+            34.477395719,
+            157.73
+          ],
+          [
+            133.141014182,
+            34.477366495,
+            157.77
+          ],
+          [
+            133.141107788,
+            34.477291395,
+            157.73
+          ],
+          [
+            133.141174692,
+            34.477233741,
+            157.72
+          ],
+          [
+            133.141210963,
+            34.477198022,
+            157.73
+          ],
+          [
+            133.141289146,
+            34.477109565,
+            157.64
+          ],
+          [
+            133.141354332,
+            34.477020578,
+            157.65
+          ],
+          [
+            133.141509422,
+            34.476700899,
+            157.68
+          ],
+          [
+            133.141666667,
+            34.476449625,
+            157.74
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "47928-12411-i-77",
+        "lfSpanFr": "2023-06-15",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "25000",
+        "ftCode": "2701",
+        "admCode": null,
+        "devDate": null,
+        "type": "通常部",
+        "rdCtg": "高速自動車国道等",
+        "state": "通常部",
+        "lvOrder": 0,
+        "name": null,
+        "admOfcRd": null,
+        "rnkWidth": "19.5m以上",
+        "Width": 30,
+        "sectID": null,
+        "tollSect": "有料",
+        "medSect": 1,
+        "motorway": 1,
+        "repLtdLvl": 25000,
+        "rtCode": null,
+        "cElvCode": "4"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            133.133333333,
+            34.475418731,
+            241.05
+          ],
+          [
+            133.134063372,
+            34.47522031,
+            239.72
+          ],
+          [
+            133.134446968,
+            34.475104317,
+            238.68
+          ],
+          [
+            133.13475711,
+            34.475,
+            237.74
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "47928-12411-i-78",
+        "lfSpanFr": "2023-06-15",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "25000",
+        "ftCode": "2701",
+        "admCode": null,
+        "devDate": null,
+        "type": "通常部",
+        "rdCtg": "市区町村道等",
+        "state": "通常部",
+        "lvOrder": 0,
+        "name": null,
+        "admOfcRd": null,
+        "rnkWidth": "3m-5.5m未満",
+        "Width": 0,
+        "sectID": null,
+        "tollSect": "無料",
+        "medSect": 0,
+        "motorway": 9,
+        "repLtdLvl": 25000,
+        "rtCode": null,
+        "cElvCode": "4"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            133.134774363,
+            34.475223435,
+            231.94
+          ],
+          [
+            133.134455783,
+            34.475460979,
+            226.78
+          ],
+          [
+            133.134288922,
+            34.475581019,
+            224.2
+          ],
+          [
+            133.133872692,
+            34.475860521,
+            217.79
+          ],
+          [
+            133.133624936,
+            34.476010216,
+            216.01
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "47928-12411-i-79",
+        "lfSpanFr": "2023-06-15",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "25000",
+        "ftCode": "2701",
+        "admCode": null,
+        "devDate": null,
+        "type": "通常部",
+        "rdCtg": "市区町村道等",
+        "state": "通常部",
+        "lvOrder": 0,
+        "name": null,
+        "admOfcRd": null,
+        "rnkWidth": "3m-5.5m未満",
+        "Width": 0,
+        "sectID": null,
+        "tollSect": "無料",
+        "medSect": 0,
+        "motorway": 9,
+        "repLtdLvl": 25000,
+        "rtCode": null,
+        "cElvCode": "4"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            133.134126039,
+            34.478709314,
+            187.35
+          ],
+          [
+            133.134163668,
+            34.478726399,
+            187.16
+          ],
+          [
+            133.13434947,
+            34.478774923,
+            186.06
+          ],
+          [
+            133.13443237,
+            34.478782769,
+            185.62
+          ],
+          [
+            133.134547685,
+            34.478783575,
+            184.91
+          ],
+          [
+            133.134786943,
+            34.478749829,
+            183.53
+          ],
+          [
+            133.135026919,
+            34.478732798,
+            182.03
+          ],
+          [
+            133.135337174,
+            34.478692592,
+            180.36
+          ],
+          [
+            133.135550278,
+            34.478686667,
+            179.5
+          ],
+          [
+            133.135683106,
+            34.478705521,
+            178.84
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "47931-12408-i-382",
+        "lfSpanFr": "2023-06-15",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "25000",
+        "ftCode": "2701",
+        "admCode": null,
+        "devDate": null,
+        "type": "通常部",
+        "rdCtg": "市区町村道等",
+        "state": "通常部",
+        "lvOrder": 0,
+        "name": null,
+        "admOfcRd": null,
+        "rnkWidth": "3m-5.5m未満",
+        "Width": 0,
+        "sectID": null,
+        "tollSect": "無料",
+        "medSect": 0,
+        "motorway": 9,
+        "repLtdLvl": 25000,
+        "rtCode": null,
+        "cElvCode": "4"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            133.141666667,
+            34.473260783,
+            157.59
+          ],
+          [
+            133.141791646,
+            34.473335351,
+            157.71
+          ],
+          [
+            133.141986104,
+            34.473461478,
+            157.81
+          ],
+          [
+            133.14201964,
+            34.473471893,
+            157.82
+          ],
+          [
+            133.142064354,
+            34.473476522,
+            157.85
+          ],
+          [
+            133.142182512,
+            34.473481856,
+            157.83
+          ],
+          [
+            133.142213253,
+            34.473487642,
+            157.85
+          ],
+          [
+            133.142248187,
+            34.473495742,
+            157.86
+          ],
+          [
+            133.142284518,
+            34.473515416,
+            157.95
+          ],
+          [
+            133.142309669,
+            34.473536246,
+            157.95
+          ],
+          [
+            133.142336219,
+            34.473567491,
+            158.04
+          ],
+          [
+            133.142352987,
+            34.473609151,
+            158.04
+          ],
+          [
+            133.142394286,
+            34.473753534,
+            158.13
+          ],
+          [
+            133.142410123,
+            34.473788251,
+            158.16
+          ],
+          [
+            133.142430618,
+            34.473811396,
+            158.13
+          ],
+          [
+            133.142452044,
+            34.473830684,
+            158.16
+          ],
+          [
+            133.142481854,
+            34.473851514,
+            158.15
+          ],
+          [
+            133.142646726,
+            34.473946025,
+            158.22
+          ],
+          [
+            133.143131026,
+            34.474121187,
+            158.42
+          ],
+          [
+            133.143184128,
+            34.47414819,
+            158.43
+          ],
+          [
+            133.143223255,
+            34.474172878,
+            158.56
+          ],
+          [
+            133.143261451,
+            34.474201424,
+            158.65
+          ],
+          [
+            133.14330148,
+            34.474238013,
+            158.86
+          ],
+          [
+            133.143339676,
+            34.474279675,
+            158.97
+          ],
+          [
+            133.143445142,
+            34.474431574,
+            159.65
+          ],
+          [
+            133.143458082,
+            34.474458106,
+            159.85
+          ],
+          [
+            133.143467399,
+            34.474485111,
+            160.22
+          ],
+          [
+            133.143464604,
+            34.474503628,
+            160.42
+          ],
+          [
+            133.143459014,
+            34.474516744,
+            160.53
+          ],
+          [
+            133.143446902,
+            34.474532947,
+            160.73
+          ],
+          [
+            133.143353895,
+            34.474631608,
+            162.02
+          ],
+          [
+            133.143333598,
+            34.474663899,
+            162.47
+          ],
+          [
+            133.143324281,
+            34.474680102,
+            162.63
+          ],
+          [
+            133.143322418,
+            34.474699391,
+            162.74
+          ],
+          [
+            133.14332894,
+            34.474720995,
+            162.82
+          ],
+          [
+            133.143344778,
+            34.474734883,
+            163.09
+          ],
+          [
+            133.143622487,
+            34.474847424,
+            165.73
+          ],
+          [
+            133.143677899,
+            34.474878887,
+            166.34
+          ],
+          [
+            133.143705849,
+            34.474900491,
+            166.68
+          ],
+          [
+            133.1437338,
+            34.47492441,
+            167.02
+          ],
+          [
+            133.143768272,
+            34.474963761,
+            167.41
+          ],
+          [
+            133.143794103,
+            34.475,
+            167.67
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "47931-12408-i-398",
+        "lfSpanFr": "2023-06-15",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "25000",
+        "ftCode": "2703",
+        "admCode": null,
+        "devDate": null,
+        "type": "通常部",
+        "rdCtg": "市区町村道等",
+        "state": "橋・高架",
+        "lvOrder": 1,
+        "name": null,
+        "admOfcRd": null,
+        "rnkWidth": "3m-5.5m未満",
+        "Width": 0,
+        "sectID": null,
+        "tollSect": "無料",
+        "medSect": 0,
+        "motorway": 9,
+        "repLtdLvl": 25000,
+        "rtCode": null,
+        "cElvCode": "4"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            133.142100129,
+            34.471500171,
+            207.74
+          ],
+          [
+            133.141894877,
+            34.471063611,
+            208.41
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "47931-12411-i-75",
+        "lfSpanFr": "2023-06-15",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "25000",
+        "ftCode": "2701",
+        "admCode": null,
+        "devDate": null,
+        "type": "通常部",
+        "rdCtg": "市区町村道等",
+        "state": "通常部",
+        "lvOrder": 0,
+        "name": null,
+        "admOfcRd": null,
+        "rnkWidth": "3m-5.5m未満",
+        "Width": 0,
+        "sectID": null,
+        "tollSect": "無料",
+        "medSect": 0,
+        "motorway": 9,
+        "repLtdLvl": 25000,
+        "rtCode": null,
+        "cElvCode": "4"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            133.143794103,
+            34.475,
+            167.67
+          ],
+          [
+            133.143823843,
+            34.475045722,
+            167.97
+          ],
+          [
+            133.14384241,
+            34.475077185,
+            168.07
+          ],
+          [
+            133.143848372,
+            34.475098586,
+            168.2
+          ],
+          [
+            133.143854833,
+            34.475121939,
+            168.3
+          ],
+          [
+            133.143857939,
+            34.475140458,
+            168.24
+          ],
+          [
+            133.143859181,
+            34.475160006,
+            168.43
+          ],
+          [
+            133.143855454,
+            34.47517801,
+            168.43
+          ],
+          [
+            133.143849059,
+            34.47520323,
+            168.48
+          ],
+          [
+            133.143792221,
+            34.475280395,
+            168.46
+          ],
+          [
+            133.14378104,
+            34.475290426,
+            168.4
+          ],
+          [
+            133.143766132,
+            34.475295828,
+            168.38
+          ],
+          [
+            133.143744701,
+            34.475298914,
+            168.26
+          ],
+          [
+            133.143386566,
+            34.475310494,
+            159.09
+          ],
+          [
+            133.143290593,
+            34.475321297,
+            161.2
+          ],
+          [
+            133.14321046,
+            34.475335958,
+            163.33
+          ],
+          [
+            133.143172656,
+            34.475347277,
+            163.39
+          ],
+          [
+            133.143137713,
+            34.47536001,
+            163.42
+          ],
+          [
+            133.143111157,
+            34.4753739,
+            163.06
+          ],
+          [
+            133.143085998,
+            34.475391262,
+            163.01
+          ],
+          [
+            133.143063635,
+            34.47541094,
+            162.65
+          ],
+          [
+            133.142977332,
+            34.475535242,
+            161.12
+          ],
+          [
+            133.142834386,
+            34.475765321,
+            159.14
+          ],
+          [
+            133.142799415,
+            34.47585113,
+            158.43
+          ],
+          [
+            133.142738845,
+            34.475950998,
+            157.96
+          ],
+          [
+            133.142713686,
+            34.475963346,
+            157.91
+          ],
+          [
+            133.142690656,
+            34.475966096,
+            157.91
+          ],
+          [
+            133.142663367,
+            34.475959487,
+            157.87
+          ],
+          [
+            133.142399755,
+            34.475782096,
+            157.66
+          ],
+          [
+            133.142343843,
+            34.475754314,
+            157.58
+          ],
+          [
+            133.142289795,
+            34.475731934,
+            157.71
+          ],
+          [
+            133.142238542,
+            34.475718815,
+            157.73
+          ],
+          [
+            133.142149155,
+            34.47570011,
+            157.8
+          ],
+          [
+            133.142012609,
+            34.475677706,
+            157.53
+          ],
+          [
+            133.141965083,
+            34.475672303,
+            157.45
+          ],
+          [
+            133.141916303,
+            34.475671142,
+            157.6
+          ],
+          [
+            133.141860391,
+            34.475674229,
+            157.65
+          ],
+          [
+            133.141819709,
+            34.475680793,
+            157.6
+          ],
+          [
+            133.141770319,
+            34.475690825,
+            157.64
+          ],
+          [
+            133.141666667,
+            34.475717389,
+            157.61
+          ]
+        ]
+      }
+    }
+  ]
+}

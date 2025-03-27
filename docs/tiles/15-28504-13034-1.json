@@ -1,0 +1,880 @@
+{
+  "BldA": [
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "20231031-47937-12417-s-1837",
+        "lfSpanFr": "2023-10-31",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "2500",
+        "ftCode": "3101",
+        "admCode": null,
+        "devDate": "2022-06-30",
+        "type": "普通建物",
+        "lvOrder": 0,
+        "name": null,
+        "grElv": 182.32,
+        "repElv": 190.27,
+        "maxElv": 192.43,
+        "gElvCode": 4,
+        "uElvCode": 3,
+        "spcFlg": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              133.165272563,
+              34.498770859
+            ],
+            [
+              133.165102221,
+              34.498767473
+            ],
+            [
+              133.16510046,
+              34.498829781
+            ],
+            [
+              133.165270693,
+              34.498833167
+            ],
+            [
+              133.165272563,
+              34.498770859
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "20231031-47937-12417-s-1839",
+        "lfSpanFr": "2023-10-31",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "2500",
+        "ftCode": "3101",
+        "admCode": null,
+        "devDate": "2022-06-30",
+        "type": "普通建物",
+        "lvOrder": 0,
+        "name": null,
+        "grElv": 184.29,
+        "repElv": 190.38,
+        "maxElv": 191.28,
+        "gElvCode": 4,
+        "uElvCode": 3,
+        "spcFlg": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              133.165132703,
+              34.498474597
+            ],
+            [
+              133.16503129,
+              34.498498775
+            ],
+            [
+              133.165051244,
+              34.498555947
+            ],
+            [
+              133.165152549,
+              34.49853177
+            ],
+            [
+              133.165132703,
+              34.498474597
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "20231031-47937-12417-s-1846",
+        "lfSpanFr": "2023-10-31",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "2500",
+        "ftCode": "3101",
+        "admCode": null,
+        "devDate": "2022-06-30",
+        "type": "普通建物",
+        "lvOrder": 0,
+        "name": null,
+        "grElv": 183.56,
+        "repElv": 190.21,
+        "maxElv": 190.72,
+        "gElvCode": 4,
+        "uElvCode": 3,
+        "spcFlg": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              133.165122141,
+              34.498355866
+            ],
+            [
+              133.165087282,
+              34.498400324
+            ],
+            [
+              133.165179009,
+              34.498449608
+            ],
+            [
+              133.165213867,
+              34.498405149
+            ],
+            [
+              133.165122141,
+              34.498355866
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "20231031-47937-12417-s-1855",
+        "lfSpanFr": "2023-10-31",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "2500",
+        "ftCode": "3101",
+        "admCode": null,
+        "devDate": "2022-06-30",
+        "type": "普通建物",
+        "lvOrder": 0,
+        "name": null,
+        "grElv": 195.87,
+        "repElv": 198.1,
+        "maxElv": 201.36,
+        "gElvCode": 4,
+        "uElvCode": 3,
+        "spcFlg": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              133.164654843,
+              34.498478772
+            ],
+            [
+              133.16466044,
+              34.498528128
+            ],
+            [
+              133.164726039,
+              34.498522995
+            ],
+            [
+              133.164720331,
+              34.498473549
+            ],
+            [
+              133.164654843,
+              34.498478772
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "20231031-47937-12417-s-1820",
+        "lfSpanFr": "2023-10-31",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "2500",
+        "ftCode": "3101",
+        "admCode": null,
+        "devDate": "2022-06-30",
+        "type": "普通建物",
+        "lvOrder": 0,
+        "name": null,
+        "grElv": 182.2,
+        "repElv": 184.01,
+        "maxElv": 186.31,
+        "gElvCode": 4,
+        "uElvCode": 3,
+        "spcFlg": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              133.164870006,
+              34.497967217
+            ],
+            [
+              133.164910094,
+              34.497959587
+            ],
+            [
+              133.164893037,
+              34.497898785
+            ],
+            [
+              133.164852948,
+              34.497906415
+            ],
+            [
+              133.164870006,
+              34.497967217
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "20231031-47937-12417-s-1866",
+        "lfSpanFr": "2023-10-31",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "2500",
+        "ftCode": "3111",
+        "admCode": null,
+        "devDate": "2022-06-30",
+        "type": "普通無壁舎",
+        "lvOrder": 0,
+        "name": null,
+        "grElv": 183.67,
+        "repElv": 187.85,
+        "maxElv": 188.2,
+        "gElvCode": 4,
+        "uElvCode": 3,
+        "spcFlg": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              133.165252116,
+              34.498425842
+            ],
+            [
+              133.165213867,
+              34.498405149
+            ],
+            [
+              133.165179009,
+              34.498449608
+            ],
+            [
+              133.165217149,
+              34.498470301
+            ],
+            [
+              133.165252116,
+              34.498425842
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "20231031-47937-12417-s-1840",
+        "lfSpanFr": "2023-10-31",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "2500",
+        "ftCode": "3101",
+        "admCode": null,
+        "devDate": "2022-06-30",
+        "type": "普通建物",
+        "lvOrder": 0,
+        "name": null,
+        "grElv": 202.47,
+        "repElv": 205.77,
+        "maxElv": 209.07,
+        "gElvCode": 4,
+        "uElvCode": 3,
+        "spcFlg": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              133.164422794,
+              34.498368341
+            ],
+            [
+              133.164382815,
+              34.498348654
+            ],
+            [
+              133.164360643,
+              34.498379486
+            ],
+            [
+              133.164400621,
+              34.498399172
+            ],
+            [
+              133.164422794,
+              34.498368341
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "20231031-47937-12417-s-1831",
+        "lfSpanFr": "2023-10-31",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "2500",
+        "ftCode": "3101",
+        "admCode": null,
+        "devDate": "2022-06-30",
+        "type": "普通建物",
+        "lvOrder": 0,
+        "name": null,
+        "grElv": 181.89,
+        "repElv": 185.48,
+        "maxElv": 185.72,
+        "gElvCode": 4,
+        "uElvCode": 3,
+        "spcFlg": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              133.165217776,
+              34.5
+            ],
+            [
+              133.165210244,
+              34.499982441
+            ],
+            [
+              133.165150458,
+              34.5
+            ],
+            [
+              133.165217776,
+              34.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "20231031-47937-12417-s-1838",
+        "lfSpanFr": "2023-10-31",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "2500",
+        "ftCode": "3101",
+        "admCode": null,
+        "devDate": "2022-06-30",
+        "type": "普通建物",
+        "lvOrder": 0,
+        "name": null,
+        "grElv": 183.95,
+        "repElv": 190.44,
+        "maxElv": 192.6,
+        "gElvCode": 4,
+        "uElvCode": 3,
+        "spcFlg": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              133.165126157,
+              34.498747534
+            ],
+            [
+              133.165128208,
+              34.49875518
+            ],
+            [
+              133.165185898,
+              34.498744251
+            ],
+            [
+              133.165182144,
+              34.49873085
+            ],
+            [
+              133.165221038,
+              34.49872341
+            ],
+            [
+              133.165196692,
+              34.498635893
+            ],
+            [
+              133.165183111,
+              34.498638438
+            ],
+            [
+              133.165159219,
+              34.49855236
+            ],
+            [
+              133.165035368,
+              34.498576
+            ],
+            [
+              133.165085199,
+              34.498755351
+            ],
+            [
+              133.165126157,
+              34.498747534
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "20231031-47937-12417-s-1832",
+        "lfSpanFr": "2023-10-31",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "2500",
+        "ftCode": "3101",
+        "admCode": null,
+        "devDate": "2022-06-30",
+        "type": "普通建物",
+        "lvOrder": 0,
+        "name": null,
+        "grElv": 180.64,
+        "repElv": 188.01,
+        "maxElv": 189.35,
+        "gElvCode": 4,
+        "uElvCode": 3,
+        "spcFlg": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              133.165261669,
+              34.499902689
+            ],
+            [
+              133.165160696,
+              34.499918298
+            ],
+            [
+              133.165172654,
+              34.499971389
+            ],
+            [
+              133.165273736,
+              34.499955778
+            ],
+            [
+              133.165261669,
+              34.499902689
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "20231031-47937-12417-s-1856",
+        "lfSpanFr": "2023-10-31",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "2500",
+        "ftCode": "3101",
+        "admCode": null,
+        "devDate": "2022-06-30",
+        "type": "普通建物",
+        "lvOrder": 0,
+        "name": null,
+        "grElv": 202.15,
+        "repElv": 205.57,
+        "maxElv": 207.53,
+        "gElvCode": 4,
+        "uElvCode": 3,
+        "spcFlg": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              133.164393601,
+              34.498422308
+            ],
+            [
+              133.164424566,
+              34.498443962
+            ],
+            [
+              133.164457392,
+              34.498411691
+            ],
+            [
+              133.164426537,
+              34.498390036
+            ],
+            [
+              133.164393601,
+              34.498422308
+            ]
+          ]
+        ]
+      }
+    }
+  ],
+  "RdCL": [
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "47937-12417-i-501",
+        "lfSpanFr": "2023-06-15",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "2500",
+        "ftCode": "2701",
+        "admCode": null,
+        "devDate": "2022-06-30",
+        "type": "通常部",
+        "rdCtg": "市区町村道等",
+        "state": "通常部",
+        "lvOrder": 0,
+        "name": null,
+        "admOfcRd": null,
+        "rnkWidth": "3m未満",
+        "Width": 0,
+        "sectID": null,
+        "tollSect": "無料",
+        "medSect": 0,
+        "motorway": 0,
+        "repLtdLvl": 2500,
+        "rtCode": null,
+        "cElvCode": "4"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            133.164408746,
+            34.497701076,
+            190.24
+          ],
+          [
+            133.164592678,
+            34.49778833,
+            188.67
+          ],
+          [
+            133.164727332,
+            34.497851986,
+            186.6
+          ],
+          [
+            133.164822048,
+            34.497944491,
+            183.91
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "47937-12417-i-511",
+        "lfSpanFr": "2023-06-15",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "2500",
+        "ftCode": "2721",
+        "admCode": null,
+        "devDate": null,
+        "type": "徒歩道",
+        "rdCtg": "市区町村道等",
+        "state": "通常部",
+        "lvOrder": 0,
+        "name": null,
+        "admOfcRd": null,
+        "rnkWidth": "3m未満",
+        "Width": 0,
+        "sectID": null,
+        "tollSect": "無料",
+        "medSect": 0,
+        "motorway": 0,
+        "repLtdLvl": 2500,
+        "rtCode": null,
+        "cElvCode": "4"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            133.160474472,
+            34.5,
+            334.99
+          ],
+          [
+            133.160356444,
+            34.499923694,
+            339.34
+          ],
+          [
+            133.16029125,
+            34.499838278,
+            342.66
+          ],
+          [
+            133.160107978,
+            34.49947188,
+            341.68
+          ],
+          [
+            133.160095372,
+            34.499237818,
+            340.82
+          ],
+          [
+            133.159968324,
+            34.499044406,
+            342.04
+          ],
+          [
+            133.159955719,
+            34.498941538,
+            343.11
+          ],
+          [
+            133.159996536,
+            34.498866996,
+            343.47
+          ],
+          [
+            133.1600915,
+            34.498737611,
+            347.11
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "47937-12417-i-512",
+        "lfSpanFr": "2023-06-15",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "2500",
+        "ftCode": "2721",
+        "admCode": null,
+        "devDate": null,
+        "type": "徒歩道",
+        "rdCtg": "市区町村道等",
+        "state": "通常部",
+        "lvOrder": 0,
+        "name": null,
+        "admOfcRd": null,
+        "rnkWidth": "3m未満",
+        "Width": 0,
+        "sectID": null,
+        "tollSect": "無料",
+        "medSect": 0,
+        "motorway": 0,
+        "repLtdLvl": 2500,
+        "rtCode": null,
+        "cElvCode": "4"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            133.1600915,
+            34.498737611,
+            347.11
+          ],
+          [
+            133.160189815,
+            34.498660764,
+            348.12
+          ],
+          [
+            133.160484774,
+            34.498404837,
+            343.42
+          ],
+          [
+            133.160600861,
+            34.498264698,
+            342.57
+          ],
+          [
+            133.160746601,
+            34.498177756,
+            343.22
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "47937-12417-i-524",
+        "lfSpanFr": "2023-06-15",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "25000",
+        "ftCode": "2701",
+        "admCode": null,
+        "devDate": null,
+        "type": "通常部",
+        "rdCtg": "市区町村道等",
+        "state": "通常部",
+        "lvOrder": 0,
+        "name": null,
+        "admOfcRd": null,
+        "rnkWidth": "3m-5.5m未満",
+        "Width": 0,
+        "sectID": null,
+        "tollSect": "無料",
+        "medSect": 0,
+        "motorway": 9,
+        "repLtdLvl": 25000,
+        "rtCode": null,
+        "cElvCode": "4"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            133.164951325,
+            34.498116059,
+            182.59
+          ],
+          [
+            133.164872433,
+            34.498034056,
+            183.29
+          ],
+          [
+            133.164822048,
+            34.497944491,
+            183.91
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "47937-12417-i-545",
+        "lfSpanFr": "2023-06-15",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "2500",
+        "ftCode": "2701",
+        "admCode": null,
+        "devDate": null,
+        "type": "通常部",
+        "rdCtg": "市区町村道等",
+        "state": "通常部",
+        "lvOrder": 0,
+        "name": null,
+        "admOfcRd": null,
+        "rnkWidth": "3m未満",
+        "Width": 0,
+        "sectID": null,
+        "tollSect": "無料",
+        "medSect": 0,
+        "motorway": 9,
+        "repLtdLvl": 2500,
+        "rtCode": null,
+        "cElvCode": "4"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            133.164580384,
+            34.497977877,
+            196.11
+          ],
+          [
+            133.164778,
+            34.498114796,
+            191.75
+          ],
+          [
+            133.164892085,
+            34.498199896,
+            189.58
+          ],
+          [
+            133.164943024,
+            34.49825539,
+            188.24
+          ],
+          [
+            133.164983305,
+            34.498318142,
+            186.76
+          ],
+          [
+            133.165025104,
+            34.498396868,
+            185.04
+          ],
+          [
+            133.165066364,
+            34.498394688,
+            184.64
+          ],
+          [
+            133.165053899,
+            34.498339724,
+            184.42
+          ],
+          [
+            133.164951325,
+            34.498116059,
+            182.59
+          ]
+        ]
+      }
+    }
+  ]
+}

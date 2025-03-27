@@ -1,0 +1,47 @@
+{
+  "RdCL": [
+    {
+      "type": "Feature",
+      "properties": {
+        "rID": "47967-12417-i-133",
+        "lfSpanFr": "2020-11-04",
+        "lfSpanTo": null,
+        "tmpFlg": 0,
+        "orgGILvl": "2500",
+        "ftCode": "2701",
+        "admCode": null,
+        "devDate": null,
+        "type": "通常部",
+        "rdCtg": "都道府県道",
+        "state": "通常部",
+        "lvOrder": 0,
+        "name": null,
+        "admOfcRd": null,
+        "rnkWidth": "3m-5.5m未満",
+        "Width": 0,
+        "sectID": null,
+        "tollSect": "無料",
+        "medSect": 0,
+        "motorway": 9,
+        "repLtdLvl": 25000,
+        "rtCode": null,
+        "cElvCode": "4"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            133.248739249,
+            34.499990233,
+            182.46
+          ],
+          [
+            133.248752511,
+            34.5,
+            182.49
+          ]
+        ]
+      }
+    }
+  ]
+}

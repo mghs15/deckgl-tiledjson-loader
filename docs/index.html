@@ -73,23 +73,27 @@ button.local {
 </head>
 <body>
 
-
 <div id='map'></div>
 <div id='menu'>
-  <span>MapLibre-v5+deck.gl-v9<br>（標高タイル使用ver）</span>
+  <span>MapLibre-v5+deck.gl-v9<br></span>
   <hr>
   <div id="menu-main">
     <span>データ表示の選択</span><br>
-    <input type="checkbox" class="local" id="showRoad" onchange="set3dLayers();" checked>道路
-    <input type="checkbox" class="local" id="showRailway" onchange="set3dLayers();" checked>鉄道
-    <input type="checkbox" class="local" id="showBuilding" onchange="set3dLayers();" checked>建物
+    <span style="font-size: 75%;">最適化ベクトルタイル+標高タイル 由来</span><br>
+    <input type="checkbox" class="local" id="showRoad" onchange="set3dLayers();" >道路
+    <input type="checkbox" class="local" id="showRailway" onchange="set3dLayers();" >鉄道
+    <input type="checkbox" class="local" id="showBuilding" onchange="set3dLayers();" >建物
     <input type="checkbox" class="local" id="showContour" onchange="set3dLayers();" checked>等高線<br>
     <input type="checkbox" class="local" id="showWaterarea" onchange="set3dLayers();" checked>水域
     <input type="checkbox" class="local" id="showBorder" onchange="set3dLayers();" checked>境界
     <input type="checkbox" class="local" id="showText" onchange="set3dLayers();" checked>注記
     <input type="checkbox" class="local" id="showIcon" onchange="set3dLayers();" checked>記号
-    <br>
-    <input type="checkbox" class="local" id="showTerrain" onchange="set3dLayers();" />地形（terrain）
+    <br><span style="font-size: 75%;">3次元電子国土基本図試作データ 由来</span><br>
+    <input type="checkbox" class="local" id="showRdCL" onchange="set3dLayers();" checked>道路
+    <input type="checkbox" class="local" id="showRailTrCL" onchange="set3dLayers();" checked>鉄道
+    <input type="checkbox" class="local" id="showBldA" onchange="set3dLayers();" checked>建物
+    <br><span style="font-size: 75%;">標高タイル+空中写真 由来</span><br>
+    <input type="checkbox" class="local" id="showTerrain" onchange="set3dLayers();" >地形（terrain）
     <hr>
     <span>表示オプション</span><br>
     <input type="checkbox" class="local" id="switchBack" onchange="switchBack();" checked>背景地図<br>
@@ -97,8 +101,15 @@ button.local {
     <input type="checkbox" class="local" id="isTileLoad" />データ読込停止<br>
     高さ強調：<input type="number" class="local" id="elevScale" onchange="set3dLayers()" min="0" value="1"/><br>
     <hr>
-    <div id="message">対象：神戸市新開地駅～谷上駅付近 ZL 14 相当の情報（ZL 13 以上 16 未満で表示）
-    <br>※神戸市すずらん台駅周辺は、ZL 16 相当の建物・注記等情報を ZL 16 以上で追加で表示
+    <div id="message">表示可能なデータ（基本的に<a  target="_blank" href="https://github.com/gsi-cyberjapan/optimal_bvmap">最適化ベクトルタイル</a>を加工）
+    <ul>
+      <li><a href="#13/34.72344/135.14403">神戸市新開地駅～谷上駅付近</a>  ZL 15 相当の情報（ZL 13 以上 16 未満で表示）
+      <br>※神戸市<a href="#15/34.72344/135.14403">すずらん台駅周辺</a>は、ZL 16 相当の建物・注記等情報を ZL 15 以上で追加で表示
+      </li>
+      <li><a href="#15/34.435165/133.231979">尾道付近</a> ZL 15 相当の情報（ZL 13 以上 16 未満で表示）
+      <br>※ZL 15 以上で<a target="_blank" href="https://www.gsi.go.jp/kibanjoho/mapinfo3D.html">３次元電子国土基本図試作データ</a>を加工したデータを表示可能
+      </li>
+    </ul>
     </div>
     <hr>
   </div>
@@ -128,7 +139,7 @@ const map = new maplibregl.Map({
   container: 'map', // container id
   hash: true, //add #position on URL
   style: 'https://mghs15.github.io/styling-tools-for-gsi-optbv/gray.json', 
-  center: [135.14437, 34.72273], // starting position [lng, lat]
+  center: [133.231979, 34.435165], // starting position [lng, lat]
   zoom: 15, // starting zoom
   minZoom: 6,
   maxZoom: 16.99,
@@ -184,6 +195,13 @@ map.on('load', function(){
         features: []
       }
   });
+  map.addSource('BldA', {
+      type: 'geojson',
+      data: {
+        type: 'FeatureCollection',
+        features: []
+      }
+  });
   
   set3dLayers();
   
@@ -211,7 +229,7 @@ class TileLoader {
     
     const mapZoom = map.getZoom();
     if(mapZoom < 13) return {};
-    const zooms = (mapZoom < 16) ? [14] : [14, 15]; // Math.round(map.getZoom()); // 仮置き;
+    const zooms = (mapZoom < 15) ? [14] : [14, 15]; // Math.round(map.getZoom()); // 仮置き;
 
     const bounds = map.getBounds();
     const tiles = this.getTilesInView(bounds, zooms);
@@ -295,14 +313,19 @@ async function set3dLayers() {
   
   if(!document.getElementById("isTileLoad").checked){
     const d = await tileLoader.loadTiles(map) || {};
-    ["contour", "road", "railway", "waterarea", "border", "building", "symbol"].forEach( k => {
+    
+    [
+      "contour", "road", "railway", 
+      "waterarea", "border", "building", "symbol", 
+      "BldA", "RailTrCL", "RdCL"
+    ].forEach( k => {
       if(!d[k]) d[k] = [];
     });
     
     g.d = setStyleInfo(d);
   }
   
-  const {contour, road, railway, waterarea, border, building, symbol} = g.d;
+  const {contour, road, railway, waterarea, border, building, symbol, BldA, RailTrCL, RdCL} = g.d;
   
   const scale = +document.getElementById("elevScale").value || 0;
   
@@ -330,6 +353,28 @@ async function set3dLayers() {
     });
   }
   
+  //建物（３次元電子国土基本図テストデータ）
+  if(map.getLayer('building-3ddk-fillextrusion')){
+    map.removeLayer('building-3ddk-fillextrusion');
+  }
+  
+  if(document.getElementById("showBldA").checked && building){
+    map.getSource('BldA').setData(
+      { type: "FeatureCollection", features: BldA }
+    );
+    map.addLayer({
+      id: 'building-3ddk-fillextrusion',
+      type: 'fill-extrusion',
+      source: 'BldA',
+      paint: {
+        "fill-extrusion-color": ["get", "color"],
+        "fill-extrusion-height": ["*", ["get", "height"], scale],
+        "fill-extrusion-base": ["*", ["get", "baseHeight"], scale],
+      },
+      layout: {
+      }
+    });
+  }
   //--------------------------------------------------
   
   //Custom(DeckGL)利用--------------------------------------------------
@@ -365,6 +410,36 @@ async function set3dLayers() {
       getWidth: d => d.properties["width"]
     });
     deckLayers.push(myRailwayDeckLayer);
+  }
+  
+  if(document.getElementById("showRdCL").checked){
+    //道路（３次元電子国土基本図テストデータ）
+    const myRdCLDeckLayer = new deck.PathLayer({
+      id: 'path-layer-RdCL',
+      data: RdCL,
+      pickable: true,
+      widthScale: 3,
+      widthMinPixels: 1,
+      getPath: d => d.geometry.coordinates.map(v => [v[0], v[1], v[2] * scale]),
+      getColor: d => d.properties["color"],
+      getWidth: d => d.properties["width"]
+    });
+    deckLayers.push(myRdCLDeckLayer);
+  }
+  
+  if(document.getElementById("showRailTrCL").checked){
+    //鉄道（３次元電子国土基本図テストデータ）
+    const myRailTrCLDeckLayer = new deck.PathLayer({
+      id: 'path-layer-RailTrCL',
+      data: RailTrCL,
+      pickable: true,
+      widthScale: 1,
+      widthMinPixels: 2,
+      getPath: d => d.geometry.coordinates.map(v => [v[0], v[1], v[2] * scale]),
+      getColor: d => d.properties["color"],
+      getWidth: d => d.properties["width"]
+    });
+    deckLayers.push(myRailTrCLDeckLayer);
   }
   
   if(document.getElementById("showContour").checked){
@@ -550,7 +625,7 @@ async function set3dLayers() {
 // データの加工
 const setStyleInfo = (data) => {
   
-  const {contour, road, railway, building, symbol} = data;
+  const {contour, road, railway, building, symbol, BldA, RailTrCL, RdCL} = data;
   
   //道路データの加工
   for(i in road){
@@ -661,6 +736,95 @@ const setStyleInfo = (data) => {
     
   }
   
+  //道路データ（３次元電子国土基本図テストデータ）の加工
+  for(i in RdCL){
+    
+    const f = RdCL[i];
+    
+    let roadOpacity = 255;
+    const ftCode = f.properties["ftCode"];
+    // トンネル・地下
+    if(ftCode == 2704 || ftCode == 2714 || ftCode == 2724 || ftCode == 2734 ){
+      roadOpacity = 100;
+    }
+    
+    let adjust = 5;
+    let color = [255,255,255,roadOpacity];
+    if(f.properties["motorway"] == 1){
+      color = [100,195,115,roadOpacity];
+      adjust = adjust + 0.3;
+    }else if (f.properties["rdCtg"] == "国道" || f.properties["rdCtg"] == "高速自動車国道等"){
+      color = [235,130,120,roadOpacity];
+      adjust = adjust + 0.2;
+    }else if (f.properties["rdCtg"] == "都道府県道"){
+      color = [255,255,100,roadOpacity];
+      adjust = adjust + 0.1;
+    }
+    
+    let width = 2;
+    const vtRnkWidth = f.properties["rnkWidth"];
+    if (vtRnkWidth == '19.5m以上') {
+      width = 6;
+    } else if (vtRnkWidth == '13m-19.5m未満') {
+      width = 5;
+    } else if (vtRnkWidth == '5.5m-13m未満') {
+      width = 4;
+    } else if (vtRnkWidth == '3m-5.5m未満') {
+      width = 3;
+    } else if (vtRnkWidth == '3m未満') {
+      width = 2;
+    }
+    
+    RdCL[i].properties["color"] = color;
+    RdCL[i].properties["width"] = width;
+    
+  }
+  
+  //鉄道データ（３次元電子国土基本図テストデータ）の加工
+  for(i in RailTrCL){
+    
+    const f = RailTrCL[i];
+    
+    const ftCode = f.properties["ftCode"];
+    let opacity = 255;
+    // トンネル・地下
+    if(ftCode == 2804 || ftCode == 2814 || ftCode == 2824 || ftCode == 2834 || ftCode == 2844 ){
+      opacity = 100;
+    }
+    if(f.properties["railState"] == "トンネル" || f.properties["railState"] == "地下"){
+      opacity = 100;
+    }
+    
+    let color = [0, 255, 255, opacity];
+    let width = 2;
+    
+    RailTrCL[i].properties["color"] = color;
+    RailTrCL[i].properties["width"] = width;
+    
+  }
+  
+  //建物データ（３次元電子国土基本図テストデータ）の加工
+  for(i in BldA){
+    
+    const f = BldA[i];
+    
+    let color = 'hsl(0, 50%, 80%)';
+    let opacity = 1;
+    
+    const ftCode = f.properties["ftCode"];
+    if(ftCode == 3101 || ftCode == 3111 || ftCode == 4302){
+      color = (ftCode == 3111) ? 'hsl(0, 100%, 95%)' : color;
+    }else if(ftCode == 3102 || ftCode == 3112){
+      color = (ftCode == 3112) ? 'hsl(30, 100%, 95%)' : 'hsl(30, 100%, 80%)';
+    }else if(ftCode == 3103 || ftCode == 4301){
+      color = 'hsl(210, 100%, 90%)';
+    }
+    
+    BldA[i].properties["height"] = f.properties["repElv"];
+    BldA[i].properties["baseHeight"] = f.properties["grElv"];
+    BldA[i].properties["color"] = color;
+    
+  }
   return data;
   
 }
