@@ -425,6 +425,19 @@ async function set3dLayers() {
       getWidth: d => d.properties["width"]
     });
     deckLayers.push(myRdCLDeckLayer);
+    
+    //道路・橋梁枠線（３次元電子国土基本図テストデータ）
+    const myRdCLSubDeckLayer = new deck.PathLayer({
+      id: 'path-layer-RdCL-Sub',
+      data: RdCL.filter(d => d.properties["state"] == "橋・高架"),
+      pickable: true,
+      widthScale: 3,
+      widthMinPixels: 1,
+      getPath: d => d.geometry.coordinates.map(v => [v[0], v[1], v[2] * scale - 0.25]),
+      getColor: d => [200,200,200],
+      getWidth: d => d.properties["width"] + 2
+    });
+    deckLayers.push(myRdCLSubDeckLayer);
   }
   
   if(document.getElementById("showRailTrCL").checked){
@@ -668,6 +681,13 @@ const setStyleInfo = (data) => {
     
     road[i].properties["color"] = color;
     road[i].properties["width"] = width;
+    
+    //橋梁のフラグを追加
+    if(ftCode == 2703 || ftCode == 2713 || ftCode == 2723 || ftCode == 2733 ){
+      road[i].properties["state"] == "橋・高架"
+    }else{
+      road[i].properties["state"] == "橋・高架以外"
+    }
     
     /***
     for(j in road[i].path){
