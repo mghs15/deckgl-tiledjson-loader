@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset='utf-8' />
-<title>三次元表示サンプル（標高タイル使用ver）</title>
+<title>三次元表示サンプル</title>
 <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -65,7 +65,7 @@ button.local {
   font-size: 1em;
   width: 100%;
 }
-#message {
+.message {
   font-size: 75%;
 }
 
@@ -78,7 +78,7 @@ button.local {
   <span>MapLibre-v5+deck.gl-v9<br></span>
   <hr>
   <div id="menu-main">
-    <span>データ表示の選択</span><br>
+    <!--<span>データ表示の選択</span><br>-->
     <span style="font-size: 75%;">最適化ベクトルタイル+標高タイル 由来</span><br>
     <input type="checkbox" class="local" id="showRoad" onchange="set3dLayers();" >道路
     <input type="checkbox" class="local" id="showRailway" onchange="set3dLayers();" >鉄道
@@ -92,24 +92,28 @@ button.local {
     <input type="checkbox" class="local" id="showRdCL" onchange="set3dLayers();" checked>道路
     <input type="checkbox" class="local" id="showRailTrCL" onchange="set3dLayers();" checked>鉄道
     <input type="checkbox" class="local" id="showBldA" onchange="set3dLayers();" checked>建物
-    <br><span style="font-size: 75%;">標高タイル+空中写真 由来</span><br>
+    <br><span style="font-size: 75%;"><a target="_blank" href="https://maps.gsi.go.jp/development/ichiran.html#dem">標高タイル(DEM10B)</a>+<a target="_blank" href="https://maps.gsi.go.jp/development/ichiran.html#slopemap">傾斜量図</a> 由来</span><br>
     <input type="checkbox" class="local" id="showTerrain" onchange="set3dLayers();" >地形（terrain）
     <hr>
-    <span>表示オプション</span><br>
-    <input type="checkbox" class="local" id="switchBack" onchange="switchBack();" checked>背景地図<br>
-    <input type="checkbox" class="local" id="showTileBoundary" onchange="addTileboundary()" checked/>タイル図郭を表示<br>
+    <!--<span>表示オプション</span><br>-->
+    <input type="checkbox" class="local" id="switchBack" onchange="switchBack();" checked>背景地図
+    <input type="checkbox" class="local" id="showTileBoundary" onchange="addTileboundary()" />タイル図郭<br>
     <input type="checkbox" class="local" id="isTileLoad" />データ読込停止<br>
-    高さ強調：<input type="number" class="local" id="elevScale" onchange="set3dLayers()" min="0" value="1"/><br>
+    高さ強調：<input type="number" class="local" id="elevScale" onchange="set3dLayers()" min="0" value="1" style="width:5em;"/><br>
     <hr>
-    <div id="message">表示可能なデータ（基本的に<a  target="_blank" href="https://github.com/gsi-cyberjapan/optimal_bvmap">最適化ベクトルタイル</a>を加工）
-    <ul>
-      <li><a href="#13/34.72344/135.14403">神戸市新開地駅～谷上駅付近</a>  ZL 15 相当の情報（ZL 13 以上 16 未満で表示）
-      <br>※神戸市<a href="#15/34.72344/135.14403">すずらん台駅周辺</a>は、ZL 16 相当の建物・注記等情報を ZL 15 以上で追加で表示
-      </li>
-      <li><a href="#15/34.435165/133.231979">尾道付近</a> ZL 15 相当の情報（ZL 13 以上 16 未満で表示）
-      <br>※ZL 15 以上で<a target="_blank" href="https://www.gsi.go.jp/kibanjoho/mapinfo3D.html">３次元電子国土基本図試作データ</a>を加工したデータを表示可能
-      </li>
-    </ul>
+    <div class="message">表示可能なデータ（基本的に<a  target="_blank" href="https://github.com/gsi-cyberjapan/optimal_bvmap">最適化ベクトルタイル</a>を加工）：
+    ●<a href="#15/34.435165/133.231979">尾道付近</a> ZL 15 相当の情報（ZL 13 以上で表示）
+      ※ZL 15 以上で<a target="_blank" href="https://www.gsi.go.jp/kibanjoho/mapinfo3D.html">３次元電子国土基本図試作データ</a>を加工したデータを表示可能
+    ●<a href="#13/34.72344/135.14403">神戸市新開地駅～谷上駅付近</a>  ZL 15 相当の情報（ZL 13 以上で表示）
+      ※神戸市<a href="#15/34.72344/135.14403">すずらん台駅周辺</a>は、ZL 16 相当の建物・注記等情報を ZL 15 以上で追加で表示
+    </div>
+    <hr>
+    <div class="message">
+      使用ライブラリ：
+      <a target="_blank" href="https://github.com/maplibre/maplibre-gl-js">MapLibre GL JS</a>、
+      <a target="_blank" href="https://github.com/visgl/deck.gl">deck.gl</a>、
+      <a target="_blank" href="https://github.com/protomaps/PMTiles">PMTiles</a>、
+      <a target="_blank" href="https://github.com/Turfjs/turf">turf.js</a>
     </div>
     <hr>
   </div>
@@ -142,14 +146,14 @@ const map = new maplibregl.Map({
   center: [133.231979, 34.435165], // starting position [lng, lat]
   zoom: 15, // starting zoom
   minZoom: 6,
-  maxZoom: 16.99,
+  maxZoom: 22,
   localIdeographFontFamily: ['MS Gothic', 'Hiragino Kaku Gothic Pro', 'sans-serif']
 });
 
 map.addControl(new maplibregl.NavigationControl(), 'bottom-right');
 map.addControl(new maplibregl.ScaleControl() );
 
-map.showTileBoundaries = true;
+map.showTileBoundaries = false;
 
 const addTileboundary = function(){
   const flag = document.getElementById("showTileBoundary").checked;
@@ -308,6 +312,10 @@ map.on("moveend", () => {
   }
 });
 
+const showPopup = info => { 
+  console.log(info);
+  alert(`標高 ${info.object.properties["vt_alti"]} m`);
+}
 
 async function set3dLayers() {
   
@@ -357,6 +365,9 @@ async function set3dLayers() {
   if(map.getLayer('building-3ddk-fillextrusion')){
     map.removeLayer('building-3ddk-fillextrusion');
   }
+  if(map.getLayer('building-3ddk-fillextrusion-sub')){
+    map.removeLayer('building-3ddk-fillextrusion-sub');
+  }
   
   if(document.getElementById("showBldA").checked && building){
     map.getSource('BldA').setData(
@@ -370,6 +381,19 @@ async function set3dLayers() {
         "fill-extrusion-color": ["get", "color"],
         "fill-extrusion-height": ["*", ["get", "height"], scale],
         "fill-extrusion-base": ["*", ["get", "baseHeight"], scale],
+      },
+      layout: {
+      }
+    });
+    map.addLayer({
+      id: 'building-3ddk-fillextrusion-sub',
+      type: 'fill-extrusion',
+      source: 'BldA',
+      paint: {
+        "fill-extrusion-color": ["get", "color"],
+        "fill-extrusion-height": ["*", ["get", "topHeight"], scale],
+        "fill-extrusion-base": ["*", ["get", "baseHeight"], scale],
+        "fill-extrusion-opacity": 0.8,
       },
       layout: {
       }
@@ -465,7 +489,11 @@ async function set3dLayers() {
       widthMinPixels: 1,
       getPath: d => d.geometry.coordinates.map(v => [v[0], v[1], v[2] * scale]),
       getColor: [200,160,60],
-      getWidth: 2
+      getWidth: 2,
+      pickable: true,
+      autoHighlight: true,
+      highlightColor: [255,0,0,255],
+      onClick: info => showPopup(info)
     });
     deckLayers.push(myContourDeckLayer);
   }
@@ -609,13 +637,13 @@ async function set3dLayers() {
       id: 'terrain-layer',
       maxZoom: 14,
       elevationDecoder: {
-        rScaler: Math.pow(2,16)*0.01,
-        gScaler: Math.pow(2,8)*0.01,
-        bScaler: 0.01,
+        rScaler: Math.pow(2,16)*0.01 * scale,
+        gScaler: Math.pow(2,8)*0.01 * scale,
+        bScaler: 0.01 * scale,
         offset: 0
       },
       elevationData: 'https://cyberjapandata.gsi.go.jp/xyz/dem_png/{z}/{x}/{y}.png',
-      texture: 'https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/{z}/{x}/{y}.jpg',
+      texture: 'https://cyberjapandata.gsi.go.jp/xyz/slopemap/{z}/{x}/{y}.png',
       color: [100,155,100]
     });  
     deckLayers.push(myTerrainDeckLayer);
@@ -842,6 +870,7 @@ const setStyleInfo = (data) => {
     
     BldA[i].properties["height"] = f.properties["repElv"];
     BldA[i].properties["baseHeight"] = f.properties["grElv"];
+    BldA[i].properties["topHeight"] = f.properties["maxElv"];
     BldA[i].properties["color"] = color;
     
   }
