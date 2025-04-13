@@ -33,6 +33,15 @@ map.on('load', function(){
     layout: {
     }
   });
+  
+  
+  map.addSource('danmen', {
+    type: 'geojson',
+    data: {
+      type: 'FeatureCollection',
+      features: []
+    }
+  });
 });
 
 map.on('mousemove', e => {
@@ -154,7 +163,6 @@ function updateDanmen(){
   if(map.getLayer('danmen')){
     map.removeLayer('danmen');
     map.removeLayer('danmen-back');
-    map.removeSource('danmen');
     
     map.getSource('danmen-base-line').setData({
       type: 'FeatureCollection',
@@ -168,12 +176,9 @@ function updateDanmen(){
   
   const scale = +document.getElementById("elevScale").value || 0;
   
-  map.addSource('danmen', {
-    type: 'geojson',
-    data: {
-      type: 'FeatureCollection',
-      features: danmenData
-    }
+  map.getSource('danmen').setData({
+    type: 'FeatureCollection',
+    features: danmenData
   });
   
   map.addLayer({
