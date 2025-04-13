@@ -153,6 +153,7 @@ function updateDanmen(){
 
   if(map.getLayer('danmen')){
     map.removeLayer('danmen');
+    map.removeLayer('danmen-back');
     map.removeSource('danmen');
     
     map.getSource('danmen-base-line').setData({
@@ -189,6 +190,19 @@ function updateDanmen(){
     }
   });
   
+  map.addLayer({
+    id: 'danmen-back',
+    type: 'fill-extrusion',
+    source: 'danmen',
+    paint: {
+      "fill-extrusion-color": "#FFFFFF",
+      "fill-extrusion-height": ["+", ["*", ["get", "height"], scale], 50],
+      "fill-extrusion-base": ["*", ["get", "height"], scale],
+      "fill-extrusion-opacity": 0.5,
+    },
+    layout: {
+    }
+  });
 }
 
 
