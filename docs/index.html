@@ -98,7 +98,8 @@ button.local {
     <!--<span>表示オプション</span><br>-->
     <input type="checkbox" class="local" id="switchBack" onchange="switchBack();" checked>背景地図
     <input type="checkbox" class="local" id="showTileBoundary" onchange="addTileboundary()" />タイル図郭<br>
-    <input type="checkbox" class="local" id="isTileLoad" />データ読込停止<br>
+    <input type="checkbox" class="local" id="isTileLoad" />データ読込停止
+    <input type="checkbox" class="local" id="isCreateDanmen" checked/>断面図生成<br>
     高さ強調：<input type="number" class="local" id="elevScale" onchange="set3dLayers()" min="0" value="1" style="width:5em;"/><br>
     <hr>
     <div class="message">表示可能なデータ（基本的に<a  target="_blank" href="https://github.com/gsi-cyberjapan/optimal_bvmap">最適化ベクトルタイル</a>を加工）：
@@ -106,6 +107,10 @@ button.local {
       ※ZL 15 以上で<a target="_blank" href="https://www.gsi.go.jp/kibanjoho/mapinfo3D.html">３次元電子国土基本図試作データ</a>を加工したデータを表示可能
     ●<a href="#13/34.72344/135.14403">神戸市新開地駅～谷上駅付近</a>  ZL 15 相当の情報（ZL 13 以上で表示）
       ※神戸市<a href="#15/34.72344/135.14403">すずらん台駅周辺</a>は、ZL 16 相当の建物・注記等情報を ZL 15 以上で追加で表示
+    </div>
+    <hr>
+    <div class="message">
+    断面図は<a target="_blank" href="https://maps.gsi.go.jp/development/ichiran.html#dem">標高タイル(DEM10B)</a>由来
     </div>
     <hr>
     <div class="message">
@@ -660,6 +665,10 @@ async function set3dLayers() {
   g.deckOverlay.setProps({
     layers: deckLayers
   });
+  
+  // その他の 3D 関係データの更新
+  // 断面図
+  updateDanmen();
  
 }
 
@@ -879,6 +888,8 @@ const setStyleInfo = (data) => {
 }
 
 </script>
- 
+
+<script src="./danmen.js"></script>
+
 </body>
 </html>
