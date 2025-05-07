@@ -3,7 +3,16 @@
 
 デモサイト： https://mghs15.github.io/deckgl-tiledjson-loader/
 
-※神戸市新開地駅～谷上駅付近のサンプルデータを表示（ZL13 以上で表示）
+> [!TIP]
+> * 3次元電子国土基本図を Web 地図にしてみた
+>   
+> https://qiita.com/mg_kudo/items/722431f979f846f426e0
+> 
+> * 独自形式 3D データ用のタイルローダーを作った（deck.gl+MapLibre 用）
+>   
+> https://qiita.com/mg_kudo/items/fc93793acf17134d4985
+> 
+
 
 ## 機能等の説明
 
