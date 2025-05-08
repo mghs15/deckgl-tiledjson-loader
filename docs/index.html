@@ -371,13 +371,18 @@ async function set3dLayers() {
       [
         "all", 
         ["<=", ["get", "baseHeight"], shinsuiElev],
-        ["<", shinsuiElev + 3, ["get", "height"]], // １階分の高さ（3m）の余裕
+        ["<", shinsuiElev - 0.5, ["get", "baseHeight"]], // 床上分の高さ（0.5m）
       ], ["rgb", 255, 255,  0],
+      [
+        "all", 
+        ["<=", ["get", "baseHeight"], shinsuiElev - 0.5], // 床上分の高さ（0.5m）
+        ["<", shinsuiElev + 3, ["get", "height"]], // １階分の高さ（3m）の余裕
+      ], ["rgb", 255,  0,  0],
       [
         "all", 
         ["<=", ["get", "height"], shinsuiElev + 3], // １階分の高さ（3m）の余裕
         ["<", shinsuiElev, ["get", "height"]],
-      ], ["rgb", 255,  0,  0],
+      ], ["rgb", 128,  0,  0],
       ["<=", ["get", "height"], shinsuiElev], ["rgb", 100,  0, 100],
       ["rgb", 100, 100, 100],
     ];
