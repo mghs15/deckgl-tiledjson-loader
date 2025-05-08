@@ -96,11 +96,13 @@ button.local {
     <input type="checkbox" class="local" id="showTerrain" onchange="set3dLayers();" >地形（terrain）
     <hr>
     <!--<span>表示オプション</span><br>-->
-    <input type="checkbox" class="local" id="switchBack" onchange="switchBack();" checked>背景地図
+    <input type="checkbox" class="local" id="switchBack" onchange="switchBack();" checked/>背景地図
     <input type="checkbox" class="local" id="showTileBoundary" onchange="addTileboundary()" />タイル図郭<br>
     <input type="checkbox" class="local" id="isTileLoad" />データ読込停止
     <input type="checkbox" class="local" id="isCreateDanmen" checked/>断面図生成<br>
     高さ強調：<input type="number" class="local" id="elevScale" onchange="set3dLayers()" min="0" value="1" style="width:5em;"/><br>
+    <input type="checkbox" class="local" id="isShinsuiCheck" onchange="set3dLayers()" checked/>浸水<span style="font-size: 75%;">（静水面標高）</span>：
+      <input type="number" class="local" id="shinsuiElev" onchange="set3dLayers()" min="0" value="1" style="width:5em;"/>m<br>
     <hr>
     <div class="message">表示可能なデータ（基本的に<a  target="_blank" href="https://github.com/gsi-cyberjapan/optimal_bvmap">最適化ベクトルタイル</a>を加工）：
     ●<a href="#15/34.435165/133.231979">尾道付近</a> ZL 15 相当の情報（ZL 13 以上で表示）
@@ -205,6 +207,14 @@ map.on('load', function(){
       }
   });
   map.addSource('BldA', {
+      type: 'geojson',
+      data: {
+        type: 'FeatureCollection',
+        features: []
+      }
+  });
+  
+  map.addSource('shinsuiPlate', {
       type: 'geojson',
       data: {
         type: 'FeatureCollection',
@@ -342,7 +352,82 @@ async function set3dLayers() {
   
   const scale = +document.getElementById("elevScale").value || 0;
   
+  // 基本のレイヤを格納
+  const deckLayers = [];
+  
   //FillExtrusion利用--------------------------------------------------
+  
+  //浸水判定用
+  const shinsuiElev = +document.getElementById("shinsuiElev").value || 0;
+  const isShinsuiCheck = document.getElementById("isShinsuiCheck").checked;
+  
+  const getBuildingColor = () => {
+    // shinsuiElev isShinsuiCheck
+    if(!isShinsuiCheck) return ["get", "color"];
+    
+    return [
+      "case",
+      ["<", shinsuiElev, ["get", "baseHeight"]], ["rgb", 255, 255, 255],
+      [
+        "all", 
+        ["<=", ["get", "baseHeight"], shinsuiElev],
+        ["<", shinsuiElev + 3, ["get", "height"]], // １階分の高さ（3m）の余裕
+      ], ["rgb", 255, 255,  0],
+      [
+        "all", 
+        ["<=", ["get", "height"], shinsuiElev + 3], // １階分の高さ（3m）の余裕
+        ["<", shinsuiElev, ["get", "height"]],
+      ], ["rgb", 255,  0,  0],
+      ["<=", ["get", "height"], shinsuiElev], ["rgb", 100,  0, 100],
+      ["rgb", 100, 100, 100],
+    ];
+  }
+  
+  if(map.getLayer('shinsuiPlate')){
+    map.removeLayer('shinsuiPlate');
+  }
+  if(isShinsuiCheck){
+    const b = map.getBounds();
+    const sw = b.getSouthWest();
+    const ne = b.getNorthEast();
+    const bbox = turf.bboxPolygon([sw.lng, sw.lat, ne.lng, ne.lat]);
+    console.log(bbox);
+    
+    
+    const myShinsuiPlateDeckLayer = new deck.SolidPolygonLayer({
+      id: 'path-layer-shinsuiplate',
+      data: [bbox],
+      parameters: {depthTest: false},
+      extruded: true,
+      wireframe: true,
+      getPolygon: d => d.geometry.coordinates[0],
+      getElevation: shinsuiElev * scale,
+      getFillColor: [0, 100, 255, 100],
+      getLineColor: [80, 80, 80],
+      pickable: true
+    });
+    deckLayers.push(myShinsuiPlateDeckLayer);
+    
+    /*
+    map.getSource('shinsuiPlate').setData(
+      { type: "FeatureCollection", features: [bbox]}
+    );
+    map.addLayer({
+      id: 'shinsuiPlate',
+      type: 'fill-extrusion',
+      source: 'shinsuiPlate',
+      paint: {
+        "fill-extrusion-color": ["rgb", 0, 100, 255],
+        "fill-extrusion-height": ["*", shinsuiElev, scale],
+        "fill-extrusion-base": shinsuiElev - 0.25,
+        "fill-extrusion-opacity": 0.5,
+      },
+      layout: {
+      }
+    });
+    */
+  }
+  
   //建物
   if(map.getLayer('building-fillextrusion')){
     map.removeLayer('building-fillextrusion');
@@ -357,7 +442,7 @@ async function set3dLayers() {
       type: 'fill-extrusion',
       source: 'building3d',
       paint: {
-        "fill-extrusion-color": ["get", "color"],
+        "fill-extrusion-color": getBuildingColor(),
         "fill-extrusion-height": ["*", ["get", "height"], scale],
         "fill-extrusion-base": ["*", ["get", "baseHeight"], scale],
       },
@@ -383,7 +468,7 @@ async function set3dLayers() {
       type: 'fill-extrusion',
       source: 'BldA',
       paint: {
-        "fill-extrusion-color": ["get", "color"],
+        "fill-extrusion-color": getBuildingColor(),
         "fill-extrusion-height": ["*", ["get", "height"], scale],
         "fill-extrusion-base": ["*", ["get", "baseHeight"], scale],
       },
@@ -395,7 +480,7 @@ async function set3dLayers() {
       type: 'fill-extrusion',
       source: 'BldA',
       paint: {
-        "fill-extrusion-color": ["get", "color"],
+        "fill-extrusion-color": getBuildingColor(),
         "fill-extrusion-height": ["*", ["get", "topHeight"], scale],
         "fill-extrusion-base": ["*", ["get", "baseHeight"], scale],
         "fill-extrusion-opacity": 0.8,
@@ -407,9 +492,6 @@ async function set3dLayers() {
   //--------------------------------------------------
   
   //Custom(DeckGL)利用--------------------------------------------------
-  
-  // 基本のレイヤを格納
-  const deckLayers = [];
   
   if(document.getElementById("showRoad").checked){
     //道路
@@ -663,7 +745,8 @@ async function set3dLayers() {
   }
   
   g.deckOverlay.setProps({
-    layers: deckLayers
+    layers: deckLayers.reverse()
+    // SolidPolygon に隠れる PathLayer を透過させるための制御
   });
   
   // その他の 3D 関係データの更新
