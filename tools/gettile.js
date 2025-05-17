@@ -142,14 +142,14 @@ async function bindElevToMvt(z, x, y) {
       }
       
       const dataName = layerNameMap[layerName];
-      if(layerName == "BldA"){
+      if(layerName == "_"){
         json[dataName] = addZToGeoJSONSync(collection, getZ, option);
       }else{
         json[dataName] = addZToGeoJSONSync(collection, getZ, option).features;
       }
     });
     
-    fs.writeFileSync(`${z}-${x}-${y}.json`, JSON.stringify(json, null, 2));
+    fs.writeFileSync(`./docs/tiles/${z}-${x}-${y}-1.json`, JSON.stringify(json, null, 2));
     
   });
 

@@ -24,6 +24,9 @@
 * タイルのキャッシュ機構とデータ取得中に地図が動き始めた時のキャンセル機能を付与（ChatGPT の出力をそのまま実装）
 
 ## サンプルデータ
+
+※本レポジトリに同封しているツールで作成したものではなく、仕様も異なる場合があります。
+
 * 神戸市新開地駅～谷上駅付近：最適化ベクトルタイル ZL 15 相当の情報（ZL 13 以上 16 未満で表示）
 	* 神戸市すずらん台駅周辺は、最適化ベクトルタイル ZL 16 相当の建物・注記等情報を ZL 15 以上で追加で表示
 * 尾道付近：最適化ベクトルタイル ZL 15 相当の情報（ZL 13 以上 16 未満で表示）
@@ -35,6 +38,49 @@
 
 * `modularize.js`: GeoJSON へ変換した３次元電子国土基本図試作データをタイル状に分割する
 * `gettile.js`: 最適化ベクトルタイルと標高タイルを用いて、標高値が付与されたタイル状のデータを作成する（WIP）
+
+### 生成されるデータの仕様（WIP）
+
+* JSON 形式であり、任意の名前のメンバー（「レイヤ名」と呼ぶこととする）を持つ構造で、各メンバーの値は、GeoJSON の FeatureCollection か、Features のは配列であること。
+* 座標値 coordinates は、GooJSON の仕様通り、Z値をとることができる。
+
+```
+{
+  "layer-name-1": [
+    {
+      "type": "Feature",
+      "geometry": {
+         "type": "LineString",
+         "coordinates": [
+           [135.08746, 34.75884, 290],
+           ...
+           [135.08721, 34.75875, 320]
+         ],
+      },
+      "properties": {...}
+    },
+    ...
+  ], // Feature の配列
+  ...
+  "layer-name-2": {
+    "type": "FeatureCollection",
+    "features": [...] // <- ここは Feature の配列と同様
+  } // FeatureCollection
+}
+```
+
+※ デモサイトでは、FeatureCollection かFeatures のは配列かを問わずに読み込めるように対応している。
+```
+// 対応例（`mergeTiles()` の一部）
+const a = d[k].features || d[k];
+data[k].push(...a);
+```
+
+※３次元電子国土基本図と組み合わせる場合、以下のような実装となっている
+|ZL|データソース|レイヤ一覧|
+|:-:|:-|:-|
+|14 |最適化ベクトルタイル+標高タイル | "contour", "road", "railway", "waterarea", "border", "building", "symbol"|
+|15 |3次元電子国土基本図 | "BldA", "RailTrCL", "RdCL"|
 
 
 ## 課題
