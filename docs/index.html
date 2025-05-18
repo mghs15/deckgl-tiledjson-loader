@@ -405,35 +405,43 @@ async function set3dLayers() {
       parameters: {depthTest: false},
       extruded: true,
       wireframe: true,
-      getPolygon: d => d.geometry.coordinates[0],
-      getElevation: shinsuiElev * scale,
+      getPolygon: d => d.geometry.coordinates[0].map(([lng, lat]) => [lng, lat, shinsuiElev * scale - 1]),
+      getElevation: 1,
       getFillColor: [0, 100, 255, 100],
       getLineColor: [80, 80, 80],
       pickable: true
     });
     deckLayers.push(myShinsuiPlateDeckLayer);
     
-    /*
-    map.getSource('shinsuiPlate').setData(
-      { type: "FeatureCollection", features: [bbox]}
-    );
-    map.addLayer({
-      id: 'shinsuiPlate',
-      type: 'fill-extrusion',
-      source: 'shinsuiPlate',
-      paint: {
-        "fill-extrusion-color": ["rgb", 0, 100, 255],
-        "fill-extrusion-height": ["*", shinsuiElev, scale],
-        "fill-extrusion-base": shinsuiElev - 0.25,
-        "fill-extrusion-opacity": 0.5,
-      },
-      layout: {
-      }
-    });
-    */
   }
   
   //建物
+  /***
+  // Solid Polygon ver.
+  if(document.getElementById("showBuilding").checked && building){
+    const myBuildingDeckLayer = new deck.SolidPolygonLayer({
+      id: 'path-layer-building',
+      data: building,
+      parameters: {depthTest: false},
+      extruded: true,
+      wireframe: true,
+      getPolygon: d => {
+        const rings = [];
+        d.geometry.coordinates.map( ring => {
+          const coords = ring.map(v => [v[0], v[1], v[2] * scale]);
+          rings.push(coords);
+        });
+        return rings;
+      },
+      getElevation: 20,
+      getFillColor: [255, 100, 100, 200],
+      getLineColor: [80, 0, 0],
+      pickable: true
+    });
+    deckLayers.push(myBuildingDeckLayer);
+  }
+  ***/
+    
   if(map.getLayer('building-fillextrusion')){
     map.removeLayer('building-fillextrusion');
   }
@@ -592,16 +600,24 @@ async function set3dLayers() {
   
   if(document.getElementById("showWaterarea").checked){
     //水域
-    const myWaterareaDeckLayer = new deck.PathLayer({
+    const myWaterareaDeckLayer = new deck.SolidPolygonLayer({
       id: 'path-layer-waterarea',
       data: waterarea,
-      pickable: true,
-      widthScale: 1,
-      widthMinPixels: 1,
-      // 簡易的に outer ring のみを表示する
-      getPath: d => d.geometry.coordinates[0].map(v => [v[0], v[1], v[2] * scale]),
-      getColor: [0,0,200],
-      getWidth: 2
+      parameters: {depthTest: false},
+      extruded: true,
+      wireframe: true,
+      getPolygon: d => {
+        const rings = [];
+        d.geometry.coordinates.map( ring => {
+          const coords = ring.map(v => [v[0], v[1], v[2] * scale - 0.5]);
+          rings.push(coords);
+        });
+        return rings;
+      },
+      getElevation: 0.5,
+      getFillColor: [190,210,255],
+      getLineColor: [20,90,255],
+      pickable: true
     });
     deckLayers.push(myWaterareaDeckLayer);
   }

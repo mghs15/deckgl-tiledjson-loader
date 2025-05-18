@@ -19,14 +19,18 @@ const lat2tile = (lat,zoom) => { return (Math.floor((1-Math.log(Math.tan(lat*Mat
 const lon2tiled = (lon,zoom) => { return ((lon+180)/360*Math.pow(2,zoom)); }
 const lat2tiled = (lat,zoom) => { return ((1-Math.log(Math.tan(lat*Math.PI/180) + 1/Math.cos(lat*Math.PI/180))/Math.PI)/2 *Math.pow(2,zoom)); }
 
-const demurl = "https://cyberjapandata.gsi.go.jp/xyz/dem5a_png/{z}/{x}/{y}.png";
+const demurl = "https://cyberjapandata.gsi.go.jp/xyz/dem_png/{z}/{x}/{y}.png";
 const url = "https://cyberjapandata.gsi.go.jp/xyz/optimal_bvmap-v1/optimal_bvmap-v1.pmtiles";
 const p = new pmtiles.PMTiles(url);
 
 
-const [z, x, y] = [15,28508,13040];
-bindElevToMvt(z, x, y);
-bindElevToMvt(z, x, y+1);
+
+const z = 14;
+for(let x = 14253; x < 14254; x++){
+  for(let y = 6521; y < 6522; y++){
+    bindElevToMvt(z, x, y);
+  }
+}
 
 async function bindElevToMvt(z, x, y) {
   
@@ -131,6 +135,8 @@ async function bindElevToMvt(z, x, y) {
       const option = {zl: z, propZ: "vt_alti"};
       let collection = {type: "FeatureCollection", features: features};
       
+      /***
+      // Polygon を LineString へ変換する等したい場合
       if(layerName == "WA"){
         collection = convertPolygonRingsToLineStrings(collection);
       }else if(layerName == "Cntr" || layerName == "AdmBdry"  || layerName == "Anno"){
@@ -140,6 +146,7 @@ async function bindElevToMvt(z, x, y) {
       }else{
         return;
       }
+      ***/
       
       const dataName = layerNameMap[layerName];
       if(layerName == "_"){

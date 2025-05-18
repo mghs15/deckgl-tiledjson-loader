@@ -41,7 +41,7 @@
 
 ### 生成されるデータの仕様（WIP）
 
-* JSON 形式であり、任意の名前のメンバー（「レイヤ名」と呼ぶこととする）を持つ構造で、各メンバーの値は、GeoJSON の FeatureCollection か、Features のは配列であること。
+* JSON 形式であり、任意の名前のメンバー（「レイヤ名」と呼ぶこととする）を持つ構造で、各メンバーの値は、GeoJSON の FeatureCollection か、Feature の配列であること。
 * 座標値 coordinates は、GooJSON の仕様通り、Z値をとることができる。
 
 ```
@@ -69,7 +69,7 @@
 }
 ```
 
-※ デモサイトでは、FeatureCollection かFeatures のは配列かを問わずに読み込めるように対応している。
+※ デモサイトでは、FeatureCollection かFeatures の配列かを問わずに読み込めるように対応している。
 ```
 // 対応例（`mergeTiles()` の一部）
 const a = d[k].features || d[k];
