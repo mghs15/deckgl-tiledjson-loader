@@ -398,21 +398,21 @@ async function set3dLayers() {
     const bbox = turf.bboxPolygon([sw.lng, sw.lat, ne.lng, ne.lat]);
     console.log(bbox);
     
-    
-    const myShinsuiPlateDeckLayer = new deck.SolidPolygonLayer({
-      id: 'path-layer-shinsuiplate',
-      data: [bbox],
-      parameters: {depthTest: false},
-      extruded: true,
-      wireframe: true,
-      getPolygon: d => d.geometry.coordinates[0].map(([lng, lat]) => [lng, lat, shinsuiElev * scale - 1]),
-      getElevation: 1,
-      getFillColor: [0, 100, 255, 100],
-      getLineColor: [80, 80, 80],
-      pickable: true
-    });
-    deckLayers.push(myShinsuiPlateDeckLayer);
-    
+    if(scale > 0){
+      const myShinsuiPlateDeckLayer = new deck.SolidPolygonLayer({
+        id: 'path-layer-shinsuiplate',
+        data: [bbox],
+        parameters: {depthTest: false},
+        extruded: true,
+        wireframe: true,
+        getPolygon: d => d.geometry.coordinates[0].map(([lng, lat]) => [lng, lat, shinsuiElev * scale - 1]),
+        getElevation: 1,
+        getFillColor: [0, 100, 255, 100],
+        getLineColor: [80, 80, 80],
+        pickable: true
+      });
+      deckLayers.push(myShinsuiPlateDeckLayer);
+    }
   }
   
   //建物
@@ -562,6 +562,25 @@ async function set3dLayers() {
       getWidth: d => d.properties["width"] + 2
     });
     deckLayers.push(myRdCLSubDeckLayer);
+    
+    //水没有無（３次元電子国土基本図テストデータ）
+    if(isShinsuiCheck){
+      const rdsunk = splitLinesByHeight(RdCL, shinsuiElev).filter(
+        feature => !feature.properties.above
+      );
+      console.log(rdsunk);
+      const myRdCLSunkDeckLayer = new deck.PathLayer({
+        id: 'path-layer-RdCL-Sunk',
+        data: rdsunk,
+        pickable: true,
+        widthScale: 3,
+        widthMinPixels: 1,
+        getPath: d => d.geometry.coordinates.map(v => [v[0], v[1], v[2] * scale + 0.25]),
+        getColor: d => [255,0,0],
+        getWidth: d => 1, //d.properties["width"]
+      });
+      deckLayers.push(myRdCLSunkDeckLayer);
+    }
   }
   
   if(document.getElementById("showRailTrCL").checked){
@@ -990,6 +1009,77 @@ const setStyleInfo = (data) => {
   return data;
   
 }
+
+// ラインデータの浸水面以上・以下の検出用（ChatGPTによる）
+function splitLinesByHeight(features, heightThreshold) {
+  const output = [];
+
+  features.forEach((feature) => {
+    const geometry = feature.geometry;
+    const properties = feature.properties || {};
+
+    const lines = geometry.type === "LineString"
+      ? [geometry.coordinates]
+      : geometry.type === "MultiLineString"
+        ? geometry.coordinates
+        : [];
+
+    lines.forEach((lineCoords) => {
+      let currentSegment = [];
+      let currentAbove = lineCoords[0][2] >= heightThreshold;
+
+      for (let i = 0; i < lineCoords.length - 1; i++) {
+        const p1 = lineCoords[i];
+        const p2 = lineCoords[i + 1];
+        const z1 = p1[2], z2 = p2[2];
+
+        const above1 = z1 >= heightThreshold;
+        const above2 = z2 >= heightThreshold;
+
+        currentSegment.push(p1);
+
+        if (above1 !== above2) {
+          // 高さをまたぐので分割点を補間
+          const t = (heightThreshold - z1) / (z2 - z1);
+          const interpolated = [
+            p1[0] + t * (p2[0] - p1[0]),
+            p1[1] + t * (p2[1] - p1[1]),
+            heightThreshold
+          ];
+          currentSegment.push(interpolated);
+
+          output.push({
+            type: "Feature",
+            geometry: {
+              type: "LineString",
+              coordinates: currentSegment
+            },
+            properties: { ...properties, above: currentAbove }
+          });
+
+          // 次のセグメント開始
+          currentSegment = [interpolated];
+          currentAbove = !currentAbove;
+        }
+      }
+
+      currentSegment.push(lineCoords[lineCoords.length - 1]);
+      if (currentSegment.length > 1) {
+        output.push({
+          type: "Feature",
+          geometry: {
+            type: "LineString",
+            coordinates: currentSegment
+          },
+          properties: { ...properties, above: currentAbove }
+        });
+      }
+    });
+  });
+
+  return output;
+}
+
 
 </script>
 
