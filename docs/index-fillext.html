@@ -102,7 +102,7 @@ button.local {
     <input type="checkbox" class="local" id="isCreateDanmen" checked/>断面図生成<br>
     高さ強調：<input type="number" class="local" id="elevScale" onchange="set3dLayers()" min="0" value="1" style="width:5em;"/><br>
     <input type="checkbox" class="local" id="isShinsuiCheck" onchange="set3dLayers()" checked/>浸水<span style="font-size: 75%;">（静水面標高）</span>：
-      <input type="number" class="local" id="shinsuiElev" onchange="set3dLayers()" value="1" style="width:5em;"/>m<br>
+      <input type="number" class="local" id="shinsuiElev" onchange="set3dLayers()" min="0" value="1" style="width:5em;"/>m<br>
     <hr>
     <div class="message">表示可能なデータ（基本的に<a  target="_blank" href="https://github.com/gsi-cyberjapan/optimal_bvmap">最適化ベクトルタイル</a>を加工）：
     ●<a href="#15/34.435165/133.231979">尾道付近</a> ZL 15 相当の情報（ZL 13 以上で表示）
@@ -355,12 +355,39 @@ async function set3dLayers() {
   // 基本のレイヤを格納
   const deckLayers = [];
   
-  //Custom(DeckGL)利用--------------------------------------------------
+  //FillExtrusion利用--------------------------------------------------
   
   //浸水判定用
   const shinsuiElev = +document.getElementById("shinsuiElev").value || 0;
   const isShinsuiCheck = document.getElementById("isShinsuiCheck").checked;
+  
+  const getBuildingColor = () => {
+    // shinsuiElev isShinsuiCheck
+    if(!isShinsuiCheck) return ["get", "color"];
     
+    return [
+      "case",
+      ["<", shinsuiElev, ["get", "baseHeight"]], ["rgb", 255, 255, 255],
+      [
+        "all", 
+        ["<=", ["get", "baseHeight"], shinsuiElev],
+        ["<", shinsuiElev - 0.5, ["get", "baseHeight"]], // 床上分の高さ（0.5m）
+      ], ["rgb", 255, 255,  0],
+      [
+        "all", 
+        ["<=", ["get", "baseHeight"], shinsuiElev - 0.5], // 床上分の高さ（0.5m）
+        ["<", shinsuiElev + 3, ["get", "height"]], // １階分の高さ（3m）の余裕
+      ], ["rgb", 255,  0,  0],
+      [
+        "all", 
+        ["<=", ["get", "height"], shinsuiElev + 3], // １階分の高さ（3m）の余裕
+        ["<", shinsuiElev, ["get", "height"]],
+      ], ["rgb", 128,  0,  0],
+      ["<=", ["get", "height"], shinsuiElev], ["rgb", 100,  0, 100],
+      ["rgb", 100, 100, 100],
+    ];
+  }
+  
   if(map.getLayer('shinsuiPlate')){
     map.removeLayer('shinsuiPlate');
   }
@@ -388,101 +415,96 @@ async function set3dLayers() {
     }
   }
   
-  // 建物・z座標なしポリゴン用設定
-  const addZToCoordinates = (coords, z) => {
-    return coords.map(ring =>
-      ring.map(([lng, lat]) => [lng, lat, z])
-    );
-  }
-  
-  const getPolygon = (feature, baseHeightName) => {
-    const z = feature.properties[baseHeightName] * scale || 0;
-    const coords = feature.geometry.coordinates;
-
-    // Polygon / MultiPolygon 対応
-    if (feature.geometry.type === 'Polygon') {
-      return addZToCoordinates(coords, z);
-    } else if (feature.geometry.type === 'MultiPolygon') {
-      return coords.map(polygon => addZToCoordinates(polygon, z));
-    }
-    return coords;
-  }
-  
-  const getBuildingColor = d => {
-    // shinsuiElev isShinsuiCheck
-    if(!isShinsuiCheck) return d.properties["color"];
-    
-    const base = d.properties["baseHeight"];
-    const h = d.properties["height"];
-    if(shinsuiElev < base){
-      return [255, 255, 255];
-    }else if(base <= shinsuiElev &&  shinsuiElev - 0.5 < base ){
-      return [255, 255,  0];
-    }else if(base + 0.5 <= shinsuiElev &&  shinsuiElev < h - 3 ){
-      return [255,  0,  0];
-    }else if(h - 3 <= shinsuiElev &&  shinsuiElev < h ){
-      return [128,  0,  64];
-    }else if(h <= shinsuiElev){
-      return [128,  0, 128];
-    }else{
-      return [255, 255, 255];
-    }
-  }
-  
   //建物
-  if(document.getElementById("showBuilding").checked){
+  /***
+  // Solid Polygon ver.
+  if(document.getElementById("showBuilding").checked && building){
     const myBuildingDeckLayer = new deck.SolidPolygonLayer({
       id: 'path-layer-building',
       data: building,
       parameters: {depthTest: false},
       extruded: true,
       wireframe: true,
-      getPolygon: d => getPolygon(d, "baseHeight"),
-      getElevation: d => (d.properties["height"] - d.properties["baseHeight"]) * scale,
-      getFillColor: d => getBuildingColor(d),
+      getPolygon: d => {
+        const rings = [];
+        d.geometry.coordinates.map( ring => {
+          const coords = ring.map(v => [v[0], v[1], v[2] * scale]);
+          rings.push(coords);
+        });
+        return rings;
+      },
+      getElevation: 20,
+      getFillColor: [255, 100, 100, 200],
       getLineColor: [80, 0, 0],
-      pickable: false
+      pickable: true
     });
     deckLayers.push(myBuildingDeckLayer);
   }
-  
-  //建物（３次元電子国土基本図テストデータ）
-  if(document.getElementById("showBldA").checked){
+  ***/
     
-    if(scale >0){
-      const myBldATopDeckLayer = new deck.SolidPolygonLayer({
-        id: 'path-layer-BldA-Top',
-        data: BldA,
-        parameters: {depthTest: false},
-        extruded: true,
-        wireframe: true,
-        getPolygon: d => getPolygon(d, "height"),
-        getElevation: d => (d.properties["topHeight"] - d.properties["height"]) * scale,
-        getFillColor: d => [...getBuildingColor(d), 100],
-        getLineColor: [200, 200, 200, 0],
-        pickable: false
-      });
-      deckLayers.push(myBldATopDeckLayer);
-    }
-    
-    const myBldADeckLayer = new deck.SolidPolygonLayer({
-      id: 'path-layer-BldA',
-      data: BldA,
-      parameters: {depthTest: false},
-      extruded: true,
-      wireframe: true,
-      getPolygon: d => getPolygon(d, "baseHeight"),
-      getElevation: d => (d.properties["height"] - d.properties["baseHeight"]) * scale,
-      getFillColor: d => getBuildingColor(d),
-      getLineColor: [100, 100, 100],
-      pickable: false
-    });
-    deckLayers.push(myBldADeckLayer);
-    
+  if(map.getLayer('building-fillextrusion')){
+    map.removeLayer('building-fillextrusion');
   }
   
+  if(document.getElementById("showBuilding").checked && building){
+    map.getSource('building3d').setData(
+      { type: "FeatureCollection", features: building }
+    );
+    map.addLayer({
+      id: 'building-fillextrusion',
+      type: 'fill-extrusion',
+      source: 'building3d',
+      paint: {
+        "fill-extrusion-color": getBuildingColor(),
+        "fill-extrusion-height": ["*", ["get", "height"], scale],
+        "fill-extrusion-base": ["*", ["get", "baseHeight"], scale],
+      },
+      layout: {
+      }
+    });
+  }
+  
+  //建物（３次元電子国土基本図テストデータ）
+  if(map.getLayer('building-3ddk-fillextrusion')){
+    map.removeLayer('building-3ddk-fillextrusion');
+  }
+  if(map.getLayer('building-3ddk-fillextrusion-sub')){
+    map.removeLayer('building-3ddk-fillextrusion-sub');
+  }
+  
+  if(document.getElementById("showBldA").checked && building){
+    map.getSource('BldA').setData(
+      { type: "FeatureCollection", features: BldA }
+    );
+    map.addLayer({
+      id: 'building-3ddk-fillextrusion',
+      type: 'fill-extrusion',
+      source: 'BldA',
+      paint: {
+        "fill-extrusion-color": getBuildingColor(),
+        "fill-extrusion-height": ["*", ["get", "height"], scale],
+        "fill-extrusion-base": ["*", ["get", "baseHeight"], scale],
+      },
+      layout: {
+      }
+    });
+    map.addLayer({
+      id: 'building-3ddk-fillextrusion-sub',
+      type: 'fill-extrusion',
+      source: 'BldA',
+      paint: {
+        "fill-extrusion-color": getBuildingColor(),
+        "fill-extrusion-height": ["*", ["get", "topHeight"], scale],
+        "fill-extrusion-base": ["*", ["get", "baseHeight"], scale],
+        "fill-extrusion-opacity": 0.8,
+      },
+      layout: {
+      }
+    });
+  }
   //--------------------------------------------------
   
+  //Custom(DeckGL)利用--------------------------------------------------
   
   if(document.getElementById("showRoad").checked){
     //道路
@@ -554,7 +576,7 @@ async function set3dLayers() {
         widthScale: 3,
         widthMinPixels: 1,
         getPath: d => d.geometry.coordinates.map(v => [v[0], v[1], v[2] * scale + 0.25]),
-        getColor: d => [255,100,0],
+        getColor: d => [255,0,0],
         getWidth: d => 1, //d.properties["width"]
       });
       deckLayers.push(myRdCLSunkDeckLayer);
