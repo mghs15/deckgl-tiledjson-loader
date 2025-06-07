@@ -554,8 +554,8 @@ async function set3dLayers() {
         widthScale: 3,
         widthMinPixels: 1,
         getPath: d => d.geometry.coordinates.map(v => [v[0], v[1], v[2] * scale + 0.25]),
-        getColor: d => [255,100,0],
-        getWidth: d => 1, //d.properties["width"]
+        getColor: d => [128,0,255],
+        getWidth: d => d.properties["width"] - 1
       });
       deckLayers.push(myRdCLSunkDeckLayer);
     }
