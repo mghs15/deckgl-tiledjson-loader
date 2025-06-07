@@ -873,19 +873,19 @@ const setStyleInfo = (data) => {
     
     let height = f.properties["alti"];
     
-    let color = 'hsl(0, 50%, 80%)';
+    let color = [230, 179, 179];
     let opacity = 1;
     
     const ftCode = f.properties["vt_code"];
     if(ftCode == 3101 || ftCode == 3111 || ftCode == 4302){
       height = height + 10;
-      color = (ftCode == 3111) ? 'hsl(0, 100%, 95%)' : color;
+      color = (ftCode == 3111) ? [255, 229, 229] : color;
     }else if(ftCode == 3102 || ftCode == 3112){
       height = height + 40;
-      color = (ftCode == 3112) ? 'hsl(30, 100%, 95%)' : 'hsl(30, 100%, 80%)';
+      color = (ftCode == 3112) ? [255, 242, 229] : [255, 204, 153];
     }else if(ftCode == 3103 || ftCode == 4301){
       height = height + 100;
-      color = 'hsl(210, 100%, 90%)';
+      color = [204, 229, 255];
     }
     
     building[i].properties["height"] = height;
@@ -966,16 +966,16 @@ const setStyleInfo = (data) => {
     
     const f = BldA[i];
     
-    let color = 'hsl(0, 50%, 80%)';
+    let color = [230, 179, 179];
     let opacity = 1;
     
     const ftCode = f.properties["ftCode"];
     if(ftCode == 3101 || ftCode == 3111 || ftCode == 4302){
-      color = (ftCode == 3111) ? 'hsl(0, 100%, 95%)' : color;
+      color = (ftCode == 3111) ? [255, 229, 229] : color;
     }else if(ftCode == 3102 || ftCode == 3112){
-      color = (ftCode == 3112) ? 'hsl(30, 100%, 95%)' : 'hsl(30, 100%, 80%)';
+      color = (ftCode == 3112) ? [255, 242, 229] : [255, 204, 153];
     }else if(ftCode == 3103 || ftCode == 4301){
-      color = 'hsl(210, 100%, 90%)';
+      color = [204, 229, 255];
     }
     
     BldA[i].properties["height"] = f.properties["repElv"];
