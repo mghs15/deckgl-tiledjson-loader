@@ -91,6 +91,10 @@ data[k].push(...a);
 * 一方、パフォーマンスは fill-extrusion の方が良さそう
 	* 未検証だが、通常は fill-extrusion を用いて、0 m 以下となる建物のみ、 SolidPolygon を使うという手はある
 
+参考：fill-extrusion を用いたデモサイト（内容は古い可能性）
+
+https://mghs15.github.io/deckgl-tiledjson-loader/index-fillext.html
+
 ### レイヤの制御
 
 * 注記の文字が、建物（MapLibre のネイティブレイヤ（fill-extrusion）使用）よりも下に表示されてしまう
