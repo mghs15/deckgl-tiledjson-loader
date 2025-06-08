@@ -26,8 +26,8 @@ const p = new pmtiles.PMTiles(url);
 
 
 const z = 14;
-for(let x = 14253; x < 14254; x++){
-  for(let y = 6521; y < 6522; y++){
+for(let x = 14216; x < 1417; x++){
+  for(let y = 6528; y < 6529; y++){
     bindElevToMvt(z, x, y);
   }
 }
@@ -50,11 +50,14 @@ async function bindElevToMvt(z, x, y) {
       return sharp( buf )
         .raw()
         .toBuffer()
+    })
+    .catch( data => {
+      return null;
     });
     
-  p.getZxy(z, x, y).then( data => {
+  await p.getZxy(z, x, y).then( data => {
 
-    console.log(data);
+    //console.log(data);
     const tile = new VectorTile(new Protobuf(data.data));
     
     const layers = tile.layers;
@@ -65,7 +68,7 @@ async function bindElevToMvt(z, x, y) {
       const layer = layers[layerName];
       const features = [];
       
-      console.log(`Layer: ${layerName}`);
+      //console.log(`Layer: ${layerName}`);
       //console.log(layer);
       
       for (let i = 0; i < layer.length; i++) {
@@ -107,6 +110,8 @@ async function bindElevToMvt(z, x, y) {
         if(x < _x) pixelX = 255;
         if(y > _y) pixelY = 0;
         if(y < _y) pixelY = 255;
+        
+        if(!buf) return 0;
         
         const size = 256;
         const ch = buf.length / ( size * size );
@@ -157,7 +162,10 @@ async function bindElevToMvt(z, x, y) {
     });
     
     fs.writeFileSync(`./docs/tiles/${z}-${x}-${y}-1.json`, JSON.stringify(json, null, 2));
+    console.log(`SUCCESS fetch pbf : ${z}/${x}/${y}`);
     
+  }).catch( err => {
+    console.log(`ERROR fetch pbf : ${z}/${x}/${y}`);
   });
 
 }
