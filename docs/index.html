@@ -380,7 +380,7 @@ async function set3dLayers() {
         wireframe: true,
         getPolygon: d => d.geometry.coordinates[0].map(([lng, lat]) => [lng, lat, shinsuiElev * scale - 1]),
         getElevation: 1,
-        getFillColor: [0, 100, 255, 100],
+        getFillColor: [12, 0, 12, 100],
         getLineColor: [80, 80, 80],
         pickable: true
       });
