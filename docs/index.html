@@ -380,7 +380,7 @@ async function set3dLayers() {
         wireframe: true,
         getPolygon: d => d.geometry.coordinates[0].map(([lng, lat]) => [lng, lat, shinsuiElev * scale - 1]),
         getElevation: 1,
-        getFillColor: [90,100,120, 100],
+        getFillColor: [90,100,120, 150],
         getLineColor: [80, 80, 80],
         pickable: true
       });
@@ -419,9 +419,9 @@ async function set3dLayers() {
     }else if(base <= shinsuiElev &&  shinsuiElev - 0.5 < base ){
       return [255, 255,  0];
     }else if(base + 0.5 <= shinsuiElev &&  shinsuiElev < h - 3 ){
-      return [255,  0,  0];
+      return [255,  128,  0];
     }else if(h - 3 <= shinsuiElev &&  shinsuiElev < h ){
-      return [128,  0,  64];
+      return [255,  0,  0];
     }else if(h <= shinsuiElev){
       return [128,  0, 128];
     }else{
@@ -458,8 +458,8 @@ async function set3dLayers() {
         wireframe: true,
         getPolygon: d => getPolygon(d, "height"),
         getElevation: d => (d.properties["topHeight"] - d.properties["height"]) * scale,
-        getFillColor: d => [...getBuildingColor(d), 100],
-        getLineColor: [200, 200, 200, 0],
+        getFillColor: d => [...getBuildingColor(d), 50],
+        getLineColor: [255, 255, 255, 0],
         pickable: false
       });
       deckLayers.push(myBldATopDeckLayer);
@@ -473,8 +473,8 @@ async function set3dLayers() {
       wireframe: true,
       getPolygon: d => getPolygon(d, "baseHeight"),
       getElevation: d => (d.properties["height"] - d.properties["baseHeight"]) * scale,
-      getFillColor: d => getBuildingColor(d),
-      getLineColor: [100, 100, 100],
+      getFillColor: d => [...getBuildingColor(d), 150],
+      getLineColor: d => getBuildingColor(d),
       pickable: false
     });
     deckLayers.push(myBldADeckLayer);
